@@ -1,0 +1,59 @@
+uuid: 67b362fb-d8bb-481a-a917-2306096dcdc7
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_media_tabs_block
+    - field.field.block_content.mt_media_tabs_block.field_mt_media_tab
+  module:
+    - entity_reference_revisions
+    - field_layout
+    - layout_builder
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          4af704ae-e25e-4d7c-b951-a984f34b0803:
+            uuid: 4af704ae-e25e-4d7c-b951-a984f34b0803
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:block_content:mt_media_tabs_block:field_mt_media_tab'
+              formatter:
+                type: entity_reference_revisions_entity_view
+                label: hidden
+                settings:
+                  view_mode: default
+                  link: ''
+                third_party_settings: {  }
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+id: block_content.mt_media_tabs_block.default
+targetEntityType: block_content
+bundle: mt_media_tabs_block
+mode: default
+content:
+  field_mt_media_tab:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

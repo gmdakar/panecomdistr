@@ -1,0 +1,30 @@
+uuid: 653defb8-2c4d-4f5c-8e7a-5d699cb4929a
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.mt_services_list
+  module:
+    - system
+    - views
+  theme:
+    - wwf9
+id: views_block__mt_services_list_block_7_2
+theme: wwf9
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:mt_services_list-block_7'
+settings:
+  id: 'views_block:mt_services_list-block_7'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/445
+    negate: false
+    context_mapping: {  }

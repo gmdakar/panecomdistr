@@ -1,0 +1,25 @@
+uuid: cb7a63fa-7324-4b6b-a600-60c04f74cd73
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:edb26602-4e48-4f05-b69c-9c97baa643e7'
+  module:
+    - block_content
+  theme:
+    - wwf9
+id: exhibitionregistration
+theme: wwf9
+region: top
+weight: 0
+provider: null
+plugin: 'block_content:edb26602-4e48-4f05-b69c-9c97baa643e7'
+settings:
+  id: 'block_content:edb26602-4e48-4f05-b69c-9c97baa643e7'
+  label: 'EXHIBITION - REGISTRATION'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

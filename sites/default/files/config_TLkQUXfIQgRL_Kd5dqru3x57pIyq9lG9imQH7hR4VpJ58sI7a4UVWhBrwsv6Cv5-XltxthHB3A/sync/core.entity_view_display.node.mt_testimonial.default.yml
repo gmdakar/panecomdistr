@@ -1,0 +1,159 @@
+uuid: 30711c7b-450f-40e2-a034-36111d0222e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.mt_testimonial.field_mt_tst_body
+    - field.field.node.mt_testimonial.field_mt_tst_subtitle
+    - field.field.node.mt_testimonial.field_mt_tst_testimonial_image
+    - field.field.node.mt_testimonial.field_mt_tst_testimonial_link
+    - image.style.mt_testimonial_image
+    - node.type.mt_testimonial
+  module:
+    - field_layout
+    - image
+    - layout_builder
+    - layout_discovery
+    - link
+    - text
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          dd6e1527-93a9-4a6a-98e6-9184e73454f8:
+            uuid: dd6e1527-93a9-4a6a-98e6-9184e73454f8
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:mt_testimonial:field_mt_tst_testimonial_image'
+              formatter:
+                label: hidden
+                settings:
+                  image_style: mt_testimonial_image
+                  image_link: file
+                third_party_settings: {  }
+                type: image
+            additional: {  }
+            weight: 0
+          ae8af1f2-38eb-47c6-b430-ba0cf6c2fbbe:
+            uuid: ae8af1f2-38eb-47c6-b430-ba0cf6c2fbbe
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:mt_testimonial:field_mt_tst_subtitle'
+              formatter:
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+                type: string
+            additional: {  }
+            weight: 1
+          62d69ad4-e184-43bc-86d1-abac2641c6f1:
+            uuid: 62d69ad4-e184-43bc-86d1-abac2641c6f1
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:mt_testimonial:field_mt_tst_body'
+              formatter:
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+                type: text_default
+            additional: {  }
+            weight: 2
+          ab3876d4-a848-4102-bcca-16f6cacefc56:
+            uuid: ab3876d4-a848-4102-bcca-16f6cacefc56
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:mt_testimonial:field_mt_tst_testimonial_link'
+              formatter:
+                label: hidden
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: ''
+                  target: ''
+                third_party_settings: {  }
+                type: link
+            additional: {  }
+            weight: 3
+          f80dcd9a-c0b2-42f4-b4f7-fe72720fb12a:
+            uuid: f80dcd9a-c0b2-42f4-b4f7-fe72720fb12a
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:mt_testimonial:links'
+            additional: {  }
+            weight: 4
+        third_party_settings: {  }
+id: node.mt_testimonial.default
+targetEntityType: node
+bundle: mt_testimonial
+mode: default
+content:
+  field_mt_tst_body:
+    weight: 5
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_mt_tst_subtitle:
+    weight: 3
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_mt_tst_testimonial_image:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: mt_testimonial_image
+      image_link: file
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_mt_tst_testimonial_link:
+    weight: 7
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  links:
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

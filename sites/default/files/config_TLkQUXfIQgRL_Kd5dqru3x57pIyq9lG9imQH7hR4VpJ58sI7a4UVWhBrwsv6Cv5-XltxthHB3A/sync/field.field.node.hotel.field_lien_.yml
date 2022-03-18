@@ -1,0 +1,23 @@
+uuid: 88a312d4-f63b-4a61-b863-de0de60b55af
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lien_
+    - node.type.hotel
+  module:
+    - link
+id: node.hotel.field_lien_
+field_name: field_lien_
+entity_type: node
+bundle: hotel
+label: 'Lien '
+description: Reservation
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

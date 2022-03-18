@@ -1,0 +1,22 @@
+uuid: 7b0c5a38-6746-4029-8ba8-70634898d064
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - wwf9
+_core:
+  default_config_hash: xpKHLSERTe8IqMfbY7KnqxDMEEPikHFXwDUSQGtGIhU
+id: wwf9_help
+theme: wwf9
+region: content
+weight: -20
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Aide
+  provider: help
+  label_display: '0'
+visibility: {  }

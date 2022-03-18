@@ -1,0 +1,32 @@
+uuid: fb3242da-5854-4434-8109-5ff8f7b56474
+langcode: fr
+status: false
+dependencies:
+  config:
+    - views.view.mt_albums_carousel
+  module:
+    - node
+    - views
+  theme:
+    - wwf9
+id: views_block__mt_albums_carousel_block_1_2
+theme: wwf9
+region: content_bottom_first
+weight: 0
+provider: null
+plugin: 'views_block:mt_albums_carousel-block_1'
+settings:
+  id: 'views_block:mt_albums_carousel-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      hotel: hotel
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

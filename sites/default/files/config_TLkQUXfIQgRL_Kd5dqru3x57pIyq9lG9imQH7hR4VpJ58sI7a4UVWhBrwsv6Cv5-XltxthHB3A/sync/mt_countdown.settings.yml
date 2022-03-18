@@ -1,0 +1,18 @@
+theme_select: block
+title: 'Countdown 9th Forum'
+prompt_message: ''
+target_url: 'https://www.worldwaterforum.org'
+dismiss_text: 'Register now'
+hint_text: ''
+inject_in_the_body: 1
+days_to: '9th World Water Forum'
+predefined_palettes: '0'
+background: '#ffffff'
+title_color: '#000000'
+message_color: '#000000'
+notes_color: '#000000'
+button_background: '#ffffff'
+button_color: '#000000'
+_core:
+  default_config_hash: n0WhXbNZR_rf309oLPc55CzMQnbuJ_CebW8OdAz7Ks8
+expiration_date: '2022-03-21 08:00:00'

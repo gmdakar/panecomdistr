@@ -1,0 +1,31 @@
+uuid: 524bd05d-afdf-44a9-b38d-0af180fbbe67
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:dceb4176-3dcc-42ac-a50a-ff22f0752311'
+  module:
+    - block_content
+    - system
+  theme:
+    - wwf9
+id: test
+theme: wwf9
+region: content_bottom_first
+weight: -35
+provider: null
+plugin: 'block_content:dceb4176-3dcc-42ac-a50a-ff22f0752311'
+settings:
+  id: 'block_content:dceb4176-3dcc-42ac-a50a-ff22f0752311'
+  label: 'Reminder : Number of badges privided per area'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /form/eligible-exhibitor-badge
+    negate: false
+    context_mapping: {  }

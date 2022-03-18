@@ -1,0 +1,17 @@
+uuid: dd92722e-a991-493d-a30a-90f08983636f
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Document
+type: document
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

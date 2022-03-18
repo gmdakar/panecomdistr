@@ -1,0 +1,21 @@
+uuid: 211d7984-c325-445b-a056-574c527290e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_lst_intro
+    - node.type.mt_listing
+  module:
+    - text
+id: node.mt_listing.field_mt_lst_intro
+field_name: field_mt_lst_intro
+entity_type: node
+bundle: mt_listing
+label: Intro
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

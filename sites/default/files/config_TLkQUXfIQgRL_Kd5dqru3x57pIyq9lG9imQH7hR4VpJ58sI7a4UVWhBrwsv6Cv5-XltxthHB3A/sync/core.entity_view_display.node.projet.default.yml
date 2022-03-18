@@ -1,0 +1,130 @@
+uuid: 758caeeb-a453-4ff4-83c9-637ff85d0cdb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.projet.body
+    - field.field.node.projet.field_adresse
+    - field.field.node.projet.field_focal_contact
+    - field.field.node.projet.field_focal_point
+    - field.field.node.projet.field_groupes_d_actions_cibles
+    - field.field.node.projet.field_image_projet
+    - field.field.node.projet.field_instan
+    - field.field.node.projet.field_lien
+    - field.field.node.projet.field_nat
+    - field.field.node.projet.field_niveau_d_avancement
+    - field.field.node.projet.field_secteur
+    - field.field.node.projet.field_type_d_accompagnement_sou
+    - image.style.large
+    - node.type.projet
+  module:
+    - field_formatter_class
+    - field_layout
+    - image
+    - layout_builder
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.projet.default
+targetEntityType: node
+bundle: projet
+mode: default
+content:
+  body:
+    label: above
+    type: text_default
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_adresse:
+    weight: 6
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_focal_contact:
+    weight: 11
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_focal_point:
+    weight: 10
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_groupes_d_actions_cibles:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_image_projet:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: large
+      image_link: ''
+    third_party_settings:
+      field_formatter_class:
+        class: img-thumbnail
+    type: image
+    region: content
+  field_instan:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_nat:
+    weight: 5
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_niveau_d_avancement:
+    weight: 8
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_secteur:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_type_d_accompagnement_sou:
+    weight: 9
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_lien: true
+  langcode: true

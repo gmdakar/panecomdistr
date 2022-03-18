@@ -1,0 +1,21 @@
+uuid: 014d3c08-6ef8-423f-b254-f15ae86dec9b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_mt_fl_reason
+    - paragraphs.paragraphs_type.mt_featured_listing
+  module:
+    - options
+id: paragraph.mt_featured_listing.field_mt_fl_reason
+field_name: field_mt_fl_reason
+entity_type: paragraph
+bundle: mt_featured_listing
+label: Reason
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

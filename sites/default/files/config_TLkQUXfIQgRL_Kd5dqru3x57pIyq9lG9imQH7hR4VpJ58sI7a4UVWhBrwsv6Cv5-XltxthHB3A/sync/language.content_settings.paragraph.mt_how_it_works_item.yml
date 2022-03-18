@@ -1,0 +1,18 @@
+uuid: 4a4459d5-e61c-4c0a-8ead-5d8692f6e927
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.mt_how_it_works_item
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '1'
+id: paragraph.mt_how_it_works_item
+target_entity_type_id: paragraph
+target_bundle: mt_how_it_works_item
+default_langcode: site_default
+language_alterable: true

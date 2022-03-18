@@ -1,0 +1,168 @@
+uuid: e6be2356-6bc3-43a1-a898-8b2c69dfe559
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.mt_icon_features.field_mt_if_body
+    - field.field.paragraph.mt_icon_features.field_mt_if_fa_icon
+    - field.field.paragraph.mt_icon_features.field_mt_if_image
+    - field.field.paragraph.mt_icon_features.field_mt_if_link
+    - field.field.paragraph.mt_icon_features.field_mt_if_title
+    - image.style.large
+    - paragraphs.paragraphs_type.mt_icon_features
+  module:
+    - field_layout
+    - fontawesome
+    - image
+    - layout_builder
+    - layout_discovery
+    - link
+    - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          8780b3f2-9860-405a-90ee-ec88a3125453:
+            uuid: 8780b3f2-9860-405a-90ee-ec88a3125453
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:mt_icon_features:field_mt_if_fa_icon'
+              formatter:
+                label: hidden
+                settings:
+                  layers: false
+                third_party_settings: {  }
+                type: fontawesome_icon_formatter
+            additional: {  }
+            weight: 0
+          f1607c4a-a0a2-4554-be9b-2f81574ccdaf:
+            uuid: f1607c4a-a0a2-4554-be9b-2f81574ccdaf
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:mt_icon_features:field_mt_if_image'
+              formatter:
+                label: hidden
+                settings:
+                  image_style: large
+                  image_link: ''
+                third_party_settings: {  }
+                type: image
+            additional: {  }
+            weight: 1
+          d0247d8b-7e81-4c1e-a142-df1ed2d633de:
+            uuid: d0247d8b-7e81-4c1e-a142-df1ed2d633de
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:mt_icon_features:field_mt_if_title'
+              formatter:
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+                type: string
+            additional: {  }
+            weight: 2
+          133b7cdb-1380-4fe5-8d94-c0e5abd42e59:
+            uuid: 133b7cdb-1380-4fe5-8d94-c0e5abd42e59
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:mt_icon_features:field_mt_if_body'
+              formatter:
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+                type: text_default
+            additional: {  }
+            weight: 3
+          fa4cf910-587c-4b44-aec7-ad0fd4e1aead:
+            uuid: fa4cf910-587c-4b44-aec7-ad0fd4e1aead
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:mt_icon_features:field_mt_if_link'
+              formatter:
+                label: hidden
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: ''
+                  target: ''
+                third_party_settings: {  }
+                type: link
+            additional: {  }
+            weight: 4
+        third_party_settings: {  }
+id: paragraph.mt_icon_features.default
+targetEntityType: paragraph
+bundle: mt_icon_features
+mode: default
+content:
+  field_mt_if_body:
+    weight: 4
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_mt_if_fa_icon:
+    weight: 1
+    label: hidden
+    settings:
+      layers: false
+    third_party_settings: {  }
+    type: fontawesome_icon_formatter
+    region: content
+  field_mt_if_image:
+    weight: 2
+    label: hidden
+    settings:
+      image_style: large
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_mt_if_link:
+    weight: 5
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_mt_if_title:
+    weight: 3
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

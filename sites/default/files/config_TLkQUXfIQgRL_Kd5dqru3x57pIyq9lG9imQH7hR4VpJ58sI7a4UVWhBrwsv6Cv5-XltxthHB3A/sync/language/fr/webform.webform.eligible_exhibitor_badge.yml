@@ -1,0 +1,13 @@
+title: 'Badge exposant ayant droit'
+elements: "info:\n  '#message_message': 'Pour r&eacute;server des badges suppl&eacute;mentaires, cliquez sur ce lien : <a href=\"https://stand.worldwaterforum.org/badges-exposant-payant/\" style=\"color:red\" target=\"_bank\">https://stand.worldwaterforum.org/badges-exposant-payant/</a>'\nmarkup:\n  '#markup': '<p><strong>Merci de renseigner le formulaire en fonction du nombre de badges auquel vous avez droit sur la base de la superficie que vous avez r&eacute;serv&eacute;e.</strong></p>'\nname_of_the_organisation:\n  '#title': 'Nom de l''organisation'\norder_number:\n  '#title': 'Numéro de commande'\nbooth_or_pavilion_name:\n  '#title': 'Nom du stand ou pavillon'\narea:\n  '#title': 'Superficie louée'\nbooth_or_pavilion_location_number:\n  '#title': 'Numéro d''emplacement du stand ou du pavillon'\nmobile:\n  '#title': Téléphone\ncountry:\n  '#title': Pays\nother_members:\n  '#title': 'Liste des ayants droit'\n  '#header':\n    0:\n      title: Prénom\n    1:\n      title: Nom\n    3:\n      title: Fonction\n    5:\n      title: Pays\n    6:\n      title: Téléphone\nmembers_01_first_name:\n  '#title': Prénom\nmembers_01_last_name:\n  '#title': Nom\nmembers_01_position_person:\n  '#title': Fonction\nmembers_01_country_mbr:\n  '#title': Pays\n"
+settings:
+  confirmation_title: Félicitations
+  confirmation_message: "<p>Le Secr&eacute;tariat ex&eacute;cutif du 9<sup>&egrave;me</sup> Forum Mondial de l&#39;Eau vous remercie pour votre int&eacute;r&ecirc;t.</p>\r\n\r\n<p>Bienvenue au Forum Mondial de l&#39;Eau &quot;Dakar 2022&quot;.</p>\r\n\r\n<p>Diamniadio, 21 au 26 mars 2022<br />\r\n<br />\r\n<br />\r\n&Agrave;&nbsp;tr&egrave;s bient&ocirc;t</p>"
+handlers:
+  email_confirmation:
+    settings:
+      subject: Félicitations
+      body: "<p>Le Secr&eacute;tariat ex&eacute;cutif du 9<sup>&egrave;me</sup> Forum Mondial de l&#39;Eau vous remercie pour votre int&eacute;r&ecirc;t.</p>\r\n\r\n<p>Bienvenue au Forum Mondial de l&#39;Eau &quot;Dakar 2022&quot;.</p>\r\n\r\n<p>Diamniadio, 21 au 26 mars 2022<br />\r\n<br />\r\n<br />\r\n&Agrave;&nbsp;tr&egrave;s bient&ocirc;t</p>"
+  email:
+    settings:
+      subject: 'Nouvelle soumission [ Badge exposant ayant droit ]'

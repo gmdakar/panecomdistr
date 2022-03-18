@@ -1,0 +1,28 @@
+uuid: 18b16a72-f67c-4d28-9d63-a3c522a10dc3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_point
+    - node.type.point_visite
+    - node.type.viste_technique
+id: node.viste_technique.field_point
+field_name: field_point
+entity_type: node
+bundle: viste_technique
+label: Point
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      point_visite: point_visite
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

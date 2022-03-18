@@ -1,0 +1,18 @@
+uuid: 5535c877-4181-441a-a346-c9651ade3f8b
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_how_it_works
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '1'
+id: block_content.mt_how_it_works
+target_entity_type_id: block_content
+target_bundle: mt_how_it_works
+default_langcode: site_default
+language_alterable: true

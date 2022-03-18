@@ -1,0 +1,27 @@
+uuid: d936c190-6446-4294-87bc-64fa447ba4e7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_file_to_download
+    - node.type.press_room
+  module:
+    - file
+id: node.press_room.field_file_to_download
+field_name: field_file_to_download
+entity_type: node
+bundle: press_room
+label: 'File to download'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt doc docx pdf xlsx csv jpg jpeg png gif pptx'
+  max_filesize: ''
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

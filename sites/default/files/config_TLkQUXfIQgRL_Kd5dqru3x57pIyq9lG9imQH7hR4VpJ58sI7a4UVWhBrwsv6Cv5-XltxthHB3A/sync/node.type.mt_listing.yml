@@ -1,0 +1,18 @@
+uuid: 12ff5bfa-51a8-49da-951f-d8163b3e9372
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Listing
+type: mt_listing
+description: 'Use the Listing content type to create and list Company entries in your site, making use of all the special functionality and automation built into the theme.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

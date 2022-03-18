@@ -1,0 +1,22 @@
+uuid: 4b11558a-ccf8-4d62-a325-29288267aada
+langcode: en
+status: true
+dependencies:
+  theme:
+    - directoryplus
+_core:
+  default_config_hash: 0Bbm1idGvAvjUzw4kiwFb4-b2WmXJfmFZfAZ198YLe0
+id: directoryplus_local_tasks
+theme: directoryplus
+region: content
+weight: -55
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

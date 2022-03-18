@@ -1,0 +1,31 @@
+uuid: 957d45fe-9327-4104-b009-165d63c38200
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:mt_tabs_block:7158e7f2-a538-4b12-b54c-c7c7e57ab88d'
+  module:
+    - block_content
+    - system
+  theme:
+    - wwf9
+id: actionplansfinalizedproposals
+theme: wwf9
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:7158e7f2-a538-4b12-b54c-c7c7e57ab88d'
+settings:
+  id: 'block_content:7158e7f2-a538-4b12-b54c-c7c7e57ab88d'
+  label: 'Plans d''action Propositions finalisées'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/426
+    negate: false
+    context_mapping: {  }

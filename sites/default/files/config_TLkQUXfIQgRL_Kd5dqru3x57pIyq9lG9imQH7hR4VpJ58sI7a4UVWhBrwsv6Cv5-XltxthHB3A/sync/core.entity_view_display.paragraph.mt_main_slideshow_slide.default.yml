@@ -1,0 +1,126 @@
+uuid: dcf6cde2-0ae6-4fc0-b6e2-b0ced9df5862
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.mt_main_slideshow_slide.field_mt_ms_slide_caption
+    - field.field.paragraph.mt_main_slideshow_slide.field_mt_ms_slide_caption_color
+    - field.field.paragraph.mt_main_slideshow_slide.field_mt_ms_slide_caption_opac
+    - field.field.paragraph.mt_main_slideshow_slide.field_mt_ms_slide_image
+    - field.field.paragraph.mt_main_slideshow_slide.field_mt_ms_slide_link
+    - field.field.paragraph.mt_main_slideshow_slide.field_mt_ms_slide_title
+    - field.field.paragraph.mt_main_slideshow_slide.field_mt_ms_slide_vimeo_id
+    - field.field.paragraph.mt_main_slideshow_slide.field_mt_ms_slide_volume
+    - field.field.paragraph.mt_main_slideshow_slide.field_mt_ms_slide_youtube_id
+    - paragraphs.paragraphs_type.mt_main_slideshow_slide
+  module:
+    - field_layout
+    - layout_builder
+    - layout_discovery
+    - link
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          f9120f00-1f83-483b-a438-45f7753c9262:
+            uuid: f9120f00-1f83-483b-a438-45f7753c9262
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:mt_main_slideshow_slide:field_mt_ms_slide_title'
+              formatter:
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+                type: string
+            additional: {  }
+            weight: 0
+          022c9f4b-c232-4996-89ab-12e7f713bedd:
+            uuid: 022c9f4b-c232-4996-89ab-12e7f713bedd
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:mt_main_slideshow_slide:field_mt_ms_slide_caption'
+              formatter:
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+                type: basic_string
+            additional: {  }
+            weight: 1
+          55a5e43b-c9cb-4540-a096-febbf72787e6:
+            uuid: 55a5e43b-c9cb-4540-a096-febbf72787e6
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:mt_main_slideshow_slide:field_mt_ms_slide_link'
+              formatter:
+                label: hidden
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: ''
+                  target: ''
+                third_party_settings: {  }
+                type: link
+            additional: {  }
+            weight: 2
+        third_party_settings: {  }
+id: paragraph.mt_main_slideshow_slide.default
+targetEntityType: paragraph
+bundle: mt_main_slideshow_slide
+mode: default
+content:
+  field_mt_ms_slide_caption:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_mt_ms_slide_link:
+    weight: 2
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_mt_ms_slide_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  created: true
+  field_mt_ms_slide_caption_color: true
+  field_mt_ms_slide_caption_opac: true
+  field_mt_ms_slide_image: true
+  field_mt_ms_slide_vimeo_id: true
+  field_mt_ms_slide_volume: true
+  field_mt_ms_slide_youtube_id: true
+  uid: true

@@ -1,0 +1,33 @@
+uuid: 49e49dbb-c159-4961-ae83-84fbfcf657ba
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: accomodation
+label: Accomodation
+type: 'canonical_entities:node'
+pattern: 'accomodation/[node:field_categorie]/[node:title]'
+selection_criteria:
+  f8e44783-3eff-4941-957d-9113cb46c3ce:
+    id: node_type
+    bundles:
+      hotel: hotel
+    negate: false
+    context_mapping:
+      node: node
+    uuid: f8e44783-3eff-4941-957d-9113cb46c3ce
+  cc478410-1759-410a-aa89-076ae4ab1bf7:
+    id: language
+    langcodes:
+      en: en
+    negate: false
+    context_mapping:
+      language: 'node:langcode:language'
+    uuid: cc478410-1759-410a-aa89-076ae4ab1bf7
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Language

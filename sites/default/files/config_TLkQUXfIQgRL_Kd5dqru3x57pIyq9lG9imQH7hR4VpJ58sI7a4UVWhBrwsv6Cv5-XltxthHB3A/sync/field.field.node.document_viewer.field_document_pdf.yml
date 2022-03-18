@@ -1,0 +1,27 @@
+uuid: 44b7a318-2179-4454-b4f4-b766a5e8ba13
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_document_pdf
+    - node.type.document_viewer
+  module:
+    - file
+id: node.document_viewer.field_document_pdf
+field_name: field_document_pdf
+entity_type: node
+bundle: document_viewer
+label: 'Document pdf'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt docx pdf pptx jpeg'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

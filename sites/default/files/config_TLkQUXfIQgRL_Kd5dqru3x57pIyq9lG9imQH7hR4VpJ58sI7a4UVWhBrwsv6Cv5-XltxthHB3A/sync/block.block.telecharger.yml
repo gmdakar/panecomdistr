@@ -1,0 +1,39 @@
+uuid: fb434e09-94ec-470e-b566-50b53198ca9f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:d0a7019d-8d51-4de8-a742-c07e4c8dc412'
+  module:
+    - block_content
+    - ctools
+    - system
+  theme:
+    - wwf9
+id: telecharger
+theme: wwf9
+region: hidden_blocks_collection
+weight: -23
+provider: null
+plugin: 'block_content:d0a7019d-8d51-4de8-a742-c07e4c8dc412'
+settings:
+  id: 'block_content:d0a7019d-8d51-4de8-a742-c07e4c8dc412'
+  label: Télécharger
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/318
+    negate: false
+    context_mapping: {  }
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      mt_canvas_page: mt_canvas_page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

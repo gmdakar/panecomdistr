@@ -1,0 +1,20 @@
+uuid: 0f766f3e-c97d-47c0-b056-49c286b3e5cb
+langcode: en
+status: true
+dependencies:
+  theme:
+    - wwf9
+_core:
+  default_config_hash: T7NMNlmVvMUSgTBRYn1bm8liMP9HgeR3xGUh8b6ucH4
+id: wwf9_local_actions
+theme: wwf9
+region: content
+weight: -18
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Actions d''administration principales'
+  provider: core
+  label_display: '0'
+visibility: {  }

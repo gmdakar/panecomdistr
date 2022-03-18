@@ -1,0 +1,58 @@
+uuid: d1b7a49b-a868-44a7-99cb-54fc1a2c8516
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.mt_tab.field_mt_tab_content
+    - field.field.paragraph.mt_tab.field_mt_tab_title
+    - paragraphs.paragraphs_type.mt_tab
+  module:
+    - field_layout
+    - layout_builder
+    - layout_discovery
+    - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          c5049857-f2ac-457b-836c-1696e540e65a:
+            uuid: c5049857-f2ac-457b-836c-1696e540e65a
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:mt_tab:field_mt_tab_content'
+              formatter:
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+                type: text_default
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+id: paragraph.mt_tab.default
+targetEntityType: paragraph
+bundle: mt_tab
+mode: default
+content:
+  field_mt_tab_content:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden:
+  created: true
+  field_mt_tab_title: true
+  uid: true

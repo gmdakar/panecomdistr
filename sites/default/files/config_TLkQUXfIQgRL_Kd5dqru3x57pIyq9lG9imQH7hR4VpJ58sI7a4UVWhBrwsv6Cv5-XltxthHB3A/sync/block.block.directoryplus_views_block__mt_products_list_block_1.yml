@@ -1,0 +1,24 @@
+uuid: f39c37b8-3d6c-45ff-8bef-4b2c9162f24d
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.mt_products_list
+  module:
+    - views
+  theme:
+    - directoryplus
+id: directoryplus_views_block__mt_products_list_block_1
+theme: directoryplus
+region: hidden_blocks_collection
+weight: -47
+provider: null
+plugin: 'views_block:mt_products_list-block_1'
+settings:
+  id: 'views_block:mt_products_list-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility: {  }

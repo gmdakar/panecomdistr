@@ -1,0 +1,38 @@
+uuid: 505ad1f2-9795-436b-abfd-f8c29f21d3ce
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:99d05e37-570e-43ba-b841-4bdf86361d4b'
+  module:
+    - block_content
+    - ctools
+    - system
+  theme:
+    - wwf9
+id: message
+theme: wwf9
+region: featured_top
+weight: 0
+provider: null
+plugin: 'block_content:99d05e37-570e-43ba-b841-4bdf86361d4b'
+settings:
+  id: 'block_content:99d05e37-570e-43ba-b841-4bdf86361d4b'
+  label: 'Message from Mr Macky SALL, President of the Republic of Senegal'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
+  'entity_bundle:webform_submission':
+    id: 'entity_bundle:webform_submission'
+    bundles: {  }
+    negate: true
+    context_mapping:
+      webform_submission: '@webform.webform_submission_route_context:webform_submission'

@@ -1,0 +1,25 @@
+display:
+  default:
+    display_options:
+      fields:
+        field_mt_prd_video:
+          alter:
+            text: "<div class=\"views-field-field-mt-prd-image\">\r\n<div class=\"overlay-container\">\r\n<span class=\"overlay overlay--colored\">\r\n<a class=\"overlay-target-link\" href=\"{{ path }}\"></a>\r\n</span>\r\n{{ field_mt_prd_video }}\r\n</div>\r\n</div>"
+        field_mt_prd_image:
+          alter:
+            text: "<div class=\"views-field-field-mt-prd-image\">\r\n<div class=\"overlay-container\">\r\n<span class=\"overlay overlay--colored\">\r\n<a class=\"overlay-target-link\" href=\"{{ path }}\"></a>\r\n</span>\r\n{{ field_mt_prd_image }}\r\n</div>\r\n</div>"
+  block_2:
+    display_options:
+      block_description: 'Logos Partenaires (Carousel)'
+      title: 'Nos Partenaires'
+      fields:
+        field_mt_prd_video:
+          alter:
+            text: "<div class=\"views-field-field-mt-prd-image\">\r\n<div class=\"overlay-container\">\r\n<span class=\"overlay overlay--colored\">\r\n<a class=\"overlay-target-link\" href=\"{{ path }}\"></a>\r\n</span>\r\n{{ field_mt_prd_video }}\r\n</div>\r\n</div>"
+  page_1:
+    display_options:
+      fields:
+        field_mt_prd_video:
+          alter:
+            text: "<div class=\"views-field-field-mt-prd-image\">\r\n<div class=\"overlay-container\">\r\n<span class=\"overlay overlay--colored\">\r\n<a class=\"overlay-target-link\" href=\"{{ path }}\"></a>\r\n</span>\r\n{{ field_mt_prd_video }}\r\n</div>\r\n</div>"
+      title: 'Nos Partenaires'

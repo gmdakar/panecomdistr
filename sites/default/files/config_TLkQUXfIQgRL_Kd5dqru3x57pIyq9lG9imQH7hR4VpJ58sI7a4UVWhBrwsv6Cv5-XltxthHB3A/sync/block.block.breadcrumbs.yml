@@ -1,0 +1,32 @@
+uuid: 2d30456b-bddf-41c1-98ad-158a22388107
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - system
+  theme:
+    - wwf9
+id: breadcrumbs
+theme: wwf9
+region: content_top
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true
+    context_mapping: {  }
+  'entity_bundle:webform_submission':
+    id: 'entity_bundle:webform_submission'
+    bundles: {  }
+    negate: true
+    context_mapping:
+      webform_submission: '@webform.webform_submission_route_context:webform_submission'

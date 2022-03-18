@@ -1,0 +1,11 @@
+uuid: 9b1f7ee0-3b95-4deb-ac56-44fefb82f0ac
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.viste_technique
+id: node.viste_technique
+target_entity_type_id: node
+target_bundle: viste_technique
+default_langcode: site_default
+language_alterable: false

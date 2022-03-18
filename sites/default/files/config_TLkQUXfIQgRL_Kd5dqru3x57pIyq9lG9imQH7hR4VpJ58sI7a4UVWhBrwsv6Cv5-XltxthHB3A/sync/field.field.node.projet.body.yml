@@ -1,0 +1,23 @@
+uuid: 3e72df65-dd26-4539-958a-18ec11b8aac0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.projet
+  module:
+    - text
+id: node.projet.body
+field_name: body
+entity_type: node
+bundle: projet
+label: Justification
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

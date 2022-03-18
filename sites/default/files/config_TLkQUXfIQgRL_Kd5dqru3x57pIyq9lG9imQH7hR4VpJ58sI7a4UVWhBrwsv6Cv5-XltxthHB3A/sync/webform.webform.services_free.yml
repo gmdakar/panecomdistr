@@ -1,0 +1,272 @@
+uuid: 2410b368-9933-4f3d-94bb-cdfbbbf6f1c3
+langcode: en
+status: open
+dependencies: {  }
+open: null
+close: null
+weight: 0
+uid: 1082
+template: false
+archive: false
+id: services_free
+title: 'Registration of regularly registered participants for free reception and transportation services'
+description: ''
+category: ''
+elements: "have_you_already_paid_the_participation_fees_:\n  '#type': select\n  '#title': 'Do you have your order number ?'\n  '#options':\n    'Yes': 'Yes'\n    'No': 'No'\n  '#required': true\ninfos_birth:\n  '#type': webform_flexbox\n  '#states':\n    visible:\n      ':input[name=\"have_you_already_paid_the_participation_fees_\"]':\n        value: 'Yes'\n  order_number:\n    '#type': textfield\n    '#title': 'Order number'\n    '#required': true\n  date_of_registration:\n    '#type': textfield\n    '#title': 'Date of registration'\n    '#required': true\n  organisation_or_company:\n    '#type': textfield\n    '#title': 'Organisation or Company'\n    '#required': true\ninfos_personnel:\n  '#type': webform_flexbox\n  '#states':\n    visible:\n      ':input[name=\"have_you_already_paid_the_participation_fees_\"]':\n        value: 'Yes'\n  title:\n    '#type': textfield\n    '#title': Title\n    '#required': true\n  first_name:\n    '#type': textfield\n    '#title': 'First name'\n    '#required': true\n  last_name:\n    '#type': textfield\n    '#title': 'Last name'\n    '#required': true\ncontact:\n  '#type': webform_flexbox\n  '#states':\n    visible:\n      ':input[name=\"have_you_already_paid_the_participation_fees_\"]':\n        value: 'Yes'\n  country:\n    '#type': textfield\n    '#title': Country\n    '#required': true\n  phone:\n    '#type': tel\n    '#title': Phone\n    '#required': true\n  email:\n    '#type': email\n    '#title': Email\n    '#required': true\ndo_you_need_a_ground_transportation_from_airport_to_hotel_the_or:\n  '#type': select\n  '#title': 'Do you need a ground transportation from Airport to Hotel (the organisation provides only collective transport to the selected hotels of the forum) ?'\n  '#options':\n    'Yes': 'Yes'\n    'No': 'No'\n  '#required': true\n  '#states':\n    visible:\n      ':input[name=\"have_you_already_paid_the_participation_fees_\"]':\n        value: 'Yes'\nmarkup_01:\n  '#type': webform_markup\n  '#states':\n    visible:\n      ':input[name=\"have_you_already_paid_the_participation_fees_\"]':\n        value: 'Yes'\n  '#markup': '<h3><strong>Arrival information</strong></h3>'\ntravel:\n  '#type': webform_flexbox\n  '#states':\n    visible:\n      ':input[name=\"have_you_already_paid_the_participation_fees_\"]':\n        value: 'Yes'\n  airline_company:\n    '#type': textfield\n    '#title': 'Airline company'\n    '#required': true\n  number_of_vol:\n    '#type': textfield\n    '#title': 'Flight number'\n    '#required': true\n  hotel:\n    '#type': textfield\n    '#title': 'Hotel reserved'\n    '#required': true\ndate:\n  '#type': webform_flexbox\n  '#states':\n    visible:\n      ':input[name=\"have_you_already_paid_the_participation_fees_\"]':\n        value: 'Yes'\n  date_and_time_of_arrival_in_dakar_gmt_ut_:\n    '#type': datetime\n    '#title': 'Date and time of arrival in Dakar (GMT/UT)'\n    '#required': true\n    '#date_date_format': ''\n    '#date_time_element': text\n    '#date_time_placeholder': '12:00'\n    '#date_time_format': 'H:i'\n  provenance_last_stop_:\n    '#type': textfield\n    '#title': 'Coming from (last stop)'\n    '#required': true\nmarkup_02:\n  '#type': webform_markup\n  '#states':\n    visible:\n      ':input[name=\"have_you_already_paid_the_participation_fees_\"]':\n        value: 'Yes'\n  '#markup': '<h3><strong>Departure information</strong></h3>'\nflexbox:\n  '#type': webform_flexbox\n  '#states':\n    visible:\n      ':input[name=\"have_you_already_paid_the_participation_fees_\"]':\n        value: 'Yes'\n  date_and_time_of_departure_from_dakar_gmt_ut_:\n    '#type': datetime\n    '#title': 'Date and time of Return flight from Dakar (GMT/UT)'\n    '#required': true\n    '#date_date_format': ''\n    '#date_time_element': text\n    '#date_time_placeholder': '12:00'\n    '#date_time_format': 'H:i'\n  place_of_return_pick_up_cicad_or_hotel_:\n    '#type': textfield\n    '#title': 'Place of return pick-up (Hotel)'\n    '#required': true\nflexbox_01:\n  '#type': webform_flexbox\n  '#states':\n    visible:\n      ':input[name=\"have_you_already_paid_the_participation_fees_\"]':\n        value: 'Yes'\n  airline_company_1:\n    '#type': textfield\n    '#title': 'Airline company'\n    '#required': true\n  number_vol:\n    '#type': textfield\n    '#title': 'Flight number'\n    '#required': true\n  destination_first_stop_:\n    '#type': textfield\n    '#title': 'Destination (first stop)'\n    '#required': true\nmarkup:\n  '#type': webform_markup\n  '#states':\n    visible:\n      ':input[name=\"have_you_already_paid_the_participation_fees_\"]':\n        value: 'No'\n  '#markup': 'Please validate your registration: <a href=\"https://signup.worldwaterforum.org/en/\" target=\"_blank\">https://signup.worldwaterforum.org/en</a> or <a href=\"https://signup.worldwaterforum.org/en/\" target=\"_blank\">https://signup.worldwaterforum.org/en/</a>'"
+css: ''
+javascript: ''
+settings:
+  ajax: false
+  ajax_scroll_top: form
+  ajax_progress_type: ''
+  ajax_effect: ''
+  ajax_speed: null
+  page: true
+  page_submit_path: ''
+  page_confirm_path: ''
+  page_theme_name: ''
+  form_title: both
+  form_submit_once: false
+  form_exception_message: ''
+  form_open_message: ''
+  form_close_message: ''
+  form_previous_submissions: true
+  form_confidential: false
+  form_confidential_message: ''
+  form_disable_remote_addr: false
+  form_convert_anonymous: false
+  form_prepopulate: false
+  form_prepopulate_source_entity: false
+  form_prepopulate_source_entity_required: false
+  form_prepopulate_source_entity_type: ''
+  form_reset: false
+  form_disable_autocomplete: false
+  form_novalidate: false
+  form_disable_inline_errors: false
+  form_required: false
+  form_unsaved: false
+  form_disable_back: false
+  form_submit_back: false
+  form_autofocus: false
+  form_details_toggle: false
+  form_access_denied: default
+  form_access_denied_title: ''
+  form_access_denied_message: ''
+  form_access_denied_attributes: {  }
+  form_file_limit: ''
+  form_method: ''
+  form_action: ''
+  form_attributes: {  }
+  share: false
+  share_node: false
+  share_theme_name: ''
+  share_title: true
+  share_page_body_attributes: {  }
+  submission_label: ''
+  submission_log: false
+  submission_views: {  }
+  submission_views_replace: {  }
+  submission_user_columns: {  }
+  submission_user_duplicate: false
+  submission_access_denied: default
+  submission_access_denied_title: ''
+  submission_access_denied_message: ''
+  submission_access_denied_attributes: {  }
+  submission_exception_message: ''
+  submission_locked_message: ''
+  submission_excluded_elements: {  }
+  submission_exclude_empty: false
+  submission_exclude_empty_checkbox: false
+  previous_submission_message: ''
+  previous_submissions_message: ''
+  autofill: false
+  autofill_message: ''
+  autofill_excluded_elements: {  }
+  wizard_progress_bar: true
+  wizard_progress_pages: false
+  wizard_progress_percentage: false
+  wizard_progress_link: false
+  wizard_progress_states: false
+  wizard_auto_forward: true
+  wizard_auto_forward_hide_next_button: false
+  wizard_keyboard: true
+  wizard_start_label: ''
+  wizard_preview_link: false
+  wizard_confirmation: true
+  wizard_confirmation_label: ''
+  wizard_track: ''
+  wizard_prev_button_label: ''
+  wizard_next_button_label: ''
+  wizard_toggle: false
+  wizard_toggle_show_label: ''
+  wizard_toggle_hide_label: ''
+  preview: 0
+  preview_label: ''
+  preview_title: ''
+  preview_message: ''
+  preview_attributes: {  }
+  preview_excluded_elements: {  }
+  preview_exclude_empty: true
+  preview_exclude_empty_checkbox: false
+  draft: none
+  draft_multiple: false
+  draft_auto_save: false
+  draft_saved_message: ''
+  draft_loaded_message: ''
+  draft_pending_single_message: ''
+  draft_pending_multiple_message: ''
+  confirmation_type: page
+  confirmation_title: 'Thank you for your registration'
+  confirmation_message: "<p><span lang=\"en\">We would like to thank you again for your registration for participation in the<strong> 9th World Water Forum scheduled for 21-26 March 2022</strong> at the Abdou Diouf International Conference Centre (CICAD) in Diamniadio-Dakar.</span></p>\r\n\r\n<p><span lang=\"en\"><strong>See you soon&nbsp;!</strong></span></p>\r\n\r\n<p><span lang=\"en\"><strong><strong><strong>Secretariat of the 9<sup>th</sup> World Water Forum</strong></strong></strong></span></p>\r\n\r\n<ul>\r\n\t<li><span lang=\"en\"><strong><strong>+221 33 836 43 44</strong></strong></span></li>\r\n\t<br />\r\n\t<li><span lang=\"en\"><strong><strong><a href=\"mailto:secretariat@worldwaterforum9.sn\">secretariat@worldwaterforum9.sn</a></strong></strong></span></li>\r\n</ul>"
+  confirmation_url: ''
+  confirmation_attributes: {  }
+  confirmation_back: true
+  confirmation_back_label: ''
+  confirmation_back_attributes: {  }
+  confirmation_exclude_query: false
+  confirmation_exclude_token: false
+  confirmation_update: false
+  limit_total: null
+  limit_total_interval: null
+  limit_total_message: ''
+  limit_total_unique: false
+  limit_user: null
+  limit_user_interval: null
+  limit_user_message: ''
+  limit_user_unique: false
+  entity_limit_total: null
+  entity_limit_total_interval: null
+  entity_limit_user: null
+  entity_limit_user_interval: null
+  purge: none
+  purge_days: null
+  results_disabled: false
+  results_disabled_ignore: false
+  results_customize: false
+  token_view: false
+  token_update: false
+  token_delete: false
+  serial_disabled: false
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+    permissions: {  }
+  view_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  purge_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  view_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  administer:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  test:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  configuration:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+handlers:
+  email:
+    id: email
+    label: Email
+    notes: ''
+    handler_id: email
+    status: true
+    conditions: {  }
+    weight: 0
+    settings:
+      states:
+        - completed
+      to_mail: bdiouf58@gmail.com
+      to_options: {  }
+      cc_mail: 'boyeouraye@gmail.com, djsarr@securizons.com'
+      cc_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      from_mail: _default
+      from_options: {  }
+      from_name: _default
+      subject: 'New submission [ Free services ]'
+      body: _default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: true
+      attachments: false
+      twig: false
+      debug: false
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      theme_name: ''
+      parameters: {  }
+  email_confirmation:
+    id: email
+    label: 'Email confirmation'
+    notes: ''
+    handler_id: email_confirmation
+    status: true
+    conditions: {  }
+    weight: 0
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:email:raw]'
+      to_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      from_mail: _default
+      from_options: {  }
+      from_name: _default
+      subject: Congratulations
+      body: "<span class=\"not_fr_quote\" lang=\"la\">&nbsp;</span><span lang=\"en\"><strong>Dear [webform_submission:values:last_name]</strong>,</span>\r\n<p><span lang=\"en\">We would like to thank you again for your registration for participation in the<strong> 9th World Water Forum scheduled for 21-26 March 2022</strong> at the Abdou Diouf International Conference Centre (CICAD) in Diamniadio-Dakar.</span></p>\r\n\r\n<p><span lang=\"en\"><strong>See you soon&nbsp;!</strong></span></p>\r\n\r\n<p><span lang=\"en\"><strong><strong><strong>Secretariat of the 9<sup>th</sup> World Water Forum</strong></strong></strong></span></p>\r\n\r\n<ul>\r\n\t<li><span lang=\"en\"><strong><strong>+221 33 836 43 44</strong></strong></span></li>\r\n\t<br />\r\n\t<li><span lang=\"en\"><strong><strong><a href=\"mailto:secretariat@worldwaterforum9.sn\">secretariat@worldwaterforum9.sn</a></strong></strong></span></li>\r\n</ul>"
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: true
+      attachments: false
+      twig: false
+      debug: false
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      theme_name: ''
+      parameters: {  }
+variants: {  }

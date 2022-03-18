@@ -1,0 +1,23 @@
+uuid: 09add0cf-45d6-4695-973c-17d5ed0133ef
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_groupes_d_actions_cibles
+    - node.type.projet
+  module:
+    - text
+id: node.projet.field_groupes_d_actions_cibles
+field_name: field_groupes_d_actions_cibles
+entity_type: node
+bundle: projet
+label: 'Targeted Action Groups'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

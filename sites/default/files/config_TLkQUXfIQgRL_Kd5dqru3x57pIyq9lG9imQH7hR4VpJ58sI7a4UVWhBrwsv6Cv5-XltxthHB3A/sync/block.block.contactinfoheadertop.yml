@@ -1,0 +1,25 @@
+uuid: 004fb12b-5cf9-44d9-8c95-05c11286c119
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:47385a7c-dff7-4f4a-8225-37b53a37da3d'
+  module:
+    - block_content
+  theme:
+    - directoryplus
+id: contactinfoheadertop
+theme: directoryplus
+region: header_top_first
+weight: 0
+provider: null
+plugin: 'block_content:47385a7c-dff7-4f4a-8225-37b53a37da3d'
+settings:
+  id: 'block_content:47385a7c-dff7-4f4a-8225-37b53a37da3d'
+  label: 'Contact Info (header top)'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

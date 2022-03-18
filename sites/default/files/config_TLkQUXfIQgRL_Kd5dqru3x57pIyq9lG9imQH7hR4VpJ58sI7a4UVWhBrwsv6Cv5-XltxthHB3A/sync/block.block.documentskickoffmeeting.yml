@@ -1,0 +1,31 @@
+uuid: 8c2c6b5b-f2a8-460c-8af6-02ab5d615b3e
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:mt_tabs_block:9dec6d77-f441-42ca-974b-b43d051b57cb'
+  module:
+    - block_content
+    - system
+  theme:
+    - wwf9
+id: documentskickoffmeeting
+theme: wwf9
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:9dec6d77-f441-42ca-974b-b43d051b57cb'
+settings:
+  id: 'block_content:9dec6d77-f441-42ca-974b-b43d051b57cb'
+  label: 'Documents Kick-off meeting'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/214
+    negate: false
+    context_mapping: {  }

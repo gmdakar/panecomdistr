@@ -1,0 +1,15 @@
+uuid: 671c9113-1675-4b20-a625-51238e89ac89
+langcode: en
+status: true
+dependencies: {  }
+name: mt_member_photo_landscape
+label: 'Member Photo (1300x650)'
+effects:
+  e47ac4e9-f5b0-4f19-964a-66b5e14da0ec:
+    uuid: e47ac4e9-f5b0-4f19-964a-66b5e14da0ec
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1300
+      height: 650
+      anchor: center-center

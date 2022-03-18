@@ -1,0 +1,21 @@
+uuid: fe3b1152-4416-410e-a534-bb1c4b7fb512
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_mt_fl_end_date
+    - paragraphs.paragraphs_type.mt_featured_listing
+  module:
+    - datetime
+id: paragraph.mt_featured_listing.field_mt_fl_end_date
+field_name: field_mt_fl_end_date
+entity_type: paragraph
+bundle: mt_featured_listing
+label: 'End Date'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

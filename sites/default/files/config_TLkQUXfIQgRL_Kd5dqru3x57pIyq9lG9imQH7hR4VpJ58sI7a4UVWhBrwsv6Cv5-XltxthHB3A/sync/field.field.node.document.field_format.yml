@@ -1,0 +1,19 @@
+uuid: f709b3a7-bded-4482-a8f1-10f743828914
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_format
+    - node.type.document
+id: node.document.field_format
+field_name: field_format
+entity_type: node
+bundle: document
+label: Format
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

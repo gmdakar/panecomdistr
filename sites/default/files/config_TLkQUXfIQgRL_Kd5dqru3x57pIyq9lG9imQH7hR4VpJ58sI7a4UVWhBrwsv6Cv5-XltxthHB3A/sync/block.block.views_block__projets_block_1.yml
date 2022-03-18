@@ -1,0 +1,32 @@
+uuid: 18f5ffa6-61b9-45de-a5d0-6c3a61e32e6a
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.projets
+  module:
+    - node
+    - views
+  theme:
+    - wwf9
+id: views_block__projets_block_1
+theme: wwf9
+region: sidebar_second
+weight: -33
+provider: null
+plugin: 'views_block:projets-block_1'
+settings:
+  id: 'views_block:projets-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      projet: projet
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

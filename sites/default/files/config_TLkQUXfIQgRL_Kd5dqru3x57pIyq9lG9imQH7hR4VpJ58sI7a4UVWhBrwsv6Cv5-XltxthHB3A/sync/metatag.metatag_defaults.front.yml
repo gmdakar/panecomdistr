@@ -1,0 +1,12 @@
+uuid: f490d1b2-5936-4bcd-a26a-949302e4cc74
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 1noCXlegCr5HFehQRF1ViXy1jhU1jZ_sNN99a8Sj5jo
+id: front
+label: 'Front page'
+tags:
+  canonical_url: '[site:url]'
+  shortlink: '[site:url]'
+  title: '9th World Water Forum - Dakar 2021'

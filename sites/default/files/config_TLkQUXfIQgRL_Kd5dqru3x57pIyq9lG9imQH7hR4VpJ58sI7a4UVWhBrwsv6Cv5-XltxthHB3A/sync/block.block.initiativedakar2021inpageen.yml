@@ -1,0 +1,41 @@
+uuid: d3afe712-19c5-4d43-8beb-173896c47a49
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:ba0e5ccf-a534-4fd8-a1bf-c8528628812a'
+  module:
+    - block_content
+    - ctools
+    - system
+  theme:
+    - wwf9
+id: initiativedakar2021inpageen
+theme: wwf9
+region: sidebar_first
+weight: -19
+provider: null
+plugin: 'block_content:ba0e5ccf-a534-4fd8-a1bf-c8528628812a'
+settings:
+  id: 'block_content:ba0e5ccf-a534-4fd8-a1bf-c8528628812a'
+  label: 'Initiative Dakar 2021 in-page EN'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      document: document
+      mt_team_member: mt_team_member
+      page: page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  request_path:
+    id: request_path
+    pages: "<front>\r\n"
+    negate: true
+    context_mapping: {  }

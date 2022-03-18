@@ -1,0 +1,21 @@
+uuid: b855139c-0c55-4874-ae47-d102a27e4abb
+langcode: en
+status: true
+dependencies:
+  module:
+    - entity_reference_revisions
+    - node
+    - paragraphs
+id: node.field_mt_lst_listing_promotion
+field_name: field_mt_lst_listing_promotion
+entity_type: node
+type: entity_reference_revisions
+settings:
+  target_type: paragraph
+module: entity_reference_revisions
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

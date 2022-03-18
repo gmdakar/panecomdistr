@@ -1,0 +1,30 @@
+uuid: 7b679319-b04f-4c6d-b5c5-3372ec51262d
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.mt_slideshow_full_screen
+  module:
+    - system
+    - views
+  theme:
+    - directoryplus
+id: directoryplus_views_block__mt_slideshow_full_screen_block_1
+theme: directoryplus
+region: banner
+weight: -55
+provider: null
+plugin: 'views_block:mt_slideshow_full_screen-block_1'
+settings:
+  id: 'views_block:mt_slideshow_full_screen-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/103
+    negate: false
+    context_mapping: {  }

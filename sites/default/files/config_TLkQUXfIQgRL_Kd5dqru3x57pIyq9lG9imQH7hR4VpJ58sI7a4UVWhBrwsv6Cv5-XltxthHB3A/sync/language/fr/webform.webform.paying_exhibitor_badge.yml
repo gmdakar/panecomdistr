@@ -1,0 +1,13 @@
+elements: "info:\n  '#message_message': 'Pour r&eacute;server des badges suppl&eacute;mentaires, cliquez sur ce lien : <a href=\"https://stand.worldwaterforum.org/badges-exposant-payant/\" style=\"color:red\" target=\"_bank\">https://stand.worldwaterforum.org/badges-exposant-payant</a>'\nname_of_the_organisation:\n  '#title': 'Nom de l''organisation'\nposition:\n  '#title': 'Position dans l''entreprise'\norder_number:\n  '#title': 'Numéro de commande'\nname:\n  '#title': Nom\nsurname:\n  '#title': Prénom\ndate_of_birth:\n  '#title': 'Date de naissance'\ncountry_of_origin:\n  '#title': 'Pays d''origine'\nphone:\n  '#title': Téléphone\nother_members:\n  '#title': 'Autres membres'\n  '#element':\n    first_name:\n      '#title': Nom\n    last_name:\n      '#title': Prénom\n    position:\n      '#title': Fonction\n    phone:\n      '#title': Téléphone\n    country:\n      '#title': Pays\n"
+settings:
+  confirmation_title: Félicitations
+  confirmation_message: "<p>Le Secr&eacute;tariat ex&eacute;cutif du 9<sup>&egrave;me</sup> Forum Mondial de l&#39;Eau vous remercie pour votre int&eacute;r&ecirc;t.</p>\r\n\r\n<p>Bienvenue au Forum Mondial de l&#39;Eau &quot;Dakar 2022&quot;.</p>\r\n\r\n<p>Diamniadio, 21 au 26 mars 2022<br />\r\n<br />\r\n<br />\r\n&Agrave;&nbsp;tr&egrave;s bient&ocirc;t</p>"
+handlers:
+  email_confirmation:
+    settings:
+      subject: Félicitations
+      body: "<p>Le Secr&eacute;tariat ex&eacute;cutif du 9<sup>&egrave;me</sup> Forum Mondial de l&#39;Eau vous remercie pour votre int&eacute;r&ecirc;t.</p>\r\n\r\n<p>Bienvenue au Forum Mondial de l&#39;Eau &quot;Dakar 2022&quot;.</p>\r\n\r\n<p>Diamniadio, 21 au 26 mars 2022<br />\r\n<br />\r\n<br />\r\n&Agrave;&nbsp;tr&egrave;s bient&ocirc;t</p>"
+  email:
+    settings:
+      subject: 'Nouvelle soumission [ Badge exposant payant ]'
+title: 'Badge exposant payant'

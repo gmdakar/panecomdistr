@@ -1,0 +1,85 @@
+uuid: 4865b893-e30e-4c47-9611-376b344652a4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_lst_listing_promotion
+    - node.type.mt_listing
+    - paragraphs.paragraphs_type.mt_featured_listing
+  module:
+    - entity_reference_revisions
+id: node.mt_listing.field_mt_lst_listing_promotion
+field_name: field_mt_lst_listing_promotion
+entity_type: node
+bundle: mt_listing
+label: Promotion
+description: 'Use for paid listings. The end date marks the duration of the period during which a listing will be prominently shown as a sponsored one or as a featured one.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      mt_featured_listing: mt_featured_listing
+    target_bundles_drag_drop:
+      mt_additional_feature:
+        weight: 20
+        enabled: false
+      mt_collapse:
+        weight: 21
+        enabled: false
+      mt_detailed_feature:
+        weight: 22
+        enabled: false
+      mt_dropdown:
+        weight: 23
+        enabled: false
+      mt_fancy_linked_image:
+        weight: 24
+        enabled: false
+      mt_fancy_tab:
+        weight: 25
+        enabled: false
+      mt_feature:
+        weight: 26
+        enabled: false
+      mt_featured_linked_text_tile:
+        weight: 27
+        enabled: false
+      mt_featured_listing:
+        enabled: true
+        weight: 28
+      mt_highlight:
+        weight: 29
+        enabled: false
+      mt_how_it_works_item:
+        weight: 30
+        enabled: false
+      mt_icon_features:
+        weight: 31
+        enabled: false
+      mt_image_button:
+        weight: 32
+        enabled: false
+      mt_main_slideshow_slide:
+        weight: 33
+        enabled: false
+      mt_map_location:
+        weight: 34
+        enabled: false
+      mt_media_tab:
+        weight: 35
+        enabled: false
+      mt_tab:
+        weight: 36
+        enabled: false
+      mt_timeline_item:
+        weight: 37
+        enabled: false
+      mt_video_gallery_slide:
+        weight: 38
+        enabled: false
+field_type: entity_reference_revisions

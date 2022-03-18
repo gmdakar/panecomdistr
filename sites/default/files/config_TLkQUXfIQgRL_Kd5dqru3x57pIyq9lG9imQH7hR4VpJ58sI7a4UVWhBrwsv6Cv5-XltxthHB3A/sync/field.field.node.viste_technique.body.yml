@@ -1,0 +1,23 @@
+uuid: e951e8ab-a3bc-415d-afc2-8b77f578c420
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.viste_technique
+  module:
+    - text
+id: node.viste_technique.body
+field_name: body
+entity_type: node
+bundle: viste_technique
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

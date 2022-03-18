@@ -1,0 +1,9 @@
+uuid: d9e27711-91dc-44eb-b535-6f013f7cee07
+langcode: en
+status: true
+dependencies: {  }
+id: mt_how_it_works_item
+label: Step
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

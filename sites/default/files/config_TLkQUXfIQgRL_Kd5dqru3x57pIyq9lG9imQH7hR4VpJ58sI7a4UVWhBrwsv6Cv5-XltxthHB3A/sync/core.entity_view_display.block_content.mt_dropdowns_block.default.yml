@@ -1,0 +1,59 @@
+uuid: 1a8abdd8-32e9-43ca-a55f-c231e05a240b
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_dropdowns_block
+    - field.field.block_content.mt_dropdowns_block.field_mt_dropdown
+  module:
+    - entity_reference_revisions
+    - field_layout
+    - layout_builder
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          9ec17aa6-0cac-4433-9c75-8b23821d7a45:
+            uuid: 9ec17aa6-0cac-4433-9c75-8b23821d7a45
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:block_content:mt_dropdowns_block:field_mt_dropdown'
+              formatter:
+                type: entity_reference_revisions_entity_view
+                label: hidden
+                settings:
+                  view_mode: default
+                  link: ''
+                third_party_settings: {  }
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+id: block_content.mt_dropdowns_block.default
+targetEntityType: block_content
+bundle: mt_dropdowns_block
+mode: default
+content:
+  field_mt_dropdown:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

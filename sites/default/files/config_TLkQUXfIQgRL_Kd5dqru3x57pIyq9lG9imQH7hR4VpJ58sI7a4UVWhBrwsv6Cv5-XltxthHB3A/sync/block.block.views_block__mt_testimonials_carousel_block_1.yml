@@ -1,0 +1,30 @@
+uuid: 8ad54f83-876a-4b9a-9d39-e1ba2b41491b
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.mt_testimonials_carousel
+  module:
+    - system
+    - views
+  theme:
+    - directoryplus
+id: views_block__mt_testimonials_carousel_block_1
+theme: directoryplus
+region: highlighted
+weight: 0
+provider: null
+plugin: 'views_block:mt_testimonials_carousel-block_1'
+settings:
+  id: 'views_block:mt_testimonials_carousel-block_1'
+  label: 'Words from our users'
+  provider: views
+  label_display: visible
+  views_label: 'Words from our users'
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: "<front>\r\n/node/102\r\n/node/103\r\n/node/104\r\n/node/105\r\n/node/111\r\n/node/106\r\n/node/107\r\n/node/110\r\n/node/108\r\n/node/109"
+    negate: false
+    context_mapping: {  }

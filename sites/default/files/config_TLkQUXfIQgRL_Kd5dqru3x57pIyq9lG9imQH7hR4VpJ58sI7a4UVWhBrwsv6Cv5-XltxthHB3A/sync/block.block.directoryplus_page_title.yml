@@ -1,0 +1,27 @@
+uuid: f8d0b43b-d060-4605-aa3f-4f15864600af
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - directoryplus
+_core:
+  default_config_hash: TpR1DMFTDMLpWaAp_hXJtsqUFgOh-xs-ImUA20Jb5D8
+id: directoryplus_page_title
+theme: directoryplus
+region: content
+weight: -57
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: "<front>\r\n/node/102\r\n/node/103\r\n/node/104\r\n/node/105\r\n/node/111\r\n/node/106\r\n/blocks\r\n/node/107\r\n/node/110\r\n/node/108\r\n/node/109"
+    negate: true
+    context_mapping: {  }

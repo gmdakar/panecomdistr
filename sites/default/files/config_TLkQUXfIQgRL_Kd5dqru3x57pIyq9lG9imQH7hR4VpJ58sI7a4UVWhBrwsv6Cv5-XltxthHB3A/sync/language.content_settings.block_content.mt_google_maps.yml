@@ -1,0 +1,18 @@
+uuid: d3937c69-a235-48ef-8363-4efadf94aa3d
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_google_maps
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '1'
+id: block_content.mt_google_maps
+target_entity_type_id: block_content
+target_bundle: mt_google_maps
+default_langcode: site_default
+language_alterable: true

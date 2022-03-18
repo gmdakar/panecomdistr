@@ -1,0 +1,29 @@
+uuid: 9b7e50f4-83f1-43f3-bfeb-f3b056234111
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: base
+label: Base
+type: 'canonical_entities:node'
+pattern: '[node:menu-link:parents:first]/[node:title]'
+selection_criteria:
+  6ab14ab3-04f2-401b-8e1b-a125e8011fe8:
+    id: node_type
+    bundles:
+      document_viewer: document_viewer
+      mt_canvas_page: mt_canvas_page
+      mt_listing: mt_listing
+      mt_product: mt_product
+      mt_service: mt_service
+      mt_showcase: mt_showcase
+      mt_testimonial: mt_testimonial
+      page: page
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 6ab14ab3-04f2-401b-8e1b-a125e8011fe8
+selection_logic: and
+weight: -5
+relationships: {  }

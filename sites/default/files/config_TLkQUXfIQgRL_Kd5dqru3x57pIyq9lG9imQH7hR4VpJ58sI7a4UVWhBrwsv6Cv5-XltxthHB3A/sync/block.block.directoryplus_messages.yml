@@ -1,0 +1,22 @@
+uuid: 58011d51-a489-43ee-af25-7e35c08712c0
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - directoryplus
+_core:
+  default_config_hash: HjPwtLOJxxCmjwwb5BoxGOSNiYuSu-H1SQ62Fc3WaAg
+id: directoryplus_messages
+theme: directoryplus
+region: system_messages
+weight: -57
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

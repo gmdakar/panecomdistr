@@ -1,0 +1,88 @@
+uuid: 20fba51b-b6b9-4190-ad29-4f7b8e404be7
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.mt_icon_features.field_mt_if_body
+    - field.field.paragraph.mt_icon_features.field_mt_if_fa_icon
+    - field.field.paragraph.mt_icon_features.field_mt_if_image
+    - field.field.paragraph.mt_icon_features.field_mt_if_link
+    - field.field.paragraph.mt_icon_features.field_mt_if_title
+    - paragraphs.paragraphs_type.mt_icon_features
+  module:
+    - field_layout
+    - fontawesome
+    - layout_builder
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          66c89fe1-829c-49e7-bbf0-f34ed7c2d16a:
+            uuid: 66c89fe1-829c-49e7-bbf0-f34ed7c2d16a
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:mt_icon_features:field_mt_if_fa_icon'
+              formatter:
+                label: hidden
+                settings:
+                  layers: false
+                third_party_settings: {  }
+                type: fontawesome_icon_formatter
+            additional: {  }
+            weight: 0
+          38996f14-606d-481a-b43a-ae0de0cf7a0f:
+            uuid: 38996f14-606d-481a-b43a-ae0de0cf7a0f
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:mt_icon_features:field_mt_if_title'
+              formatter:
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+                type: string
+            additional: {  }
+            weight: 1
+        third_party_settings: {  }
+id: paragraph.mt_icon_features.preview
+targetEntityType: paragraph
+bundle: mt_icon_features
+mode: preview
+content:
+  field_mt_if_fa_icon:
+    weight: 0
+    label: hidden
+    settings:
+      layers: false
+    third_party_settings: {  }
+    type: fontawesome_icon_formatter
+    region: content
+  field_mt_if_title:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  field_mt_if_body: true
+  field_mt_if_image: true
+  field_mt_if_link: true

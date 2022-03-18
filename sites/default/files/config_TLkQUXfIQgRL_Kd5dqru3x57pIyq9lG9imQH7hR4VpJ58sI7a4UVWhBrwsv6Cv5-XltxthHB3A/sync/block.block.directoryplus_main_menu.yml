@@ -1,0 +1,32 @@
+uuid: 6701e9ce-0d2e-4b2e-bba1-f862c0919ee5
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - directoryplus
+_core:
+  default_config_hash: IIh8rNExWMmy0f8Oc1eUcTILd9R2EcBnw5MnAcKQEX4
+id: directoryplus_main_menu
+theme: directoryplus
+region: sidebar_second
+weight: -51
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    pages: "<front>\r\n/node/3\r\n/node/9\r\n/node/14\r\n/node/102\r\n/node/103\r\n/node/22\r\n/node/23\r\n/node/30\r\n/node/36\r\n/node/39\r\n/node/104\r\n/node/41\r\n/node/42\r\n/node/43\r\n/node/44\r\n/node/45\r\n/node/105\r\n/node/111\r\n/node/106\r\n/node/56\r\n/node/57\r\n/node/107\r\n/node/62\r\n/node/110\r\n/node/64\r\n/node/65\r\n/node/66\r\n/node/67\r\n/node/68\r\n/node/69\r\n/node/70\r\n/node/71\r\n/node/72\r\n/node/73\r\n/node/74\r\n/node/75\r\n/benefits\r\n/contact\r\n/contact/alternative\r\n/services-4-col\r\n/services\r\n/services-2-col\r\n/services-isotope\r\n/events-3-col\r\n/products-4-col\r\n/products\r\n/products-3-col\r\n/products-2-col\r\n/products-isotope\r\n/products-masonry\r\n/albums*\r\n/showcases-4-col\r\n/showcases\r\n/showcases-2-col\r\n/articles-4-col\r\n/articles-3-col\r\n/articles-2-col\r\n/videos\r\n/clients\r\n/product-categories\r\n/product-categories-masonry\r\n/team-members*\r\n/about-us\r\n/pricing-tables\r\n/testimonials-3-col\r\n/testimonials-3-col-2\r\n/testimonials-masonry\r\n/blocks\r\n/node/108\r\n/node/109\r\n/photo-gallery\r\n/listings\r\n/listings-2-col\r\n/listings-4-col\r\n/listings-map\r\n/listings-list\r\n/listings*\r\n/featured-listings\r\n/sponsored-listings"
+    negate: true
+    context_mapping: {  }

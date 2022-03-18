@@ -1,0 +1,8 @@
+uuid: 7651d6f1-ea1d-4edf-996e-38218d6b9d91
+langcode: en
+status: true
+dependencies: {  }
+name: 'Type hotel'
+vid: type_hotel
+description: ''
+weight: 0

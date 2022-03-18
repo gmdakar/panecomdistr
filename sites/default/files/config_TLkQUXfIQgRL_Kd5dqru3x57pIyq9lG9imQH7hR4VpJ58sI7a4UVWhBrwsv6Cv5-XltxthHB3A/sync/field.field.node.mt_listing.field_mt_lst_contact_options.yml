@@ -1,0 +1,82 @@
+uuid: abd3f988-6913-4d83-ba5e-1405427a2d2e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_lst_contact_options
+    - node.type.mt_listing
+    - paragraphs.paragraphs_type.mt_icon_features
+  module:
+    - entity_reference_revisions
+id: node.mt_listing.field_mt_lst_contact_options
+field_name: field_mt_lst_contact_options
+entity_type: node
+bundle: mt_listing
+label: 'Contact Options'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      mt_icon_features: mt_icon_features
+    target_bundles_drag_drop:
+      mt_collapse:
+        weight: 19
+        enabled: false
+      mt_detailed_feature:
+        weight: 20
+        enabled: false
+      mt_dropdown:
+        weight: 21
+        enabled: false
+      mt_fancy_linked_image:
+        weight: 22
+        enabled: false
+      mt_fancy_tab:
+        weight: 23
+        enabled: false
+      mt_feature:
+        weight: 24
+        enabled: false
+      mt_featured_linked_text_tile:
+        weight: 25
+        enabled: false
+      mt_how_it_works_item:
+        weight: 26
+        enabled: false
+      mt_icon_features:
+        enabled: true
+        weight: 27
+      mt_image_button:
+        weight: 28
+        enabled: false
+      mt_main_slideshow_slide:
+        weight: 29
+        enabled: false
+      mt_map_location:
+        weight: 30
+        enabled: false
+      mt_media_tab:
+        weight: 31
+        enabled: false
+      mt_tab:
+        weight: 32
+        enabled: false
+      mt_timeline_item:
+        weight: 33
+        enabled: false
+      mt_video_gallery_slide:
+        weight: 34
+        enabled: false
+      mt_additional_feature:
+        weight: 35
+        enabled: false
+      mt_highlight:
+        weight: 36
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,30 @@
+uuid: 70786d4e-c010-4597-b720-ef523448dd51
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.mt_team_members_masonry
+  module:
+    - system
+    - views
+  theme:
+    - directoryplus
+id: views_block__mt_team_members_masonry_block_1
+theme: directoryplus
+region: content_bottom_first
+weight: 0
+provider: null
+plugin: 'views_block:mt_team_members_masonry-block_1'
+settings:
+  id: 'views_block:mt_team_members_masonry-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /about-us
+    negate: false
+    context_mapping: {  }

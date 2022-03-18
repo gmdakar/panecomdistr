@@ -1,0 +1,21 @@
+display:
+  default:
+    display_options:
+      fields:
+        field_image:
+          alter:
+            text: "<div class=\"views-field-field-image\">\r\n<div class=\"overlay-container\">\r\n<span class=\"overlay overlay--colored\">\r\n<a class=\"overlay-target-link\" href=\"{{ path }}\"></a>\r\n</span>\r\n<span class=\"article-meta\">\r\n<span class=\"article-meta__day\">{{ created }}</span>\r\n<span class=\"article-meta__month-year\">{{ created_1 }}</span>\r\n</span>\r\n{{ field_image }}\r\n</div>\r\n</div>"
+  block_1:
+    display_options:
+      fields:
+        field_image:
+          alter:
+            text: "<div class=\"views-field-field-image\">\r\n<div class=\"overlay-container\">\r\n<span class=\"overlay overlay--colored\">\r\n<a class=\"overlay-target-link\" href=\"{{ path }}\"></a>\r\n</span>\r\n<span class=\"article-meta\">\r\n<span class=\"article-meta__day\">{{ created }}</span>\r\n<span class=\"article-meta__month-year\">{{ created_1 }}</span>\r\n</span>\r\n{{ field_image }}\r\n</div>\r\n</div>"
+        view_node:
+          text: 'En savoir plus'
+  page_2:
+    display_options:
+      fields:
+        field_image:
+          alter:
+            text: "<div class=\"views-field-field-image\">\r\n<div class=\"overlay-container\">\r\n<span class=\"overlay overlay--colored\">\r\n<a class=\"overlay-target-link\" href=\"{{ path }}\"></a>\r\n</span>\r\n<span class=\"article-meta\">\r\n<span class=\"article-meta__day\">{{ created }}</span>\r\n<span class=\"article-meta__month-year\">{{ created_1 }}</span>\r\n</span>\r\n{{ field_image }}\r\n</div>\r\n</div>"

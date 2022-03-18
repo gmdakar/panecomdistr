@@ -1,0 +1,41 @@
+uuid: 5e71fa9e-ea20-4c1e-8e10-466b8dfdd171
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:88d10d47-2254-49dc-9263-0ca8b2b15832'
+  module:
+    - block_content
+    - ctools
+    - system
+  theme:
+    - wwf9
+id: contributetotheforum
+theme: wwf9
+region: hidden_blocks_collection
+weight: -20
+provider: null
+plugin: 'block_content:88d10d47-2254-49dc-9263-0ca8b2b15832'
+settings:
+  id: 'block_content:88d10d47-2254-49dc-9263-0ca8b2b15832'
+  label: 'Contribuez par vos connaissances'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      document: document
+      mt_team_member: mt_team_member
+      page: page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true
+    context_mapping: {  }

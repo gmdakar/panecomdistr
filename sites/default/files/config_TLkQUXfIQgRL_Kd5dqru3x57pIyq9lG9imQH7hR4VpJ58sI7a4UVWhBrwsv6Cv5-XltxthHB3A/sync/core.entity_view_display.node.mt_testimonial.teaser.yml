@@ -1,0 +1,130 @@
+uuid: 76e93c0c-e8dd-4e00-9bb5-85240cb6e5d6
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.mt_testimonial.field_mt_tst_body
+    - field.field.node.mt_testimonial.field_mt_tst_subtitle
+    - field.field.node.mt_testimonial.field_mt_tst_testimonial_image
+    - field.field.node.mt_testimonial.field_mt_tst_testimonial_link
+    - image.style.mt_testimonial_image
+    - node.type.mt_testimonial
+  module:
+    - field_layout
+    - image
+    - layout_builder
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          2f627c7e-fab3-405b-af2b-22dc177f59c2:
+            uuid: 2f627c7e-fab3-405b-af2b-22dc177f59c2
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:mt_testimonial:field_mt_tst_testimonial_image'
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_style: mt_testimonial_image
+                  image_link: content
+                third_party_settings: {  }
+            additional: {  }
+            weight: 0
+          0e157005-dc3d-4cd5-8c55-2c88325bddfe:
+            uuid: 0e157005-dc3d-4cd5-8c55-2c88325bddfe
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:mt_testimonial:field_mt_tst_subtitle'
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            additional: {  }
+            weight: 1
+          66166832-92fd-4022-86d6-2f5043901dae:
+            uuid: 66166832-92fd-4022-86d6-2f5043901dae
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:mt_testimonial:field_mt_tst_body'
+              formatter:
+                type: text_summary_or_trimmed
+                label: hidden
+                settings:
+                  trim_length: 600
+                third_party_settings: {  }
+            additional: {  }
+            weight: 2
+          47a867bb-081e-4db5-babb-c1c01102658a:
+            uuid: 47a867bb-081e-4db5-babb-c1c01102658a
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:mt_testimonial:links'
+            additional: {  }
+            weight: 3
+        third_party_settings: {  }
+id: node.mt_testimonial.teaser
+targetEntityType: node
+bundle: mt_testimonial
+mode: teaser
+content:
+  field_mt_tst_body:
+    type: text_summary_or_trimmed
+    weight: 5
+    region: content
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  field_mt_tst_subtitle:
+    type: string
+    weight: 3
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_mt_tst_testimonial_image:
+    type: image
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      image_style: mt_testimonial_image
+      image_link: content
+    third_party_settings: {  }
+  links:
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_mt_tst_testimonial_link: true
+  langcode: true

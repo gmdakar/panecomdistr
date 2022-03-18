@@ -1,0 +1,33 @@
+uuid: de2ea8ac-f40f-4931-9cc1-46445c3d0c20
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.mt_related_nodes_carousel
+  module:
+    - node
+    - views
+  theme:
+    - directoryplus
+id: views_block__mt_related_nodes_carousel_block_1
+theme: directoryplus
+region: highlighted
+weight: 0
+provider: null
+plugin: 'views_block:mt_related_nodes_carousel-block_1'
+settings:
+  id: 'views_block:mt_related_nodes_carousel-block_1'
+  label: 'Related Products'
+  provider: views
+  label_display: visible
+  views_label: 'Related Products'
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      mt_product: mt_product
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

@@ -1,0 +1,52 @@
+uuid: 1a11d6e9-17e9-41bd-91e6-fce0a98b0391
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.press_room.field_documents
+    - field.field.node.press_room.field_file_to_download
+    - node.type.press_room
+  module:
+    - field_layout
+    - layout_builder
+    - layout_discovery
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          5a67724b-3d70-4e00-b3a7-d02eb1e27e75:
+            uuid: 5a67724b-3d70-4e00-b3a7-d02eb1e27e75
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:press_room:links'
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+id: node.press_room.teaser
+targetEntityType: node
+bundle: press_room
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_documents: true
+  field_file_to_download: true
+  langcode: true

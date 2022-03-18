@@ -1,0 +1,23 @@
+uuid: 0a80f618-28b9-4957-9e0d-bc787d544ad5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_focal_point
+    - node.type.projet
+  module:
+    - text
+id: node.projet.field_focal_point
+field_name: field_focal_point
+entity_type: node
+bundle: projet
+label: 'Focal point'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

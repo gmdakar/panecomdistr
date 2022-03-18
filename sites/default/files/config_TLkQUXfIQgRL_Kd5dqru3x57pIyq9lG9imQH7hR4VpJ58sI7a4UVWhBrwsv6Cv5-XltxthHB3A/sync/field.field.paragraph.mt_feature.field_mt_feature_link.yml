@@ -1,0 +1,23 @@
+uuid: ac55a33b-5f3f-4410-96e1-64346cabafd0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_mt_feature_link
+    - paragraphs.paragraphs_type.mt_feature
+  module:
+    - link
+id: paragraph.mt_feature.field_mt_feature_link
+field_name: field_mt_feature_link
+entity_type: paragraph
+bundle: mt_feature
+label: Link
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

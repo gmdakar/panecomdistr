@@ -1,0 +1,11 @@
+uuid: e9ecf01d-2131-4771-b05d-b389c781d916
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.point_visite
+id: node.point_visite
+target_entity_type_id: node
+target_bundle: point_visite
+default_langcode: site_default
+language_alterable: false

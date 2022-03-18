@@ -1,0 +1,31 @@
+uuid: 5508e1e2-317e-4119-88e5-d3da0e4c6fc7
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:49b987ff-4ce0-4662-8921-f4363458630e'
+  module:
+    - block_content
+    - system
+  theme:
+    - wwf9
+id: participateintheforum_2
+theme: wwf9
+region: system_messages
+weight: 0
+provider: null
+plugin: 'block_content:49b987ff-4ce0-4662-8921-f4363458630e'
+settings:
+  id: 'block_content:49b987ff-4ce0-4662-8921-f4363458630e'
+  label: 'Participate in the forum'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

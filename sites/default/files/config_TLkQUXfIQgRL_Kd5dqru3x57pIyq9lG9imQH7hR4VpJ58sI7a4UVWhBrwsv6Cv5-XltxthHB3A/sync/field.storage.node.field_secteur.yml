@@ -1,0 +1,19 @@
+uuid: 1a7716d4-38b9-480e-9044-ce52cf6fba32
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_secteur
+field_name: field_secteur
+entity_type: node
+type: text_with_summary
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

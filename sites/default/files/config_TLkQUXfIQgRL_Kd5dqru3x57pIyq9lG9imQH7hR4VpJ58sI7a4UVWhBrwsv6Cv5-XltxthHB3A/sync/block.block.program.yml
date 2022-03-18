@@ -1,0 +1,38 @@
+uuid: 810fb306-d42d-44c7-b861-716b83bb868e
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - ctools
+    - menu_block
+  theme:
+    - wwf9
+id: program
+theme: wwf9
+region: footer_third
+weight: 0
+provider: null
+plugin: 'menu_block:main'
+settings:
+  id: 'menu_block:main'
+  label: '9th Forum'
+  provider: menu_block
+  label_display: visible
+  follow: false
+  follow_parent: child
+  level: 1
+  depth: 0
+  expand_all_items: false
+  parent: 'main:menu_link_content:0822445a-c1ba-450e-a14d-34504a5433bb'
+  suggestion: main
+  label_type: block
+  label_link: false
+visibility:
+  'entity_bundle:webform_submission':
+    id: 'entity_bundle:webform_submission'
+    bundles: {  }
+    negate: true
+    context_mapping:
+      webform_submission: '@webform.webform_submission_route_context:webform_submission'

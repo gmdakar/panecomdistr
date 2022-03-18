@@ -1,0 +1,13 @@
+uuid: 38b360cd-59c3-4205-9aaa-5d05ccb22456
+langcode: en
+status: true
+dependencies: {  }
+id: maj_schedule
+label: 'MaJ Schedule'
+enabled: true
+keep: 10
+period: 3600
+cron: null
+source_id: default_db
+destination_id: private_files
+settings_profile_id: null

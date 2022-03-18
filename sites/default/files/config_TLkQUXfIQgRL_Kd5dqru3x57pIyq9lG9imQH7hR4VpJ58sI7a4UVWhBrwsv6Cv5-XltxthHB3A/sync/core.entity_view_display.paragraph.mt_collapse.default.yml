@@ -1,0 +1,58 @@
+uuid: 7f6245de-56cf-4a75-86b1-bbd5d3c8527e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.mt_collapse.field_mt_collapse_body
+    - field.field.paragraph.mt_collapse.field_mt_collapse_title
+    - paragraphs.paragraphs_type.mt_collapse
+  module:
+    - field_layout
+    - layout_builder
+    - layout_discovery
+    - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          7d2e5286-6425-482f-b678-f791ade3e361:
+            uuid: 7d2e5286-6425-482f-b678-f791ade3e361
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:mt_collapse:field_mt_collapse_body'
+              formatter:
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+                type: text_default
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+id: paragraph.mt_collapse.default
+targetEntityType: paragraph
+bundle: mt_collapse
+mode: default
+content:
+  field_mt_collapse_body:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden:
+  created: true
+  field_mt_collapse_title: true
+  uid: true

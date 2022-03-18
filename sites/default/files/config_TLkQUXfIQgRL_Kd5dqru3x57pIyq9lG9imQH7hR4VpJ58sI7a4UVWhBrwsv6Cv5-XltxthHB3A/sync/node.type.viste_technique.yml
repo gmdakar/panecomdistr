@@ -1,0 +1,18 @@
+uuid: 74d2abf6-2273-4dfd-a566-412cde18b94f
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'viste technique'
+type: viste_technique
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

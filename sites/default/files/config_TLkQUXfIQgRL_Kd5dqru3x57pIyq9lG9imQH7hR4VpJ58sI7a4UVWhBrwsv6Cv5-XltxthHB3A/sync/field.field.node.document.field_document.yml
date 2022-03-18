@@ -1,0 +1,27 @@
+uuid: ee76cad9-19a4-4d9e-a9ee-9a81c968c635
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_document
+    - node.type.document
+  module:
+    - file
+id: node.document.field_document
+field_name: field_document
+entity_type: node
+bundle: document
+label: Document
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: docs-kickoff
+  file_extensions: 'txt doc docx pdf xlsx csv jpg jpeg png gif pptx'
+  max_filesize: ''
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

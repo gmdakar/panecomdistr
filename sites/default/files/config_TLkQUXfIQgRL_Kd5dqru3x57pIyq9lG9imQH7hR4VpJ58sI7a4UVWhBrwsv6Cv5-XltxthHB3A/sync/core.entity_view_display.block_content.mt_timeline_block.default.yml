@@ -1,0 +1,93 @@
+uuid: 1a1bcc99-a2f9-439c-9a2c-2a1958e13065
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_timeline_block
+    - field.field.block_content.mt_timeline_block.field_mt_tml_timeline_item
+    - field.field.block_content.mt_timeline_block.field_mt_tml_timeline_viewmore
+  module:
+    - entity_reference_revisions
+    - field_layout
+    - layout_builder
+    - layout_discovery
+    - link
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          a7ab953c-4b58-48ef-be14-483c5524ee5f:
+            uuid: a7ab953c-4b58-48ef-be14-483c5524ee5f
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:block_content:mt_timeline_block:field_mt_tml_timeline_item'
+              formatter:
+                type: entity_reference_revisions_entity_view
+                label: hidden
+                settings:
+                  view_mode: default
+                  link: ''
+                third_party_settings: {  }
+            additional: {  }
+            weight: 0
+          5b93b680-87a7-4ef8-b6af-f26b49626ad7:
+            uuid: 5b93b680-87a7-4ef8-b6af-f26b49626ad7
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:block_content:mt_timeline_block:field_mt_tml_timeline_viewmore'
+              formatter:
+                label: visually_hidden
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: ''
+                  target: ''
+                third_party_settings: {  }
+                type: link
+            additional: {  }
+            weight: 1
+        third_party_settings: {  }
+id: block_content.mt_timeline_block.default
+targetEntityType: block_content
+bundle: mt_timeline_block
+mode: default
+content:
+  field_mt_tml_timeline_item:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_mt_tml_timeline_viewmore:
+    weight: 2
+    label: visually_hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden:
+  langcode: true

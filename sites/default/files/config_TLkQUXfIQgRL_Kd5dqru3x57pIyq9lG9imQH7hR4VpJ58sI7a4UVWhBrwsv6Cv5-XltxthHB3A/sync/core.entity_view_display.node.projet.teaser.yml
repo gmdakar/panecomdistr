@@ -1,0 +1,96 @@
+uuid: 16d78c82-aeaa-45a7-904e-daa90e22492d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.projet.body
+    - field.field.node.projet.field_adresse
+    - field.field.node.projet.field_focal_contact
+    - field.field.node.projet.field_focal_point
+    - field.field.node.projet.field_groupes_d_actions_cibles
+    - field.field.node.projet.field_image_projet
+    - field.field.node.projet.field_instan
+    - field.field.node.projet.field_lien
+    - field.field.node.projet.field_nat
+    - field.field.node.projet.field_niveau_d_avancement
+    - field.field.node.projet.field_secteur
+    - field.field.node.projet.field_type_d_accompagnement_sou
+    - node.type.projet
+  module:
+    - field_layout
+    - layout_builder
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          7f15375b-d209-4f48-8981-76f27e59bb4b:
+            uuid: 7f15375b-d209-4f48-8981-76f27e59bb4b
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:projet:links'
+            additional: {  }
+            weight: 0
+          9a30230d-b6c3-4c8b-8acc-241f66c3181f:
+            uuid: 9a30230d-b6c3-4c8b-8acc-241f66c3181f
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:projet:body'
+              formatter:
+                label: hidden
+                type: text_summary_or_trimmed
+                settings:
+                  trim_length: 600
+                third_party_settings: {  }
+            additional: {  }
+            weight: 1
+        third_party_settings: {  }
+id: node.projet.teaser
+targetEntityType: node
+bundle: projet
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_adresse: true
+  field_focal_contact: true
+  field_focal_point: true
+  field_groupes_d_actions_cibles: true
+  field_image_projet: true
+  field_instan: true
+  field_lien: true
+  field_nat: true
+  field_niveau_d_avancement: true
+  field_secteur: true
+  field_type_d_accompagnement_sou: true
+  langcode: true

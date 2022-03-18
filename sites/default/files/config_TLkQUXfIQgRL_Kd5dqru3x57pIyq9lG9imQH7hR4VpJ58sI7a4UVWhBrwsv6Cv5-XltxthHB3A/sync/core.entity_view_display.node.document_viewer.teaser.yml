@@ -1,0 +1,33 @@
+uuid: fa1c437e-4b33-4a2d-9a85-99f26e604213
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.document_viewer.body
+    - field.field.node.document_viewer.field_document_pdf
+    - node.type.document_viewer
+  module:
+    - text
+    - user
+id: node.document_viewer.teaser
+targetEntityType: node
+bundle: document_viewer
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_document_pdf: true
+  langcode: true

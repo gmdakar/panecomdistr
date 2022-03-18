@@ -1,0 +1,30 @@
+uuid: 91bde0fc-e32b-4813-a0b7-06cf2171e5f3
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.mt_team_members_carousel
+  module:
+    - system
+    - views
+  theme:
+    - wwf9
+id: views_block__mt_team_members_carousel_block_1_2
+theme: wwf9
+region: featured_top
+weight: -16
+provider: null
+plugin: 'views_block:mt_team_members_carousel-block_1'
+settings:
+  id: 'views_block:mt_team_members_carousel-block_1'
+  label: 'Messages de bienvenue'
+  provider: views
+  label_display: visible
+  views_label: 'Messages de bienvenue'
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

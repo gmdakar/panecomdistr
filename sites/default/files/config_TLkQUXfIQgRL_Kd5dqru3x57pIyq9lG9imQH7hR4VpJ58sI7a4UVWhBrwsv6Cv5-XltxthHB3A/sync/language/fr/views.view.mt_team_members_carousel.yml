@@ -1,0 +1,23 @@
+display:
+  default:
+    display_options:
+      fields:
+        field_mt_tmm_facebook_account:
+          alter:
+            text: "<li>\r\n<a target=\"_blank\" href=\"{{ field_mt_tmm_facebook_account__value }}\" class=\"background-color-facebook\">\r\n<i class=\"fab fa-facebook\"><span class=\"sr-only\">facebook</span></i>\r\n</a>\r\n</li>"
+        field_mt_tmm_twitter_account:
+          alter:
+            text: "<li>\r\n<a target=\"_blank\" href=\"{{ field_mt_tmm_twitter_account__value }}\" class=\"background-color-twitter\">\r\n<i class=\"fab fa-twitter\"><span class=\"sr-only\">twitter</span></i>\r\n</a>\r\n</li>"
+        field_mt_tmm_youtube_account:
+          alter:
+            text: "<li>\r\n<a target=\"_blank\" href=\"{{ field_mt_tmm_youtube_account__value }}\" class=\"background-color-youtube\">\r\n<i class=\"fab fa-linkedin\"><span class=\"sr-only\">youtube</span></i>\r\n</a>\r\n</li>"
+        field_mt_tmm_linkedin_account:
+          alter:
+            text: "<li>\r\n<a target=\"_blank\" href=\"{{ field_mt_tmm_linkedin_account__value }}\" class=\"background-color-linkedin\">\r\n<i class=\"fab fa-linkedin\"><span class=\"sr-only\">linkedin</span></i>\r\n</a>\r\n</li>"
+        field_mt_tmm_member_photo:
+          alter:
+            text: "<div class=\"views-field-field-mt-tmm-member-photo\">\r\n<div class=\"overlay-container\">\r\n<div class=\"overlay overlay--colored\">\r\n<a class=\"overlay-target-link\" href=\"{{ path }}\"></a>\r\n<div class=\"overlay-inner\">\r\n<ul class=\"icons-list icons-list--small icons-list--bordered icons-list--no-margin\">\r\n{{ field_mt_tmm_twitter_account }}\r\n{{ field_mt_tmm_facebook_account }}\r\n{{ field_mt_tmm_linkedin_account }}\r\n{{ field_mt_tmm_youtube_account }}\r\n</ul>\r\n</div>\r\n</div>\r\n{{ field_mt_tmm_member_photo }}\r\n</div>\r\n</div>"
+        nothing:
+          alter:
+            text: "<div class=\"text-container\">\r\n<div class=\"views-field-title\">{{ title }}</div>\r\n{{ field_mt_tmm_subtitle }}\r\n</div>"
+      title: 'Messages de bienvenue'

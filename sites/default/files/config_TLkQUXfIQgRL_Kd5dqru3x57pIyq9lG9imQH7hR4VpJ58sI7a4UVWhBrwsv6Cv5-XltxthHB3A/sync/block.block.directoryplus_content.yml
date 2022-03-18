@@ -1,0 +1,22 @@
+uuid: 34511477-100c-4f3a-92d8-395f6abdf0d1
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - directoryplus
+_core:
+  default_config_hash: vK1p6mCOh5qkXs94boz5er53FGYbukdJb5-utFMa_CA
+id: directoryplus_content
+theme: directoryplus
+region: content
+weight: -49
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

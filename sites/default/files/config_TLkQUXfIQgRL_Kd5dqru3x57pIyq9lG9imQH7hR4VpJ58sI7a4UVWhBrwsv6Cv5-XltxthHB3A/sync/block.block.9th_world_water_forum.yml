@@ -1,0 +1,31 @@
+uuid: 69a6a436-ea72-4d4a-b745-4c67de1a3739
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - menu_block
+  theme:
+    - wwf9
+id: 9th_world_water_forum
+theme: wwf9
+region: footer_first
+weight: -18
+provider: null
+plugin: 'menu_block:main'
+settings:
+  id: 'menu_block:main'
+  label: '9th World Water Forum'
+  provider: menu_block
+  label_display: visible
+  follow: false
+  follow_parent: child
+  level: 1
+  depth: 0
+  expand_all_items: false
+  parent: 'main:menu_link_content:0822445a-c1ba-450e-a14d-34504a5433bb'
+  suggestion: main
+  label_type: block
+  label_link: false
+visibility: {  }

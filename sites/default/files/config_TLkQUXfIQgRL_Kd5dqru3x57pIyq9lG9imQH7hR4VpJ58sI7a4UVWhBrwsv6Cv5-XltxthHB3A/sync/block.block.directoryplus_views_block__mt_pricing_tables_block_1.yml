@@ -1,0 +1,30 @@
+uuid: e29262de-8a46-4059-b97c-48650c90ed28
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.mt_pricing_tables
+  module:
+    - system
+    - views
+  theme:
+    - directoryplus
+id: directoryplus_views_block__mt_pricing_tables_block_1
+theme: directoryplus
+region: highlighted_top
+weight: -57
+provider: null
+plugin: 'views_block:mt_pricing_tables-block_1'
+settings:
+  id: 'views_block:mt_pricing_tables-block_1'
+  label: 'Choose the plan that fits your needs'
+  provider: views
+  label_display: visible
+  views_label: 'Choose the plan that fits your needs'
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: "<front>\r\n/node/102\r\n/node/103\r\n/node/104\r\n/node/105\r\n/node/111\r\n/node/106\r\n/node/107\r\n/node/110\r\n/node/108\r\n/node/109\r\n/about-us"
+    negate: false
+    context_mapping: {  }

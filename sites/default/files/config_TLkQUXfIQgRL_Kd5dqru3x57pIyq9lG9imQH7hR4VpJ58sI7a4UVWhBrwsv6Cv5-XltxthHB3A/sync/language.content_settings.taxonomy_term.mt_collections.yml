@@ -1,0 +1,18 @@
+uuid: a2d954dd-beba-49ee-935f-8ca67f293cc6
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.mt_collections
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '1'
+id: taxonomy_term.mt_collections
+target_entity_type_id: taxonomy_term
+target_bundle: mt_collections
+default_langcode: site_default
+language_alterable: true

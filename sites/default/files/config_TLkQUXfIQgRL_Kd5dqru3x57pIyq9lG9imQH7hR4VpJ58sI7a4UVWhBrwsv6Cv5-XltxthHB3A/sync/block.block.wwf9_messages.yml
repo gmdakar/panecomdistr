@@ -1,0 +1,22 @@
+uuid: cd64f665-84e0-407c-bb19-3178a9cb29bf
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - wwf9
+_core:
+  default_config_hash: HjPwtLOJxxCmjwwb5BoxGOSNiYuSu-H1SQ62Fc3WaAg
+id: wwf9_messages
+theme: wwf9
+region: system_messages
+weight: -57
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Messages de statut'
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,107 @@
+uuid: 4e754196-0fa0-40d3-83ea-fc7f597ea1c2
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.mt_album.field_mt_alb_body
+    - field.field.node.mt_album.field_mt_alb_image
+    - field.field.node.mt_album.field_mt_alb_tags
+    - field.field.node.mt_album.field_mt_alb_video
+    - image.style.large
+    - node.type.mt_album
+  module:
+    - field_layout
+    - image
+    - layout_builder
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          0f7b1877-5e89-4648-ae75-11c86d1e2676:
+            uuid: 0f7b1877-5e89-4648-ae75-11c86d1e2676
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:mt_album:field_mt_alb_image'
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_style: large
+                  image_link: content
+                third_party_settings: {  }
+            additional: {  }
+            weight: 0
+          b4d2a466-bb19-42ef-b74e-c1614454fa57:
+            uuid: b4d2a466-bb19-42ef-b74e-c1614454fa57
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:mt_album:field_mt_alb_body'
+              formatter:
+                type: text_summary_or_trimmed
+                label: hidden
+                settings:
+                  trim_length: 600
+                third_party_settings: {  }
+            additional: {  }
+            weight: 1
+          fbf7a018-a5e5-40e7-b57b-18cab9a1aa2c:
+            uuid: fbf7a018-a5e5-40e7-b57b-18cab9a1aa2c
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:mt_album:links'
+            additional: {  }
+            weight: 2
+        third_party_settings: {  }
+id: node.mt_album.teaser
+targetEntityType: node
+bundle: mt_album
+mode: teaser
+content:
+  field_mt_alb_body:
+    type: text_summary_or_trimmed
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  field_mt_alb_image:
+    type: image
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: large
+      image_link: content
+    third_party_settings: {  }
+  links:
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_mt_alb_tags: true
+  field_mt_alb_video: true
+  langcode: true

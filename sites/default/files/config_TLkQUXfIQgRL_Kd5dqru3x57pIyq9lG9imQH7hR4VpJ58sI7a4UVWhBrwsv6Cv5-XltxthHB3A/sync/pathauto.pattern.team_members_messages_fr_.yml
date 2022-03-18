@@ -1,0 +1,33 @@
+uuid: d4598524-0a42-47b0-8167-95f42464ca35
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: team_members_messages_fr_
+label: 'Team members (Messages Fr)'
+type: 'canonical_entities:node'
+pattern: 'messages-de-bienvenue/[node:title]'
+selection_criteria:
+  d4f320d5-2c4e-41ed-b0c5-aaa1e975d5d4:
+    id: node_type
+    bundles:
+      mt_team_member: mt_team_member
+    negate: false
+    context_mapping:
+      node: node
+    uuid: d4f320d5-2c4e-41ed-b0c5-aaa1e975d5d4
+  59da1234-5b0b-44fe-9a0b-7b045e9f39a0:
+    id: language
+    langcodes:
+      fr: fr
+    negate: false
+    context_mapping:
+      language: 'node:langcode:language'
+    uuid: 59da1234-5b0b-44fe-9a0b-7b045e9f39a0
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Language

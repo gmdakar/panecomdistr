@@ -1,0 +1,61 @@
+uuid: 25297fff-e7d3-4d89-931b-5ca13af018d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.mt_dropdown.field_mt_dropdown_block
+    - field.field.paragraph.mt_dropdown.field_mt_dropdown_fa_icon
+    - paragraphs.paragraphs_type.mt_dropdown
+  module:
+    - field_layout
+    - layout_builder
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          3cc90103-106c-4b0a-9a9a-80c33cc10496:
+            uuid: 3cc90103-106c-4b0a-9a9a-80c33cc10496
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:mt_dropdown:field_mt_dropdown_block'
+              formatter:
+                label: hidden
+                settings:
+                  view_mode: default
+                  link: false
+                third_party_settings: {  }
+                type: entity_reference_entity_view
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+id: paragraph.mt_dropdown.default
+targetEntityType: paragraph
+bundle: mt_dropdown
+mode: default
+content:
+  field_mt_dropdown_block:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden:
+  created: true
+  field_mt_dropdown_fa_icon: true
+  uid: true

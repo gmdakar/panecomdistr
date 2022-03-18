@@ -1,0 +1,21 @@
+uuid: 785b86c6-4d32-414c-827b-45f6b8f79edf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_lst_location
+    - node.type.mt_listing
+  module:
+    - geolocation
+id: node.mt_listing.field_mt_lst_location
+field_name: field_mt_lst_location
+entity_type: node
+bundle: mt_listing
+label: Location
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: geolocation

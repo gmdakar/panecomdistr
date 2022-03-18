@@ -1,0 +1,23 @@
+uuid: d88dd924-9530-4ec1-be91-6de249ce5407
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_focal_contact
+    - node.type.projet
+  module:
+    - text
+id: node.projet.field_focal_contact
+field_name: field_focal_contact
+entity_type: node
+bundle: projet
+label: 'Focal contact'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

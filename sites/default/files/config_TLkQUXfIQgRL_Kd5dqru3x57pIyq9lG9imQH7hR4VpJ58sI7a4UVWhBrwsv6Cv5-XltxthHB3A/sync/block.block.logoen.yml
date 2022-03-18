@@ -1,0 +1,25 @@
+uuid: c73a8000-0e78-4cf8-94b5-21c7bcf5c399
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:1b08e555-72c7-449b-b23b-fbc9e5d00868'
+  module:
+    - block_content
+  theme:
+    - wwf9
+id: logoen
+theme: wwf9
+region: header
+weight: -22
+provider: null
+plugin: 'block_content:1b08e555-72c7-449b-b23b-fbc9e5d00868'
+settings:
+  id: 'block_content:1b08e555-72c7-449b-b23b-fbc9e5d00868'
+  label: Logo
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,20 @@
+uuid: 3df66a7b-88e6-4cae-bd07-70653ac6da95
+langcode: en
+status: true
+dependencies:
+  theme:
+    - directoryplus
+_core:
+  default_config_hash: T7NMNlmVvMUSgTBRYn1bm8liMP9HgeR3xGUh8b6ucH4
+id: directoryplus_local_actions
+theme: directoryplus
+region: content
+weight: -50
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

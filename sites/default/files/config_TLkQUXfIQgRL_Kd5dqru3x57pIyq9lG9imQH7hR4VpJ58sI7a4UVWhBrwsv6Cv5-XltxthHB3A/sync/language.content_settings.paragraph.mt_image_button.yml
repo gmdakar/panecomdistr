@@ -1,0 +1,18 @@
+uuid: 8f6ca9eb-826b-4968-81e0-871425298804
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.mt_image_button
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '1'
+id: paragraph.mt_image_button
+target_entity_type_id: paragraph
+target_bundle: mt_image_button
+default_langcode: site_default
+language_alterable: true

@@ -1,0 +1,18 @@
+uuid: 7fd2e8a2-8d1b-4695-85c5-e87d2bf8f6ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.mt_map_location
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '1'
+id: paragraph.mt_map_location
+target_entity_type_id: paragraph
+target_bundle: mt_map_location
+default_langcode: site_default
+language_alterable: true

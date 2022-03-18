@@ -1,0 +1,25 @@
+uuid: fe723291-a39e-40cf-a27f-d3d7930a7841
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:1558fd04-bffe-4fec-9059-19065f586a7b'
+  module:
+    - block_content
+  theme:
+    - wwf9
+id: stakeholdersmeeting
+theme: wwf9
+region: hidden_blocks_collection
+weight: 0
+provider: null
+plugin: 'block_content:1558fd04-bffe-4fec-9059-19065f586a7b'
+settings:
+  id: 'block_content:1558fd04-bffe-4fec-9059-19065f586a7b'
+  label: 'Stakeholders Meeting'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

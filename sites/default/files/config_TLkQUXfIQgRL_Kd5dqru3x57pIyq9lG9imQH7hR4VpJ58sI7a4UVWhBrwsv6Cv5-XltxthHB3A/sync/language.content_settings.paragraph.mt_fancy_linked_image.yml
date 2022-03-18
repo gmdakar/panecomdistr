@@ -1,0 +1,18 @@
+uuid: 22332b17-1097-48a0-9e99-1093aaf53636
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.mt_fancy_linked_image
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '1'
+id: paragraph.mt_fancy_linked_image
+target_entity_type_id: paragraph
+target_bundle: mt_fancy_linked_image
+default_langcode: site_default
+language_alterable: true

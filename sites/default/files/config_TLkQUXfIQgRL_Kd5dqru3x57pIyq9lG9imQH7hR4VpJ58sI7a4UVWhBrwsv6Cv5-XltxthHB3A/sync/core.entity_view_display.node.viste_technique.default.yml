@@ -1,0 +1,51 @@
+uuid: f371a59f-5c0b-4f39-bd31-be068035f697
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.viste_technique.body
+    - field.field.node.viste_technique.field_point
+    - field.field.node.viste_technique.field_register
+    - node.type.viste_technique
+  module:
+    - text
+    - user
+    - webform
+id: node.viste_technique.default
+targetEntityType: node
+bundle: viste_technique
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_point:
+    weight: 103
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_register:
+    weight: 102
+    label: above
+    settings:
+      source_entity: true
+    third_party_settings: {  }
+    type: webform_entity_reference_entity_view
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  langcode: true

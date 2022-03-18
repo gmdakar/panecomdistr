@@ -1,0 +1,20 @@
+display:
+  default:
+    display_options:
+      fields:
+        field_mt_tmm_member_photo:
+          alter:
+            text: "<div class=\"views-field-field-mt-tmm-member-photo\">\r\n<div class=\"overlay-container\">\r\n<span class=\"overlay overlay--colored\">\r\n<a class=\"overlay-target-link\" href=\"{{ path }}\"></a>\r\n</span>\r\n{{ field_mt_tmm_member_photo }}\r\n</div>\r\n</div>"
+        field_mt_tmm_twitter_account:
+          alter:
+            text: "<li>\r\n<a target=\"_blank\" href=\"{{ field_mt_tmm_twitter_account__value }}\">\r\n<i class=\"fab fa-twitter\"><span class=\"sr-only\">twitter</span></i>\r\n</a>\r\n</li>"
+        field_mt_tmm_facebook_account:
+          alter:
+            text: "<li>\r\n<a target=\"_blank\" href=\"{{ field_mt_tmm_facebook_account__value }}\">\r\n<i class=\"fab fa-facebook\"><span class=\"sr-only\">facebook</span></i>\r\n</a>\r\n</li>"
+        field_mt_tmm_linkedin_account:
+          alter:
+            text: "<li>\r\n<a target=\"_blank\" href=\"{{ field_mt_tmm_linkedin_account__value }}\">\r\n<i class=\"fab fa-linkedin\"><span class=\"sr-only\">linkedin</span></i>\r\n</a>\r\n</li>"
+        nothing:
+          alter:
+            text: "<ul class=\"icons-list icons-list--bordered\">\r\n{{ field_mt_tmm_twitter_account }}\r\n{{ field_mt_tmm_facebook_account }}\r\n{{ field_mt_tmm_linkedin_account }}\r\n</ul>"
+      title: 'Messages de bienvenue'

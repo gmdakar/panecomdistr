@@ -1,0 +1,30 @@
+uuid: 18eaeaf8-c1be-4e9f-bbf0-552e528cc180
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.mt_slideshow_boxed_width
+  module:
+    - system
+    - views
+  theme:
+    - directoryplus
+id: directoryplus_views_block__mt_slideshow_boxed_width_block_1
+theme: directoryplus
+region: content_top_highlighted
+weight: -57
+provider: null
+plugin: 'views_block:mt_slideshow_boxed_width-block_1'
+settings:
+  id: 'views_block:mt_slideshow_boxed_width-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/102
+    negate: false
+    context_mapping: {  }

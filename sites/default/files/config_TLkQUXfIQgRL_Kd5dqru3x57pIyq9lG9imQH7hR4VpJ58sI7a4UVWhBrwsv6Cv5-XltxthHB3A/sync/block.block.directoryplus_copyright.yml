@@ -1,0 +1,25 @@
+uuid: fc0d00af-1be2-4a3d-849a-cc5d0bd73201
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:77bbdaf0-f40e-46e6-9ecf-f4cb3eb9f644'
+  module:
+    - block_content
+  theme:
+    - directoryplus
+id: directoryplus_copyright
+theme: directoryplus
+region: sub_footer_first
+weight: -56
+provider: null
+plugin: 'block_content:77bbdaf0-f40e-46e6-9ecf-f4cb3eb9f644'
+settings:
+  id: 'block_content:77bbdaf0-f40e-46e6-9ecf-f4cb3eb9f644'
+  label: Copyright
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

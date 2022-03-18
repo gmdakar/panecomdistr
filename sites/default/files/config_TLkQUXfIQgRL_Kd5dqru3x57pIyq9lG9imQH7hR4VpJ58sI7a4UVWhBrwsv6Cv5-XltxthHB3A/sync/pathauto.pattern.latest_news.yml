@@ -1,0 +1,25 @@
+uuid: 51d719c5-cd7d-4d85-800b-b02916e9c4d6
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: latest_news
+label: 'Latest News'
+type: 'canonical_entities:node'
+pattern: 'latest-news/[node:title]'
+selection_criteria:
+  bee9558e-afec-4c6e-9992-b87bab673bb0:
+    id: node_type
+    bundles:
+      article: article
+      mt_album: mt_album
+    negate: false
+    context_mapping:
+      node: node
+    uuid: bee9558e-afec-4c6e-9992-b87bab673bb0
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Language

@@ -1,0 +1,38 @@
+uuid: 19c61218-e9e4-45ef-b21a-9e78db1742ab
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:72c169d2-45c6-40c2-82e4-4f0f6f243331'
+  module:
+    - block_content
+    - ctools
+    - system
+  theme:
+    - wwf9
+id: wwf9_highlightsfrontpage
+theme: wwf9
+region: sub_featured
+weight: -50
+provider: null
+plugin: 'block_content:72c169d2-45c6-40c2-82e4-4f0f6f243331'
+settings:
+  id: 'block_content:72c169d2-45c6-40c2-82e4-4f0f6f243331'
+  label: 'The 9th Forum in a few figures'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "<front>\r\n/node/102\r\n/node/103\r\n/node/104\r\n/node/105\r\n/node/111\r\n/node/106\r\n/node/107\r\n/node/110\r\n/node/108\r\n/node/109"
+    negate: false
+    context_mapping: {  }
+  'entity_bundle:webform_submission':
+    id: 'entity_bundle:webform_submission'
+    bundles: {  }
+    negate: true
+    context_mapping:
+      webform_submission: '@webform.webform_submission_route_context:webform_submission'

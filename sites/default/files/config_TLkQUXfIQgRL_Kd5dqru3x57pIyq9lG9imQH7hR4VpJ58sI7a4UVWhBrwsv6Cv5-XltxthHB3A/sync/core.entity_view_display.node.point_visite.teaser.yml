@@ -1,0 +1,36 @@
+uuid: 192a8ebf-3199-4874-b985-340609808b37
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.point_visite.body
+    - field.field.node.point_visite.field_image
+    - node.type.point_visite
+  module:
+    - text
+    - user
+id: node.point_visite.teaser
+targetEntityType: node
+bundle: point_visite
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  field_image: true
+  langcode: true

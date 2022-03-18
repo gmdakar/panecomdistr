@@ -1,0 +1,68 @@
+uuid: ddcc87b0-50a3-4e35-a0a5-4fb5968c0aea
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_background_image_block
+    - field.field.block_content.mt_background_image_block.field_mt_background_image
+    - field.field.block_content.mt_background_image_block.field_mt_bg_image_color
+    - field.field.block_content.mt_background_image_block.field_mt_bg_image_layout_mode
+    - field.field.block_content.mt_background_image_block.field_mt_bg_image_opacity
+    - field.field.block_content.mt_background_image_block.field_mt_bg_image_positioning
+    - field.field.block_content.mt_background_image_block.field_mt_block_reference
+  module:
+    - field_layout
+    - layout_builder
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          fc8f3ef3-f74c-4346-a7e4-db4b066ecff5:
+            uuid: fc8f3ef3-f74c-4346-a7e4-db4b066ecff5
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:block_content:mt_background_image_block:field_mt_block_reference'
+              formatter:
+                label: hidden
+                settings:
+                  link: true
+                  view_mode: default
+                third_party_settings: {  }
+                type: entity_reference_entity_view
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+id: block_content.mt_background_image_block.default
+targetEntityType: block_content
+bundle: mt_background_image_block
+mode: default
+content:
+  field_mt_block_reference:
+    weight: 0
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden:
+  field_mt_background_image: true
+  field_mt_bg_image_color: true
+  field_mt_bg_image_layout_mode: true
+  field_mt_bg_image_opacity: true
+  field_mt_bg_image_positioning: true
+  langcode: true

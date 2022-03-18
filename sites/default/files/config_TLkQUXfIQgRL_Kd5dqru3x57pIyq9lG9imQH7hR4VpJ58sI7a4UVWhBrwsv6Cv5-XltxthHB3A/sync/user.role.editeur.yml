@@ -1,0 +1,40 @@
+uuid: 61a3d650-f2e4-4276-bf4b-b87cddaffc44
+langcode: en
+status: true
+dependencies: {  }
+id: editeur
+label: Manager
+weight: 5
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access content'
+  - 'access content overview'
+  - 'access contextual links'
+  - 'access toolbar'
+  - 'administer block_content display'
+  - 'administer block_content fields'
+  - 'administer blocks'
+  - 'administer menu'
+  - 'administer nodes'
+  - 'administer url aliases'
+  - 'bypass node access'
+  - 'create article content'
+  - 'create content translations'
+  - 'create mt_canvas_page content'
+  - 'create url aliases'
+  - 'edit any mt_canvas_page content'
+  - 'edit own article content'
+  - 'edit own mt_canvas_page content'
+  - 'revert article revisions'
+  - 'revert mt_canvas_page revisions'
+  - 'translate article node'
+  - 'translate block_content'
+  - 'translate mt_canvas_page node'
+  - 'update content translations'
+  - 'use text format basic_html'
+  - 'use text format full_html'
+  - 'view article revisions'
+  - 'view mt_canvas_page revisions'
+  - 'view own unpublished content'
+  - 'view unpublished paragraphs'

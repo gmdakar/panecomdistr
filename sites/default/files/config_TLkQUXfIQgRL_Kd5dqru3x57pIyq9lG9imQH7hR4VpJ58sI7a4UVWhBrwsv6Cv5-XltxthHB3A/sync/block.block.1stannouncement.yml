@@ -1,0 +1,41 @@
+uuid: 8111982c-deae-4058-805f-918d21721a37
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:50abf850-2f46-4982-911e-52267b5b2898'
+  module:
+    - block_content
+    - ctools
+    - system
+  theme:
+    - wwf9
+id: 1stannouncement
+theme: wwf9
+region: sidebar_first
+weight: -18
+provider: null
+plugin: 'block_content:50abf850-2f46-4982-911e-52267b5b2898'
+settings:
+  id: 'block_content:50abf850-2f46-4982-911e-52267b5b2898'
+  label: '1st Announcement'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      document: document
+      mt_team_member: mt_team_member
+      page: page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  request_path:
+    id: request_path
+    pages: "<front>\r\n"
+    negate: true
+    context_mapping: {  }

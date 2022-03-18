@@ -1,0 +1,25 @@
+uuid: 7c98a090-4897-46a0-ac4c-f4d218eaffd9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_register
+    - node.type.viste_technique
+  module:
+    - webform
+id: node.viste_technique.field_register
+field_name: field_register
+entity_type: node
+bundle: viste_technique
+label: register
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: webform

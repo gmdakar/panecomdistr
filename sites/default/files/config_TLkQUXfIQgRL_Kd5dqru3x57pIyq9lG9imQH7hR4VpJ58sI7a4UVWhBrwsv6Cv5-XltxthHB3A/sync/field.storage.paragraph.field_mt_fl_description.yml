@@ -1,0 +1,19 @@
+uuid: 8a7a24dc-9172-48c9-897b-c231908d072f
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_mt_fl_description
+field_name: field_mt_fl_description
+entity_type: paragraph
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

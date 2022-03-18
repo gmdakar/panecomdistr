@@ -1,0 +1,21 @@
+uuid: 86d40a42-66e8-46f3-8929-f047a83fe514
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - wwf9
+id: searchform_2
+theme: wwf9
+region: header_top_highlighted_second
+weight: -21
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form'
+  provider: search
+  label_display: '0'
+  page_id: ''
+visibility: {  }

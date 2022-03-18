@@ -1,0 +1,68 @@
+uuid: 0a82be5f-d4a3-4d77-86f7-f087db070782
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_frontpage_cover_block
+    - field.field.block_content.mt_frontpage_cover_block.field_mt_fpcb_background_image
+    - field.field.block_content.mt_frontpage_cover_block.field_mt_fpcb_badge
+    - field.field.block_content.mt_frontpage_cover_block.field_mt_fpcb_block_height
+    - field.field.block_content.mt_frontpage_cover_block.field_mt_fpcb_cta_button
+    - field.field.block_content.mt_frontpage_cover_block.field_mt_fpcb_image_button
+    - field.field.block_content.mt_frontpage_cover_block.field_mt_fpcb_subtitle
+    - field.field.block_content.mt_frontpage_cover_block.field_mt_fpcb_title
+  module:
+    - field_layout
+    - layout_builder
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          f9737b50-7249-4b04-8604-bf11372b89bb:
+            uuid: f9737b50-7249-4b04-8604-bf11372b89bb
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:block_content:mt_frontpage_cover_block:field_mt_fpcb_title'
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+id: block_content.mt_frontpage_cover_block.default
+targetEntityType: block_content
+bundle: mt_frontpage_cover_block
+mode: default
+content:
+  field_mt_fpcb_title:
+    type: string
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  field_mt_fpcb_background_image: true
+  field_mt_fpcb_badge: true
+  field_mt_fpcb_block_height: true
+  field_mt_fpcb_cta_button: true
+  field_mt_fpcb_image_button: true
+  field_mt_fpcb_subtitle: true
+  langcode: true

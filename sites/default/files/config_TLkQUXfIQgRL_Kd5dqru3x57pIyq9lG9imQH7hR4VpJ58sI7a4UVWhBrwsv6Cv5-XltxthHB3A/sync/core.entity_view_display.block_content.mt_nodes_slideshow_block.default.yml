@@ -1,0 +1,58 @@
+uuid: b2c71c2c-8bdb-41c9-add1-c2814f182a73
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_nodes_slideshow_block
+    - field.field.block_content.mt_nodes_slideshow_block.field_mt_ns_slide
+  module:
+    - field_layout
+    - layout_builder
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          4a05b84d-b06e-4b94-811f-7414db7ce5ce:
+            uuid: 4a05b84d-b06e-4b94-811f-7414db7ce5ce
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:block_content:mt_nodes_slideshow_block:field_mt_ns_slide'
+              formatter:
+                label: hidden
+                settings:
+                  view_mode: mt_slide_view
+                  link: false
+                third_party_settings: {  }
+                type: entity_reference_entity_view
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+id: block_content.mt_nodes_slideshow_block.default
+targetEntityType: block_content
+bundle: mt_nodes_slideshow_block
+mode: default
+content:
+  field_mt_ns_slide:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: mt_slide_view
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden:
+  langcode: true

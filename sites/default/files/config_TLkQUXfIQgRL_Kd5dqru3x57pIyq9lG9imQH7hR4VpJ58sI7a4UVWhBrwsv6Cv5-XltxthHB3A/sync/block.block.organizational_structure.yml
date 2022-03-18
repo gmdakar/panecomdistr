@@ -1,0 +1,38 @@
+uuid: 67872c9c-8194-47b8-b159-241636f46b94
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - ctools
+    - menu_block
+  theme:
+    - wwf9
+id: organizational_structure
+theme: wwf9
+region: footer_second
+weight: 0
+provider: null
+plugin: 'menu_block:main'
+settings:
+  id: 'menu_block:main'
+  label: 'World Water Forum'
+  provider: menu_block
+  label_display: visible
+  follow: false
+  follow_parent: child
+  level: 1
+  depth: 0
+  expand_all_items: false
+  parent: 'main:menu_link_content:bf200532-66a1-467b-bd27-bdad4cfe26f4'
+  suggestion: main
+  label_type: block
+  label_link: false
+visibility:
+  'entity_bundle:webform_submission':
+    id: 'entity_bundle:webform_submission'
+    bundles: {  }
+    negate: true
+    context_mapping:
+      webform_submission: '@webform.webform_submission_route_context:webform_submission'

@@ -1,0 +1,27 @@
+uuid: 74eeba50-b33d-4e9f-b16f-be95c5e83f78
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - wwf9
+_core:
+  default_config_hash: TpR1DMFTDMLpWaAp_hXJtsqUFgOh-xs-ImUA20Jb5D8
+id: wwf9_page_title
+theme: wwf9
+region: content
+weight: -21
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Nos Partenaires'
+  provider: core
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: "<front>\r\n/node/102\r\n/node/103\r\n/node/104\r\n/node/105\r\n/node/111\r\n/node/106\r\n/blocks\r\n/node/107\r\n/node/110\r\n/node/108\r\n/node/109"
+    negate: true
+    context_mapping: {  }

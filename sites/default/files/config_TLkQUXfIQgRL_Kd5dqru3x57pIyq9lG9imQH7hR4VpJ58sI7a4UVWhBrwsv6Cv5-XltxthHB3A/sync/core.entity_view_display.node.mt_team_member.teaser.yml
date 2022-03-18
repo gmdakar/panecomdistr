@@ -1,0 +1,119 @@
+uuid: ab11fbef-c5ef-427c-ae70-838c206a3523
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.mt_team_member.field_mt_tmm_body
+    - field.field.node.mt_team_member.field_mt_tmm_facebook_account
+    - field.field.node.mt_team_member.field_mt_tmm_featured
+    - field.field.node.mt_team_member.field_mt_tmm_linkedin_account
+    - field.field.node.mt_team_member.field_mt_tmm_member_photo
+    - field.field.node.mt_team_member.field_mt_tmm_member_photo_wide
+    - field.field.node.mt_team_member.field_mt_tmm_subheader_body
+    - field.field.node.mt_team_member.field_mt_tmm_subtitle
+    - field.field.node.mt_team_member.field_mt_tmm_twitter_account
+    - field.field.node.mt_team_member.field_mt_tmm_youtube_account
+    - image.style.mt_member_photo
+    - node.type.mt_team_member
+  module:
+    - field_layout
+    - image
+    - layout_builder
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          2b370d42-578e-4b92-8108-666b7bb87f79:
+            uuid: 2b370d42-578e-4b92-8108-666b7bb87f79
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:mt_team_member:field_mt_tmm_body'
+              formatter:
+                type: text_summary_or_trimmed
+                label: hidden
+                settings:
+                  trim_length: 600
+                third_party_settings: {  }
+            additional: {  }
+            weight: 0
+          152d41f6-781d-4c13-9fab-f36e0d3589e2:
+            uuid: 152d41f6-781d-4c13-9fab-f36e0d3589e2
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:mt_team_member:field_mt_tmm_member_photo'
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_style: mt_member_photo
+                  image_link: content
+                third_party_settings: {  }
+            additional: {  }
+            weight: 1
+          3a750da5-bb7f-4f0b-b60d-143bae27ccc5:
+            uuid: 3a750da5-bb7f-4f0b-b60d-143bae27ccc5
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:mt_team_member:links'
+            additional: {  }
+            weight: 2
+        third_party_settings: {  }
+id: node.mt_team_member.teaser
+targetEntityType: node
+bundle: mt_team_member
+mode: teaser
+content:
+  field_mt_tmm_body:
+    type: text_summary_or_trimmed
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  field_mt_tmm_member_photo:
+    type: image
+    weight: 3
+    region: content
+    label: hidden
+    settings:
+      image_style: mt_member_photo
+      image_link: content
+    third_party_settings: {  }
+  links:
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_mt_tmm_facebook_account: true
+  field_mt_tmm_featured: true
+  field_mt_tmm_linkedin_account: true
+  field_mt_tmm_member_photo_wide: true
+  field_mt_tmm_subheader_body: true
+  field_mt_tmm_subtitle: true
+  field_mt_tmm_twitter_account: true
+  field_mt_tmm_youtube_account: true
+  langcode: true

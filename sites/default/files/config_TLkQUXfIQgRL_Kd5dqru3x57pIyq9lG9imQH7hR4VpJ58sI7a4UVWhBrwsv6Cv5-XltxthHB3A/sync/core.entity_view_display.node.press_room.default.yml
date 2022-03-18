@@ -1,0 +1,98 @@
+uuid: d593a764-ae0f-4d2b-b4b2-6308325f4eb9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.press_room.field_documents
+    - field.field.node.press_room.field_file_to_download
+    - node.type.press_room
+  module:
+    - field_layout
+    - file
+    - layout_builder
+    - layout_discovery
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          45024b1b-43dc-4bd3-92c7-40e803c0e942:
+            uuid: 45024b1b-43dc-4bd3-92c7-40e803c0e942
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:press_room:links'
+            additional: {  }
+            weight: 0
+          e7a0ae7d-485a-4e0d-a0a1-1f2b2768e51d:
+            uuid: e7a0ae7d-485a-4e0d-a0a1-1f2b2768e51d
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:press_room:field_file_to_download'
+              formatter:
+                label: hidden
+                settings:
+                  use_description_as_link_text: true
+                third_party_settings: {  }
+                type: file_default
+            additional: {  }
+            weight: 1
+          55b2544b-8888-42ea-a4e6-b14681b53755:
+            uuid: 55b2544b-8888-42ea-a4e6-b14681b53755
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:press_room:field_documents'
+              formatter:
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+                type: entity_reference_label
+            additional: {  }
+            weight: 2
+        third_party_settings: {  }
+id: node.press_room.default
+targetEntityType: node
+bundle: press_room
+mode: default
+content:
+  field_documents:
+    weight: 103
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_file_to_download:
+    weight: 102
+    label: hidden
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

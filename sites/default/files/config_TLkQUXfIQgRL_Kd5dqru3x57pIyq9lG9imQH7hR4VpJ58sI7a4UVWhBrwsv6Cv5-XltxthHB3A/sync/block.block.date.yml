@@ -1,0 +1,25 @@
+uuid: 5875faf2-f1ae-40e9-bfeb-e711e451f2c5
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:a644bec7-c29d-461f-ac0e-74f0b09673c8'
+  module:
+    - block_content
+  theme:
+    - wwf9
+id: date
+theme: wwf9
+region: header_first
+weight: -30
+provider: null
+plugin: 'block_content:a644bec7-c29d-461f-ac0e-74f0b09673c8'
+settings:
+  id: 'block_content:a644bec7-c29d-461f-ac0e-74f0b09673c8'
+  label: Date
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

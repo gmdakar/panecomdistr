@@ -1,0 +1,23 @@
+uuid: 294c094e-4c86-48af-9382-b7e9fba70a22
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_website
+    - node.type.mt_product
+  module:
+    - link
+id: node.mt_product.field_website
+field_name: field_website
+entity_type: node
+bundle: mt_product
+label: Website
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

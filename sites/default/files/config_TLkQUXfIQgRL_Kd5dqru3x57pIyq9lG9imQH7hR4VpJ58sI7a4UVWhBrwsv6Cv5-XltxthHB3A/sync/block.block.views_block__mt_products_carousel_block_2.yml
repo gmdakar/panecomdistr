@@ -1,0 +1,37 @@
+uuid: df22af67-88a7-4464-8411-0ddc31a1948a
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.mt_products_carousel
+  module:
+    - ctools
+    - system
+    - views
+  theme:
+    - wwf9
+id: views_block__mt_products_carousel_block_2
+theme: wwf9
+region: highlighted_top
+weight: 0
+provider: null
+plugin: 'views_block:mt_products_carousel-block_2'
+settings:
+  id: 'views_block:mt_products_carousel-block_2'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
+  'entity_bundle:webform_submission':
+    id: 'entity_bundle:webform_submission'
+    bundles: {  }
+    negate: true
+    context_mapping:
+      webform_submission: '@webform.webform_submission_route_context:webform_submission'

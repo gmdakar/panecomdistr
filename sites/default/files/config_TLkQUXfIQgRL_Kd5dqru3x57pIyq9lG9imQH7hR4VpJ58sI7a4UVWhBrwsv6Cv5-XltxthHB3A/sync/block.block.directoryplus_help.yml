@@ -1,0 +1,22 @@
+uuid: e5885464-1f24-428e-a0d5-0997359ce5c5
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - directoryplus
+_core:
+  default_config_hash: xpKHLSERTe8IqMfbY7KnqxDMEEPikHFXwDUSQGtGIhU
+id: directoryplus_help
+theme: directoryplus
+region: content
+weight: -56
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

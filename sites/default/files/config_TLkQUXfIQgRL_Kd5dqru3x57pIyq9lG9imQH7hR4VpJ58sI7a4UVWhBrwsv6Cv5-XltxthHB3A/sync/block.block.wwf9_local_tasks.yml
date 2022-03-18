@@ -1,0 +1,22 @@
+uuid: da1c89db-f732-47c8-8241-87dd2d9c36fa
+langcode: en
+status: true
+dependencies:
+  theme:
+    - wwf9
+_core:
+  default_config_hash: 0Bbm1idGvAvjUzw4kiwFb4-b2WmXJfmFZfAZ198YLe0
+id: wwf9_local_tasks
+theme: wwf9
+region: content
+weight: -19
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Onglets
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

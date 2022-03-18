@@ -1,0 +1,18 @@
+uuid: 226f3b2b-6cf4-4cda-a276-c1c91ffbc565
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.mt_video_gallery_slide
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '1'
+id: paragraph.mt_video_gallery_slide
+target_entity_type_id: paragraph
+target_bundle: mt_video_gallery_slide
+default_langcode: site_default
+language_alterable: true

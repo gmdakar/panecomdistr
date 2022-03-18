@@ -1,0 +1,30 @@
+uuid: 1b7eca5b-bc3f-4ad7-90f5-98381e80ff3b
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.mt_popular_tags
+  module:
+    - system
+    - views
+  theme:
+    - directoryplus
+id: directoryplus_views_block__mt_popular_tags_block_1
+theme: directoryplus
+region: footer_fourth
+weight: -51
+provider: null
+plugin: 'views_block:mt_popular_tags-block_1'
+settings:
+  id: 'views_block:mt_popular_tags-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/108
+    negate: true
+    context_mapping: {  }

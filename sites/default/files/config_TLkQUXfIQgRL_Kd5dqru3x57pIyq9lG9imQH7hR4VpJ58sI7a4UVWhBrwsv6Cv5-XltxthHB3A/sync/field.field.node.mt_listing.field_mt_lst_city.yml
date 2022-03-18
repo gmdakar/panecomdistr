@@ -1,0 +1,19 @@
+uuid: 7952a0a9-c1ce-42fe-979d-fb406065c3d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_lst_city
+    - node.type.mt_listing
+id: node.mt_listing.field_mt_lst_city
+field_name: field_mt_lst_city
+entity_type: node
+bundle: mt_listing
+label: City
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

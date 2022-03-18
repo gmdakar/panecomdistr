@@ -1,0 +1,113 @@
+uuid: f40d50e8-dcd9-4730-b850-0c19784faed2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.mt_how_it_works_item.field_mt_hiw_body
+    - field.field.paragraph.mt_how_it_works_item.field_mt_hiw_link
+    - field.field.paragraph.mt_how_it_works_item.field_mt_hiw_title
+    - paragraphs.paragraphs_type.mt_how_it_works_item
+  module:
+    - field_layout
+    - layout_builder
+    - layout_discovery
+    - link
+    - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          71ae7d8e-8540-4816-90fb-d9dcca4f3488:
+            uuid: 71ae7d8e-8540-4816-90fb-d9dcca4f3488
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:mt_how_it_works_item:field_mt_hiw_title'
+              formatter:
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+                type: string
+            additional: {  }
+            weight: 0
+          35990c09-bd69-4338-bf07-09fc6da6a7bc:
+            uuid: 35990c09-bd69-4338-bf07-09fc6da6a7bc
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:mt_how_it_works_item:field_mt_hiw_body'
+              formatter:
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+                type: text_default
+            additional: {  }
+            weight: 1
+          d5a3ce78-faf0-4d69-ac08-8eedfb30baf0:
+            uuid: d5a3ce78-faf0-4d69-ac08-8eedfb30baf0
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:mt_how_it_works_item:field_mt_hiw_link'
+              formatter:
+                label: hidden
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: ''
+                  target: ''
+                third_party_settings: {  }
+                type: link
+            additional: {  }
+            weight: 2
+        third_party_settings: {  }
+id: paragraph.mt_how_it_works_item.default
+targetEntityType: paragraph
+bundle: mt_how_it_works_item
+mode: default
+content:
+  field_mt_hiw_body:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_mt_hiw_link:
+    weight: 2
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_mt_hiw_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

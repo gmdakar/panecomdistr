@@ -1,0 +1,18 @@
+uuid: ac3d4055-8d5c-4154-9343-8452ab9e2c2e
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_features_slideshow_block
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '1'
+id: block_content.mt_features_slideshow_block
+target_entity_type_id: block_content
+target_bundle: mt_features_slideshow_block
+default_langcode: site_default
+language_alterable: true

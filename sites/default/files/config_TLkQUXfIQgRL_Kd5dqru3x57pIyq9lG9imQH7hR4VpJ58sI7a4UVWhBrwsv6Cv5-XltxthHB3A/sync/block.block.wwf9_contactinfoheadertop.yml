@@ -1,0 +1,25 @@
+uuid: 843e9457-9d68-451e-b02d-aaa2f147473f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:47385a7c-dff7-4f4a-8225-37b53a37da3d'
+  module:
+    - block_content
+  theme:
+    - wwf9
+id: wwf9_contactinfoheadertop
+theme: wwf9
+region: header_top_highlighted_first
+weight: -40
+provider: null
+plugin: 'block_content:47385a7c-dff7-4f4a-8225-37b53a37da3d'
+settings:
+  id: 'block_content:47385a7c-dff7-4f4a-8225-37b53a37da3d'
+  label: 'Contact Info (header top)'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

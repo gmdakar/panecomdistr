@@ -1,0 +1,15 @@
+uuid: 40ce9c39-1181-40db-9c2e-ffa0a1ed17c3
+langcode: en
+status: true
+dependencies: {  }
+name: mt_listing_icon
+label: 'Listing Icon (39x52)'
+effects:
+  325d4442-9eb3-40b6-b094-fb66b9204574:
+    uuid: 325d4442-9eb3-40b6-b094-fb66b9204574
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 39
+      height: 52
+      anchor: center-center

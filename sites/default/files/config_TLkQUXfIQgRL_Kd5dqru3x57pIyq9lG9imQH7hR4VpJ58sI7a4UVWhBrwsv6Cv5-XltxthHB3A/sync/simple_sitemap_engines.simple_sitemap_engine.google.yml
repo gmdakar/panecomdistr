@@ -1,0 +1,10 @@
+uuid: c18f6752-c6c2-47cb-a8b6-8f6dca6f3907
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: PS-z03VbhvMPW8pe7N_Pya5JDfVm1mL_F07cJ_srmYE
+id: google
+label: Google
+url: 'https://www.google.com/ping?sitemap=[sitemap]'
+sitemap_variants: {  }

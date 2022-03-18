@@ -1,0 +1,13 @@
+display:
+  default:
+    display_options:
+      fields:
+        field_image:
+          alter:
+            text: "<div class=\"views-field-field-image\">\r\n<div class=\"overlay-container\">\r\n<span class=\"overlay overlay--colored\">\r\n<a class=\"overlay-target-link\" href=\"{{ path }}\"></a>\r\n</span>\r\n<span class=\"article-meta\">\r\n<span class=\"article-meta__day\">{{ created }}</span>\r\n<span class=\"article-meta__month-year\">{{ created_1 }}</span>\r\n</span>\r\n{{ field_image }}\r\n</div>\r\n</div>"
+      title: 'Dernières Actualités'
+      header:
+        area:
+          content:
+            value: "<h3 class=\"block-title text-center\">BLOG NEWS</h3>\r\n\r\n<p>&nbsp;</p>\r\n"
+            format: full_html

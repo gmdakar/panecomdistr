@@ -1,0 +1,23 @@
+uuid: d40c6b44-c672-4cb5-82c9-085957452e98
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.point_visite
+  module:
+    - text
+id: node.point_visite.body
+field_name: body
+entity_type: node
+bundle: point_visite
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

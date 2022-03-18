@@ -1,0 +1,33 @@
+uuid: e08ea62e-7b28-4e53-b9da-7950792a4f3c
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.mt_articles_list
+  module:
+    - ctools
+    - views
+  theme:
+    - wwf9
+id: views_block__mt_articles_list_block_2
+theme: wwf9
+region: sidebar_second
+weight: -32
+provider: null
+plugin: 'views_block:mt_articles_list-block_2'
+settings:
+  id: 'views_block:mt_articles_list-block_2'
+  label: Actualités
+  provider: views
+  label_display: visible
+  views_label: Actualités
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      article: article
+      mt_album: mt_album
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

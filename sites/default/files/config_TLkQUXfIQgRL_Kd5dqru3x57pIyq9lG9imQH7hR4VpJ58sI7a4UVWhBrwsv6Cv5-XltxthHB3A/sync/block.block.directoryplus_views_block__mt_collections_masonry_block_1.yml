@@ -1,0 +1,24 @@
+uuid: 3af19dff-30fb-4cf4-b584-2876f3bc1231
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.mt_collections_masonry
+  module:
+    - views
+  theme:
+    - directoryplus
+id: directoryplus_views_block__mt_collections_masonry_block_1
+theme: directoryplus
+region: hidden_blocks_collection
+weight: -49
+provider: null
+plugin: 'views_block:mt_collections_masonry-block_1'
+settings:
+  id: 'views_block:mt_collections_masonry-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility: {  }

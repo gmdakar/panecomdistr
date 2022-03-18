@@ -1,0 +1,31 @@
+uuid: 773d39cd-97d0-4db9-be3e-1b58cd67b5b1
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:0f338e64-7351-40c2-b312-fe4aa6214d64'
+  module:
+    - block_content
+    - system
+  theme:
+    - wwf9
+id: packs
+theme: wwf9
+region: content_bottom_first
+weight: -34
+provider: null
+plugin: 'block_content:0f338e64-7351-40c2-b312-fe4aa6214d64'
+settings:
+  id: 'block_content:0f338e64-7351-40c2-b312-fe4aa6214d64'
+  label: Packs
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /form/eligible-exhibitor-badge
+    negate: false
+    context_mapping: {  }

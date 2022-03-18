@@ -1,0 +1,58 @@
+uuid: 98949051-6c07-442c-84ac-38b0eefae150
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_tabs_block
+    - field.field.block_content.mt_tabs_block.field_mt_block_reference
+  module:
+    - field_layout
+    - layout_builder
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          9ae3c062-1d0e-4280-9109-443780ef7d28:
+            uuid: 9ae3c062-1d0e-4280-9109-443780ef7d28
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:block_content:mt_tabs_block:field_mt_block_reference'
+              formatter:
+                label: hidden
+                settings:
+                  link: true
+                  view_mode: default
+                third_party_settings: {  }
+                type: entity_reference_entity_view
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+id: block_content.mt_tabs_block.default
+targetEntityType: block_content
+bundle: mt_tabs_block
+mode: default
+content:
+  field_mt_block_reference:
+    weight: 0
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden:
+  langcode: true

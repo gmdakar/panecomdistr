@@ -1,0 +1,12 @@
+banner_title: 'Follow Online / Participer En ligne'
+banner_desc:
+  value: "<p>Stakeholders meeting →&nbsp;<a href=\"https://www.idealco.fr/campagne/?utm_campaign=g-6666-d9d525fd&amp;event=188\" target=\"_blank\">Follow the event ONLINE</a></p>\r\n\r\n<p>Réunion des parties prenantes →&nbsp;<a href=\"https://www.idealco.fr/campagne/?utm_campaign=g-6666-d9d525fd&amp;event=188\" target=\"_blank\">Suivre l'évènement EN LIGNE</a></p>\r\n"
+  format: full_html
+background_style: bg_img
+banner_bg: black-bg
+banner_img:
+  - '1874'
+banner_text: white-text
+from_date: '2021-10-14 09:30:32 Africa/Dakar'
+to_date: '2021-10-15 20:00:00 Africa/Dakar'
+show_banner: 1

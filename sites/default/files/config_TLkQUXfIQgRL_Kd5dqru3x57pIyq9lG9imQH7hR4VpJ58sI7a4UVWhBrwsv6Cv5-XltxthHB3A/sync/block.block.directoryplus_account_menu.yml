@@ -1,0 +1,27 @@
+uuid: d6dc6ce3-5c01-4bb4-92f7-c059132cdd9b
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - directoryplus
+_core:
+  default_config_hash: c_JBBWB1Ffr0kTiRTk1eg_qK8oaPCCzzE7cYgTCs5jk
+id: directoryplus_account_menu
+theme: directoryplus
+region: sidebar_first
+weight: -53
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 1
+  expand_all_items: false
+visibility: {  }

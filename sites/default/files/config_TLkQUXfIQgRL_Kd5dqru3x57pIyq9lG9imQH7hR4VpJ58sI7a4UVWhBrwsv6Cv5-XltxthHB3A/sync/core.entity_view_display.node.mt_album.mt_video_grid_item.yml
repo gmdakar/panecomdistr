@@ -1,0 +1,93 @@
+uuid: 76fcebaf-409c-4dfe-9f9c-3e5a0de1f7cc
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.mt_video_grid_item
+    - field.field.node.mt_album.field_mt_alb_body
+    - field.field.node.mt_album.field_mt_alb_image
+    - field.field.node.mt_album.field_mt_alb_tags
+    - field.field.node.mt_album.field_mt_alb_video
+    - image.style.large
+    - node.type.mt_album
+  module:
+    - field_layout
+    - layout_builder
+    - layout_discovery
+    - text
+    - user
+    - video_embed_field
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          acc9720b-eebd-460f-94b2-0827c728cbbe:
+            uuid: acc9720b-eebd-460f-94b2-0827c728cbbe
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:mt_album:field_mt_alb_video'
+              formatter:
+                label: hidden
+                settings:
+                  image_style: large
+                  link_image_to: content
+                third_party_settings: {  }
+                type: video_embed_field_thumbnail
+            additional: {  }
+            weight: 0
+          12278919-7679-49a8-83f8-38ad7a4b9d47:
+            uuid: 12278919-7679-49a8-83f8-38ad7a4b9d47
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:mt_album:field_mt_alb_body'
+              formatter:
+                label: hidden
+                settings:
+                  trim_length: 100
+                third_party_settings: {  }
+                type: text_summary_or_trimmed
+            additional: {  }
+            weight: 1
+        third_party_settings: {  }
+id: node.mt_album.mt_video_grid_item
+targetEntityType: node
+bundle: mt_album
+mode: mt_video_grid_item
+content:
+  field_mt_alb_body:
+    weight: 1
+    label: hidden
+    settings:
+      trim_length: 100
+    third_party_settings: {  }
+    type: text_summary_or_trimmed
+    region: content
+  field_mt_alb_video:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: large
+      link_image_to: content
+    third_party_settings: {  }
+    type: video_embed_field_thumbnail
+    region: content
+hidden:
+  field_mt_alb_image: true
+  field_mt_alb_tags: true
+  langcode: true
+  links: true

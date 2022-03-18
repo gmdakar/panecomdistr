@@ -1,0 +1,21 @@
+uuid: 8089e369-ebfa-4d3d-8627-2fc7a5901038
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - directoryplus
+id: searchform
+theme: directoryplus
+region: footer_first
+weight: -58
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form'
+  provider: search
+  label_display: '0'
+  page_id: ''
+visibility: {  }

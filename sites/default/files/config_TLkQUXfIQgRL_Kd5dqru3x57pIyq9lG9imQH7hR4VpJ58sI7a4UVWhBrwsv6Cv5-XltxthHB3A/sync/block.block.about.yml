@@ -1,0 +1,38 @@
+uuid: ff00f9ee-1d6f-4554-a983-954fb7941b90
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:452bb424-6421-49a1-ab3e-c95582ffe695'
+  module:
+    - block_content
+    - ctools
+    - system
+  theme:
+    - wwf9
+id: about
+theme: wwf9
+region: content
+weight: -29
+provider: null
+plugin: 'block_content:452bb424-6421-49a1-ab3e-c95582ffe695'
+settings:
+  id: 'block_content:452bb424-6421-49a1-ab3e-c95582ffe695'
+  label: 'The 9th World Water Forum'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
+  'entity_bundle:webform_submission':
+    id: 'entity_bundle:webform_submission'
+    bundles: {  }
+    negate: true
+    context_mapping:
+      webform_submission: '@webform.webform_submission_route_context:webform_submission'

@@ -1,0 +1,18 @@
+uuid: 95fa43e0-2b39-46c4-a0f6-2d06da6b5c99
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_fltt_block
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '1'
+id: block_content.mt_fltt_block
+target_entity_type_id: block_content
+target_bundle: mt_fltt_block
+default_langcode: site_default
+language_alterable: true

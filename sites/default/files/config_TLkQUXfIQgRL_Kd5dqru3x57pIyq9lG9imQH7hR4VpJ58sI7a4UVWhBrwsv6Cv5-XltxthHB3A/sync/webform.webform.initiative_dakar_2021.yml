@@ -1,0 +1,246 @@
+uuid: 48d3e9ff-0a1e-4150-aefd-a731ea265970
+langcode: en
+status: closed
+dependencies: {  }
+open: null
+close: null
+weight: 0
+uid: 1
+template: false
+archive: true
+id: initiative_dakar_2021
+title: 'Application form - Initiative Dakar 2022'
+description: ''
+category: ''
+elements: "privacy:\n  '#type': item\n  '#title': Privacy\n  '#title_display': none\n  '#markup': '<div class=\"messages messages--status\">Your personal data is confidential and will not be shared with third parties. The information collected in this process will only be used for the purposes of labelling.</div>'\nthemes_relevant:\n  '#type': webform_wizard_page\n  '#title': 'Themes relevant to the candidacy'\n  water_security:\n    '#type': checkboxes\n    '#title': 'Water Security and Sanitation'\n    '#options':\n      'Implement the Right to Water and Sanitation and provide access to safe water and sanitation in emergency situations ': 'Implement the Right to Water and Sanitation and provide access to safe water and sanitation in emergency situations '\n      'Improve water quality and waste management': 'Improve water quality and waste management'\n      'Reduce water-related illness and deaths ': 'Reduce water-related illness and deaths '\n      'Protect and restore ecosystems and forests, including coastal and marine impacts, and combat desertification ': 'Protect and restore ecosystems and forests, including coastal and marine impacts, and combat desertification '\n      'Halt the loss of aquatic biodiversity and invasive species in water ecosystems ': 'Halt the loss of aquatic biodiversity and invasive species in water ecosystems '\n      'Strengthen resilience and adaptive capacity to climate change and natural disasters': 'Strengthen resilience and adaptive capacity to climate change and natural disasters'\n  rural_development:\n    '#type': checkboxes\n    '#title': 'Rural Development'\n    '#options':\n      'Ensure universal access to water (in rural areas) ': 'Ensure universal access to water (in rural areas) '\n      'Ensure universal access to sanitation and hygiene (in rural areas) ': 'Ensure universal access to sanitation and hygiene (in rural areas) '\n      'Provide public water, sanitation and hygiene facilities (schools, healthcare facilities, etc.) ': 'Provide public water, sanitation and hygiene facilities (schools, healthcare facilities, etc.) '\n      'Ensure sustainable agricultural practices, including water productivity and efficiency, reduction of diffuse pollution, and decreased food losses ': 'Ensure sustainable agricultural practices, including water productivity and efficiency, reduction of diffuse pollution, and decreased food losses '\n      'Engage and empower rural communities to be the drivers of social-economic development through water ': 'Engage and empower rural communities to be the drivers of social-economic development through water '\n  cooperation:\n    '#type': checkboxes\n    '#title': Cooperation\n    '#options':\n      'Harmonize the rural-urban divide to curb migration ': 'Harmonize the rural-urban divide to curb migration '\n      'Implement IWRM at all levels': 'Implement IWRM at all levels'\n      'Implement transboundary cooperation to foster peace and prevent conflicts ': 'Implement transboundary cooperation to foster peace and prevent conflicts '\n      'Expand international cooperation, including ODA, and capacity building to foster peace ': 'Expand international cooperation, including ODA, and capacity building to foster peace '\n      'Enhance cooperation on multipurpose infrastructure, including hydropower ': 'Enhance cooperation on multipurpose infrastructure, including hydropower '\n      'Enhance North-South, South-South and triangular cooperation on data and information sharing, and capacity building ': 'Enhance North-South, South-South and triangular cooperation on data and information sharing, and capacity building '\n      'Enhance multi-stakeholder dialogue and partnerships, including with outside sectors ': 'Enhance multi-stakeholder dialogue and partnerships, including with outside sectors '\n  means_tools:\n    '#type': checkboxes\n    '#title': 'Means & Tools (Transversal theme that relates to all other priorities)'\n    '#options':\n      'Mobilize additional financial resources and promote innovative funding ': 'Mobilize additional financial resources and promote innovative funding '\n      'Implement the principles of good water governance, including participatory decision-making ': 'Implement the principles of good water governance, including participatory decision-making '\n      'Foster a water-sensitive approach to legislation and regulation ': 'Foster a water-sensitive approach to legislation and regulation '\n      'Develop effective, accountable and transparent institutions at all levels and promote integrity ': 'Develop effective, accountable and transparent institutions at all levels and promote integrity '\n      'Increase water efficiency and sustainable management through science, technology, innovation and education': 'Increase water efficiency and sustainable management through science, technology, innovation and education'\n  in_each:\n    '#type': item\n    '#title': 'In each case, adaptation to climate change and gender issues are taken into account'\n    '#title_display': none\n    '#markup': '<p class=\"application\">In each case, adaptation to climate change and gender issues are taken into account.</p>'\na_about_the_project_carrier:\n  '#type': webform_wizard_page\n  '#title': 'Part A - About the project carrier'\n  name_of_project_carrying_entity:\n    '#type': textfield\n    '#title': 'Name of project-carrying entity'\n    '#format_items': comma\n    '#required': true\n  address:\n    '#type': webform_flexbox\n    head_office_address:\n      '#type': textarea\n      '#title': 'Head office address'\n      '#flex': 2\n      '#format_items': comma\n      '#required': true\n    mailing_address_if_different:\n      '#type': textarea\n      '#title': 'Mailing address, if different'\n      '#flex': 2\n      '#format_items': comma\n  contacts:\n    '#type': webform_flexbox\n    phone:\n      '#type': tel\n      '#title': Phone\n      '#required': true\n      '#format_items': comma\n    email:\n      '#type': email\n      '#title': Email\n      '#required': true\n      '#format_items': comma\n    website:\n      '#type': textfield\n      '#title': Website\n      '#format_items': comma\n  legal_status_of_the_project_s_entity:\n    '#type': radios\n    '#title': 'Legal status of the project''s entity'\n    '#options':\n      'Private entity': 'Private entity'\n      'Government entity': 'Government entity'\n      'Civil Society Organization': 'Civil Society Organization'\n      \"Association\\t\": \"Association\\t\"\n    '#options_display': side_by_side\n  legal_representative:\n    '#type': webform_flexbox\n    civility:\n      '#type': webform_select_other\n      '#title': Civility\n      '#options': titles\n      '#required': true\n    first_name:\n      '#type': textfield\n      '#title': 'First name'\n      '#required': true\n      '#format_items': comma\n    last_name:\n      '#type': textfield\n      '#title': 'Last name'\n      '#required': true\n      '#format_items': comma\n  contacts_2:\n    '#type': webform_flexbox\n    function_within_the_organization:\n      '#type': textfield\n      '#title': 'Function within the organization'\n      '#required': true\n      '#format_items': comma\n    phone_perso:\n      '#type': tel\n      '#title': Phone\n      '#required': true\n      '#format_items': comma\n    email_perso:\n      '#type': email\n      '#title': Email\n      '#required': true\n      '#format_items': comma\nb_about_the_project:\n  '#type': webform_wizard_page\n  '#title': 'Part B - About the project'\n  project___description:\n    '#type': fieldset\n    '#title': 'Project Description'\n    project__description:\n      '#type': item\n      '#title': 'Project Description'\n      '#title_display': none\n      '#markup': |\n        <p><strong><em>Presentation in one page minimum and three pages maximum, to help appreciate:</em></strong></p>\n        \n        <ul>\n        \t<li><em>The overall framework: Presentation of the issues, objectives of the project and the nature of the problem to be solved or the situation that is intended to be improved.</em></li>\n        \t<li><em>The means or actions to be taken.</em></li>\n        \t<li><em>The specifics and originality of the project: Putting into perspective the project&#39;s interest, its convincing and resilient character, innovative and replicability, gains toward the SDG6 or the theme to which it relates.</em></li>\n        \t<li><em>The proposed method of implementation of the project:&nbsp; The duration and the timeline for the completion of the project, the presentation of the human resources and techniques put in place to prove results before 2021.</em></li>\n        </ul>\n        \n        <p><strong><em>These presentation elements are expected to allow the evaluation of the project according to the criteria specified in the settlement of the call for projects.</em></strong> <strong><em>However, the order is given as an indication.</em></strong></p>\n        \n    project_description:\n      '#type': text_format\n      '#title': 'Describe your project'\n      '#required': true\n      '#allowed_formats':\n        basic_html: basic_html\n      '#hide_help': true\n  technical___precisions:\n    '#type': fieldset\n    '#title': 'Technical Precisions'\n    technical__precisions:\n      '#type': item\n      '#title': 'Technical precisions'\n      '#title_display': none\n      '#markup': |\n        <p>If the project is collective, describe the number of partners directly involved in the project and the contours of their involvement?</p>\n        \n        <p><em>Identify direct partners and specify</em> <em>whether their contribution is technical, human, budgetary or</em> <em>material.</em></p>\n        \n    additional_technical_precisions:\n      '#type': text_format\n      '#title': 'Additional technical precisions'\n      '#allowed_formats':\n        basic_html: basic_html\n      '#hide_help': true\n  approach:\n    '#type': fieldset\n    '#title': Approach\n    term_approach:\n      '#type': item\n      '#title': 'Term approach'\n      '#title_display': none\n      '#markup': '<em>Specify the interest of the project in view of what it will initiate, and which will or should continue for years to come.</em>'\n    medium_long_term_approach:\n      '#type': text_format\n      '#title': 'How does this project fit into a medium-long-term approach?'\n      '#allowed_formats':\n        basic_html: basic_html\n      '#hide_help': true\n  other___beneficiaries:\n    '#type': fieldset\n    '#title': 'Other Beneficiaries'\n    other__beneficiaries:\n      '#type': item\n      '#title': 'Other beneficiaries'\n      '#title_display': none\n      '#markup': '<em>Specify the scope of the project and the nature of the impact on third parties or partners.</em>'\n    other_beneficiaries:\n      '#type': text_format\n      '#title': 'Who would be the other beneficiaries of the implementation of the project?'\n      '#allowed_formats':\n        basic_html: basic_html\n      '#hide_help': true\n  media__coverage:\n    '#type': fieldset\n    '#title': 'Media coverage'\n    media_coverage:\n      '#type': text_format\n      '#title': 'What are the potentials for media coverage, communication and awareness, dissemination of the project (during and after its implementation) and what promotion efforts are planned for this purpose?'\n      '#allowed_formats':\n        basic_html: basic_html\n      '#hide_help': true\n  features__innovative:\n    '#type': fieldset\n    '#title': 'Features Innovative'\n    features_innovative:\n      '#type': text_format\n      '#title': 'Which features of this project are making it an innovative one?'\n      '#allowed_formats':\n        basic_html: basic_html\n      '#hide_help': true\n  impact___project:\n    '#type': fieldset\n    '#title': 'Impact Project'\n    impact__project:\n      '#type': item\n      '#title': 'Impact project'\n      '#title_display': none\n      '#markup': '<em>Precise the project contribution in alleviating issues resulting from gender inequalities and exclusion.</em>'\n    impact_project:\n      '#type': text_format\n      '#title': 'What impact the project will have in reducing gender-based inequalities and exclusion of disadvantaged groups?'\n      '#allowed_formats':\n        basic_html: basic_html\n      '#hide_help': true\n  environment__protect:\n    '#type': fieldset\n    '#title': 'Environment Protect'\n    environment__project:\n      '#type': item\n      '#title': 'Environment project'\n      '#title_display': none\n      '#markup': '<em>Detail how the implementation of such a project will not contribute to environmental degradation.</em>'\n    environmental_protection:\n      '#type': text_format\n      '#title': 'Does the project take into count the environmental protection aspect?'\n      '#allowed_formats':\n        basic_html: basic_html\n      '#hide_help': true\n  uploads:\n    '#type': fieldset\n    '#title': Uploads\n    join_technical_pieces:\n      '#type': webform_document_file\n      '#title': 'Document file'\n      '#multiple': true\n      '#description': 'Join any technical pieces that can be useful in understanding the project and its feasibility (schema, photo, training flyer, market research, quote, etc....).'\n      '#max_filesize': '10'\n      '#file_extensions': 'txt rtf pdf doc docx odt ppt pptx odp xls xlsx ods jpg jpeg png'\n      '#sanitize': true\nc_budget_and_funding_plan:\n  '#type': webform_wizard_page\n  '#title': 'Part C - Budget and Funding Plan'\n  funding_plan:\n    '#type': item\n    '#title': 'Funding Plan'\n    '#markup': |\n      <div>Note : This part is to be filled only if the project is requesting funding from partners<br />\n      Budget table and funding plan to be attached to the file:</div>\n      \n  budget_title:\n    '#type': item\n    '#title': Budget\n    '#display_on': both\n  budget:\n    '#type': webform_flexbox\n    expenditures:\n      '#type': webform_custom_composite\n      '#title': Expenditures\n      '#flex': 2\n      '#multiple__min_items': 3\n      '#multiple__sorting': false\n      '#multiple__operations': false\n      '#multiple__add_more_input': false\n      '#element':\n        expense:\n          '#type': textfield\n          '#title': 'Line of expense'\n          '#placeholder': 'Line of expense'\n        amount:\n          '#type': number\n          '#title': 'Amount (€)'\n          '#placeholder': 'Amount (€)'\n    incomes:\n      '#type': webform_custom_composite\n      '#title': Incomes\n      '#flex': 2\n      '#multiple__min_items': 3\n      '#multiple__sorting': false\n      '#multiple__operations': false\n      '#multiple__add_more_input': false\n      '#element':\n        income:\n          '#type': textfield\n          '#title': 'Line of Income'\n          '#placeholder': 'Line of Income'\n        amount:\n          '#type': number\n          '#title': 'Amount (€)'\n          '#placeholder': 'Amount (€)'\n  total:\n    '#type': webform_flexbox\n    expenditures_total:\n      '#type': number\n      '#title': '[Expenditures] – TOTAL TTC'\n    incomes_total:\n      '#type': textfield\n      '#title': '[Incomes] – TOTAL TTC'\n  funding:\n    '#type': webform_section\n    '#title': 'Funding Plan'\n    total_project:\n      '#type': webform_custom_composite\n      '#title': 'Total project expenses'\n      '#multiple': false\n      '#multiple__sorting': false\n      '#multiple__operations': false\n      '#multiple__add_more': false\n      '#format_items': ol\n      '#element':\n        expenditures:\n          '#type': number\n          '#title': Expenditures\n          '#placeholder': Expenditures\n        incomes:\n          '#type': number\n          '#title': Incomes\n          '#placeholder': Incomes\n    contribution_already:\n      '#type': webform_custom_composite\n      '#title': 'Contribution already awarded or in process by project partners'\n      '#multiple': false\n      '#multiple__sorting': false\n      '#multiple__operations': false\n      '#multiple__add_more': false\n      '#format_items': ol\n      '#element':\n        expenditures:\n          '#type': number\n          '#title': Expenditures\n          '#placeholder': Expenditures\n        incomes:\n          '#type': number\n          '#title': Incomes\n          '#placeholder': Incomes\n    contribution_from:\n      '#type': webform_custom_composite\n      '#title': 'Contribution from Project carrier (Self- financing)'\n      '#multiple': false\n      '#multiple__sorting': false\n      '#multiple__operations': false\n      '#multiple__add_more': false\n      '#format_items': ol\n      '#element':\n        expenditures:\n          '#type': number\n          '#title': Expenditures\n          '#placeholder': Expenditures\n        incomes:\n          '#type': number\n          '#title': Incomes\n          '#placeholder': Incomes\n    total_funding_needed:\n      '#type': webform_custom_composite\n      '#title': 'Total funding needed from parters'\n      '#multiple': false\n      '#multiple__sorting': false\n      '#multiple__operations': false\n      '#multiple__add_more': false\n      '#element':\n        expenditures:\n          '#type': number\n          '#title': Expenditures\n          '#placeholder': Expenditures\n        incomes:\n          '#type': number\n          '#title': Incomes\n          '#placeholder': Incomes\ndear_candidate:\n  '#type': webform_wizard_page\n  '#title': 'Review your informations'\n  review_your_informations:\n    '#type': item\n    '#title': 'Review your informations'\n    '#markup': |\n      <div>Dear Candidate<br />\n      You are almost at the end of your application process. Please take the time to review the information you&rsquo;ve entered before submitting.<br />\n      <br />\n      Thank you,</div>"
+css: ''
+javascript: ''
+settings:
+  ajax: false
+  ajax_scroll_top: form
+  ajax_progress_type: ''
+  ajax_effect: ''
+  ajax_speed: null
+  page: true
+  page_submit_path: /form/initiative-dakar-2022
+  page_confirm_path: ''
+  page_theme_name: ''
+  form_title: source_entity_webform
+  form_submit_once: true
+  form_exception_message: ''
+  form_open_message: ''
+  form_close_message: ''
+  form_previous_submissions: true
+  form_confidential: false
+  form_confidential_message: ''
+  form_disable_remote_addr: true
+  form_convert_anonymous: false
+  form_prepopulate: false
+  form_prepopulate_source_entity: false
+  form_prepopulate_source_entity_required: false
+  form_prepopulate_source_entity_type: ''
+  form_reset: true
+  form_disable_autocomplete: false
+  form_novalidate: false
+  form_disable_inline_errors: false
+  form_required: false
+  form_unsaved: true
+  form_disable_back: false
+  form_submit_back: true
+  form_autofocus: false
+  form_details_toggle: false
+  form_access_denied: default
+  form_access_denied_title: ''
+  form_access_denied_message: ''
+  form_access_denied_attributes: {  }
+  form_file_limit: '10 MB'
+  form_method: ''
+  form_action: ''
+  form_attributes: {  }
+  share: false
+  share_node: false
+  share_theme_name: ''
+  share_title: true
+  share_page_body_attributes: {  }
+  submission_label: ''
+  submission_log: false
+  submission_views: {  }
+  submission_views_replace:
+    webform_routes: {  }
+    node_routes: {  }
+  submission_user_columns: {  }
+  submission_user_duplicate: false
+  submission_access_denied: default
+  submission_access_denied_title: ''
+  submission_access_denied_message: ''
+  submission_access_denied_attributes: {  }
+  submission_exception_message: ''
+  submission_locked_message: ''
+  submission_excluded_elements: {  }
+  submission_exclude_empty: false
+  submission_exclude_empty_checkbox: false
+  previous_submission_message: ''
+  previous_submissions_message: ''
+  autofill: false
+  autofill_message: ''
+  autofill_excluded_elements: {  }
+  wizard_progress_bar: true
+  wizard_progress_pages: false
+  wizard_progress_percentage: false
+  wizard_progress_link: true
+  wizard_progress_states: false
+  wizard_auto_forward: true
+  wizard_auto_forward_hide_next_button: false
+  wizard_keyboard: true
+  wizard_start_label: ''
+  wizard_preview_link: false
+  wizard_confirmation: true
+  wizard_confirmation_label: ''
+  wizard_track: name
+  wizard_prev_button_label: ''
+  wizard_next_button_label: ''
+  wizard_toggle: false
+  wizard_toggle_show_label: ''
+  wizard_toggle_hide_label: ''
+  preview: 1
+  preview_label: ''
+  preview_title: ''
+  preview_message: ''
+  preview_attributes: {  }
+  preview_excluded_elements: {  }
+  preview_exclude_empty: true
+  preview_exclude_empty_checkbox: false
+  draft: none
+  draft_multiple: false
+  draft_auto_save: false
+  draft_saved_message: ''
+  draft_loaded_message: ''
+  draft_pending_single_message: ''
+  draft_pending_multiple_message: ''
+  confirmation_type: page
+  confirmation_title: Congratulations
+  confirmation_message: "<div class=\"confirmation\">\r\n<p>Your application file for the&nbsp; &quot;Initiative Dakar 2022&quot; has been well received.</p>\r\n\r\n<p>The Executive Secretariat for the 9<sup>th</sup> World Water Forum thanks you for your interest.</p>\r\n\r\n<p>Welcome to the &quot;Dakar 2022&quot; World Water Forum.</p>\r\n\r\n<p>Diamniadio, March 21 to 26, 2022.</p>\r\n</div>"
+  confirmation_url: ''
+  confirmation_attributes: {  }
+  confirmation_back: false
+  confirmation_back_label: ''
+  confirmation_back_attributes: {  }
+  confirmation_exclude_query: false
+  confirmation_exclude_token: false
+  confirmation_update: false
+  limit_total: null
+  limit_total_interval: null
+  limit_total_message: ''
+  limit_total_unique: false
+  limit_user: null
+  limit_user_interval: null
+  limit_user_message: ''
+  limit_user_unique: false
+  entity_limit_total: null
+  entity_limit_total_interval: null
+  entity_limit_user: null
+  entity_limit_user_interval: null
+  purge: none
+  purge_days: null
+  results_disabled: false
+  results_disabled_ignore: false
+  results_customize: false
+  token_view: false
+  token_update: false
+  token_delete: false
+  serial_disabled: false
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+    permissions: {  }
+  view_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  purge_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  view_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  administer:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  test:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  configuration:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+handlers:
+  courriel:
+    id: email
+    label: Email
+    notes: ''
+    handler_id: courriel
+    status: true
+    conditions: {  }
+    weight: 0
+    settings:
+      states:
+        - completed
+      to_mail: dakar2021@worldwaterforum9.sn
+      to_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      from_mail: _default
+      from_options: {  }
+      from_name: _default
+      subject: 'Nouvelle candidature [Initiative Dakar 2022]'
+      body: "<p>Date of application : [webform_submission:created]</p>\r\n\r\n<p>Below are the values submitted:</p>\r\n\r\n<p>&nbsp;</p>\r\n[webform_submission:values]"
+      excluded_elements:
+        privacy: privacy
+        in_each: in_each
+        project__description: project__description
+        technical__precisions: technical__precisions
+        term_approach: term_approach
+        other__beneficiaries: other__beneficiaries
+        impact__project: impact__project
+        environment__project: environment__project
+        review_your_informations: review_your_informations
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: true
+      exclude_attachments: false
+      html: true
+      attachments: true
+      twig: false
+      debug: false
+      reply_to: dakar2021@worldwaterforum9.sn
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      theme_name: ''
+      parameters: {  }
+variants: {  }

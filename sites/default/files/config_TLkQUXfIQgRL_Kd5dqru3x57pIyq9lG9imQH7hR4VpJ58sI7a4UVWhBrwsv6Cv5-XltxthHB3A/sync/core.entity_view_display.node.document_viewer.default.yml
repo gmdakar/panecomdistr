@@ -1,0 +1,41 @@
+uuid: 5dcd6d0b-0914-49f0-a159-3e426ae40310
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.document_viewer.body
+    - field.field.node.document_viewer.field_document_pdf
+    - node.type.document_viewer
+  module:
+    - field_formatter_class
+    - pdf
+    - user
+id: node.document_viewer.default
+targetEntityType: node
+bundle: document_viewer
+mode: default
+content:
+  field_document_pdf:
+    weight: 1
+    label: hidden
+    settings:
+      keep_pdfjs: '1'
+      width: 100%
+      height: '1280'
+      page: ''
+      zoom: auto
+      custom_zoom: ''
+      pagemode: thumbs
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    type: pdf_default
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  langcode: true

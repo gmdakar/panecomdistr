@@ -1,0 +1,22 @@
+uuid: 57dafcaf-50ec-4607-b483-47e4ab52c4d7
+langcode: fr
+status: true
+dependencies: {  }
+id: editor
+label: Editeur
+weight: 6
+is_admin: null
+permissions:
+  - 'access content'
+  - 'access content overview'
+  - 'access toolbar'
+  - 'administer nodes'
+  - 'create article content'
+  - 'create content translations'
+  - 'delete own article content'
+  - 'edit any article content'
+  - 'edit own article content'
+  - 'translate article node'
+  - 'use text format full_html'
+  - 'use text format restricted_html'
+  - 'view own unpublished content'

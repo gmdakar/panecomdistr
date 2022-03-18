@@ -1,0 +1,22 @@
+uuid: 6d37863f-f9b3-43c6-a363-336cd2b39a40
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - directoryplus
+_core:
+  default_config_hash: ceLLy3eLwF6_mlZ1_GFCbGiBi36aOuRrju-plVJNEbo
+id: directoryplus_powered
+theme: directoryplus
+region: footer_first
+weight: -56
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

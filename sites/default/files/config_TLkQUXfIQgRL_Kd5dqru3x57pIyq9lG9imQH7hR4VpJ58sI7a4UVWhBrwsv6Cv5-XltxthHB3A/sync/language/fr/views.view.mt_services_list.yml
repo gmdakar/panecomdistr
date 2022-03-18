@@ -1,0 +1,90 @@
+display:
+  page_2:
+    display_title: 'Page - Présentations'
+    display_options:
+      title: Présentations
+      fields:
+        title:
+          label: Titre
+        field_document_type:
+          label: Catégorie
+  page_3:
+    display_title: 'Page - Rapports'
+    display_options:
+      title: Rapports
+      fields:
+        title:
+          label: Titre
+        field_document_type:
+          label: Catégorie
+  block_1:
+    display_title: 'Bloc - Présentations'
+    display_options:
+      fields:
+        title:
+          label: Titre
+        field_document_type:
+          label: Catégorie
+        field_document:
+          alter:
+            text: 'Télécharger [{{ field_format }} - {{ field_taille }}]'
+      block_description: Présentations
+  block_2:
+    display_title: 'Bloc -Rapports'
+    display_options:
+      fields:
+        title:
+          label: Titre
+        field_document_type:
+          label: Catégorie
+        field_document:
+          alter:
+            text: 'Télécharger [{{ field_format }} - {{ field_taille }}]'
+      block_description: Rapports
+  block_3:
+    display_title: 'Bloc -Notes'
+  default:
+    display_options:
+      fields:
+        title:
+          label: Titre
+        field_document_type:
+          label: Catégorie
+        field_document:
+          alter:
+            text: 'Télécharger [{{ field_format }} - {{ field_taille }}]'
+  block_4:
+    display_options:
+      fields:
+        field_document:
+          alter:
+            text: 'Télécharger [{{ field_format }} - {{ field_taille }}]'
+      block_description: 'Présentations Processus Consultatif'
+  block_5:
+    display_options:
+      fields:
+        field_document:
+          alter:
+            text: 'Télécharger [{{ field_format }} - {{ field_taille }}]'
+      block_description: Coopération
+  block_6:
+    display_options:
+      fields:
+        field_document:
+          alter:
+            text: 'Télécharger [{{ field_format }} - {{ field_taille }}]'
+      block_description: 'Sécurité et Assainissement de l''eau'
+  block_7:
+    display_options:
+      fields:
+        field_document:
+          alter:
+            text: 'Télécharger [{{ field_format }} - {{ field_taille }}]'
+      block_description: 'Développement Rural'
+  block_8:
+    display_options:
+      fields:
+        field_document:
+          alter:
+            text: 'Télécharger [{{ field_format }} - {{ field_taille }}]'
+      block_description: 'Outils et Moyens'

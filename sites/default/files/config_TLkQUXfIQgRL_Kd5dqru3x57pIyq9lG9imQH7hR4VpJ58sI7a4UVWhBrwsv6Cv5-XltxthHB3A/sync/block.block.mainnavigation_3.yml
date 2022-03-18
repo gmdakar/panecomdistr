@@ -1,0 +1,42 @@
+uuid: dbb97775-0f94-4c70-aa93-f338c78c1337
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - ctools
+    - menu_block
+  theme:
+    - wwf9
+id: mainnavigation_3
+theme: wwf9
+region: sidebar_first
+weight: -17
+provider: null
+plugin: 'menu_block:main'
+settings:
+  id: 'menu_block:main'
+  label: Navigation
+  provider: menu_block
+  label_display: visible
+  follow: false
+  follow_parent: child
+  level: 2
+  depth: 0
+  expand_all_items: false
+  parent: 'main:'
+  suggestion: main
+  label_type: block
+  label_link: false
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      article: article
+      document: document
+      mt_album: mt_album
+      page: page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

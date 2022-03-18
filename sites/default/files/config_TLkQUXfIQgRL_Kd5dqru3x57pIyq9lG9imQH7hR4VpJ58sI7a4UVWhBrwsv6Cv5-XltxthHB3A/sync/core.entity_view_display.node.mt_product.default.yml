@@ -1,0 +1,434 @@
+uuid: 117dc762-2666-45b3-ab31-dc6c238e5182
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.mt_product.field_mt_prd_additional_features
+    - field.field.node.mt_product.field_mt_prd_availability
+    - field.field.node.mt_product.field_mt_prd_banner_carousel
+    - field.field.node.mt_product.field_mt_prd_body
+    - field.field.node.mt_product.field_mt_prd_buy_link
+    - field.field.node.mt_product.field_mt_prd_categories
+    - field.field.node.mt_product.field_mt_prd_content_tabs
+    - field.field.node.mt_product.field_mt_prd_highlight
+    - field.field.node.mt_product.field_mt_prd_image
+    - field.field.node.mt_product.field_mt_prd_landscape_image
+    - field.field.node.mt_product.field_mt_prd_most_popular
+    - field.field.node.mt_product.field_mt_prd_price
+    - field.field.node.mt_product.field_mt_prd_pricing_table_item
+    - field.field.node.mt_product.field_mt_prd_product_code
+    - field.field.node.mt_product.field_mt_prd_subheader_body
+    - field.field.node.mt_product.field_mt_prd_tags
+    - field.field.node.mt_product.field_mt_prd_video
+    - field.field.node.mt_product.field_website
+    - image.style.large
+    - node.type.mt_product
+  module:
+    - entity_reference_revisions
+    - field_layout
+    - image
+    - layout_builder
+    - layout_discovery
+    - link
+    - options
+    - text
+    - user
+    - video_embed_field
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          9644ffe5-a945-4485-905e-4fc7cce797ae:
+            uuid: 9644ffe5-a945-4485-905e-4fc7cce797ae
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:mt_product:field_mt_prd_subheader_body'
+              formatter:
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+                type: text_default
+            additional: {  }
+            weight: 0
+          63b7f9f6-f0e8-425d-8fe7-e66fabaa0527:
+            uuid: 63b7f9f6-f0e8-425d-8fe7-e66fabaa0527
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:mt_product:field_mt_prd_image'
+              formatter:
+                label: hidden
+                settings:
+                  image_style: large
+                  image_link: file
+                third_party_settings: {  }
+                type: image
+            additional: {  }
+            weight: 1
+          d7d4e8a7-5f56-4361-9933-6f503f7324c2:
+            uuid: d7d4e8a7-5f56-4361-9933-6f503f7324c2
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:mt_product:field_mt_prd_highlight'
+              formatter:
+                type: entity_reference_revisions_entity_view
+                label: hidden
+                settings:
+                  view_mode: default
+                  link: ''
+                third_party_settings: {  }
+            additional: {  }
+            weight: 2
+          cff17f7d-2e56-47c9-a6b0-2f5bd660243a:
+            uuid: cff17f7d-2e56-47c9-a6b0-2f5bd660243a
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:mt_product:field_mt_prd_body'
+              formatter:
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+                type: text_default
+            additional: {  }
+            weight: 3
+          2ac2a3b5-f683-4140-8f9c-8bb217f17e47:
+            uuid: 2ac2a3b5-f683-4140-8f9c-8bb217f17e47
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:mt_product:field_mt_prd_additional_features'
+              formatter:
+                type: entity_reference_revisions_entity_view
+                label: above
+                settings:
+                  view_mode: default
+                  link: ''
+                third_party_settings: {  }
+            additional: {  }
+            weight: 4
+          713ecf2c-b6b6-4085-b4d4-082697b79f79:
+            uuid: 713ecf2c-b6b6-4085-b4d4-082697b79f79
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:mt_product:field_mt_prd_video'
+              formatter:
+                label: hidden
+                settings:
+                  image_style: large
+                  link_image_to: provider
+                third_party_settings: {  }
+                type: video_embed_field_thumbnail
+            additional: {  }
+            weight: 5
+          55e2138a-df0f-47f1-89e3-75db96de5aef:
+            uuid: 55e2138a-df0f-47f1-89e3-75db96de5aef
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:mt_product:field_mt_prd_tags'
+              formatter:
+                label: hidden
+                settings:
+                  link: true
+                third_party_settings: {  }
+                type: entity_reference_label
+            additional: {  }
+            weight: 6
+          a250002b-3f0d-4b4b-8fdc-15de59beb374:
+            uuid: a250002b-3f0d-4b4b-8fdc-15de59beb374
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:mt_product:field_mt_prd_product_code'
+              formatter:
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+                type: string
+            additional: {  }
+            weight: 7
+          372bb7d7-bd58-4e1c-895a-6d7ab6adc22a:
+            uuid: 372bb7d7-bd58-4e1c-895a-6d7ab6adc22a
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:mt_product:field_mt_prd_availability'
+              formatter:
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+                type: list_default
+            additional: {  }
+            weight: 8
+          a2561d5f-17bb-486b-b0ef-8d6a170916be:
+            uuid: a2561d5f-17bb-486b-b0ef-8d6a170916be
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:mt_product:field_mt_prd_price'
+              formatter:
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+                type: string
+            additional: {  }
+            weight: 9
+          8430d0a5-5a67-4575-a7c5-133f81c64c8a:
+            uuid: 8430d0a5-5a67-4575-a7c5-133f81c64c8a
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:mt_product:field_mt_prd_buy_link'
+              formatter:
+                label: hidden
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: ''
+                  target: ''
+                third_party_settings: {  }
+                type: link
+            additional: {  }
+            weight: 10
+          a93e4059-46a7-42a3-9105-308b107b778e:
+            uuid: a93e4059-46a7-42a3-9105-308b107b778e
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:mt_product:field_mt_prd_content_tabs'
+              formatter:
+                type: entity_reference_revisions_entity_view
+                label: hidden
+                settings:
+                  view_mode: default
+                  link: ''
+                third_party_settings: {  }
+            additional: {  }
+            weight: 11
+          b530fecc-bfb2-497c-83dc-b1083fb776ae:
+            uuid: b530fecc-bfb2-497c-83dc-b1083fb776ae
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:mt_product:links'
+            additional: {  }
+            weight: 12
+          9592776c-f17d-4625-a3d1-5a9d5368feee:
+            uuid: 9592776c-f17d-4625-a3d1-5a9d5368feee
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:mt_product:field_mt_prd_banner_carousel'
+              formatter:
+                label: hidden
+                settings:
+                  image_style: ''
+                  image_link: ''
+                third_party_settings: {  }
+                type: image
+            additional: {  }
+            weight: 13
+          e7470ac4-539d-44c6-860c-baf9a81d5fbc:
+            uuid: e7470ac4-539d-44c6-860c-baf9a81d5fbc
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:mt_product:field_website'
+              formatter:
+                label: above
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: ''
+                  target: ''
+                third_party_settings: {  }
+                type: link
+            additional: {  }
+            weight: 14
+        third_party_settings: {  }
+id: node.mt_product.default
+targetEntityType: node
+bundle: mt_product
+mode: default
+content:
+  field_mt_prd_additional_features:
+    type: entity_reference_revisions_entity_view
+    weight: 8
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_mt_prd_availability:
+    weight: 15
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_mt_prd_banner_carousel:
+    weight: 23
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_mt_prd_body:
+    weight: 7
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_mt_prd_buy_link:
+    weight: 19
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_mt_prd_content_tabs:
+    type: entity_reference_revisions_entity_view
+    weight: 21
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_mt_prd_highlight:
+    type: entity_reference_revisions_entity_view
+    weight: 5
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_mt_prd_image:
+    weight: 3
+    label: hidden
+    settings:
+      image_style: large
+      image_link: file
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_mt_prd_price:
+    weight: 17
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_mt_prd_product_code:
+    weight: 14
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_mt_prd_subheader_body:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_mt_prd_tags:
+    weight: 12
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_mt_prd_video:
+    weight: 10
+    label: hidden
+    settings:
+      image_style: large
+      link_image_to: provider
+    third_party_settings: {  }
+    type: video_embed_field_thumbnail
+    region: content
+  field_website:
+    weight: 24
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  links:
+    weight: 22
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_mt_prd_categories: true
+  field_mt_prd_landscape_image: true
+  field_mt_prd_most_popular: true
+  field_mt_prd_pricing_table_item: true
+  langcode: true

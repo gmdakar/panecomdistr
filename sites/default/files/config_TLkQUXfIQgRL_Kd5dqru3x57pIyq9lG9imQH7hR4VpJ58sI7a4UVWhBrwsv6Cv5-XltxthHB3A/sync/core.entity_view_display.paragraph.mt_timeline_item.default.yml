@@ -1,0 +1,117 @@
+uuid: d14980e3-1881-48e6-8db3-cf0f21155a83
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.mt_timeline_item.field_mt_tml_timeline_date
+    - field.field.paragraph.mt_timeline_item.field_mt_tml_timeline_link
+    - field.field.paragraph.mt_timeline_item.field_mt_tml_timeline_title
+    - paragraphs.paragraphs_type.mt_timeline_item
+  module:
+    - datetime
+    - field_layout
+    - layout_builder
+    - layout_discovery
+    - link
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          9326e31f-e5d4-4f29-82c2-89cbc7fd92c9:
+            uuid: 9326e31f-e5d4-4f29-82c2-89cbc7fd92c9
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:mt_timeline_item:field_mt_tml_timeline_title'
+              formatter:
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+                type: string
+            additional: {  }
+            weight: 0
+          fc2bbd48-970f-4bf0-a29b-8d54a5b99787:
+            uuid: fc2bbd48-970f-4bf0-a29b-8d54a5b99787
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:mt_timeline_item:field_mt_tml_timeline_date'
+              formatter:
+                label: hidden
+                settings:
+                  timezone_override: ''
+                  format_type: mt_yearless_date
+                third_party_settings: {  }
+                type: datetime_default
+            additional: {  }
+            weight: 1
+          c92ed23f-2f53-4710-9862-542a3a6b4258:
+            uuid: c92ed23f-2f53-4710-9862-542a3a6b4258
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:mt_timeline_item:field_mt_tml_timeline_link'
+              formatter:
+                label: hidden
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: ''
+                  target: ''
+                third_party_settings: {  }
+                type: link
+            additional: {  }
+            weight: 2
+        third_party_settings: {  }
+id: paragraph.mt_timeline_item.default
+targetEntityType: paragraph
+bundle: mt_timeline_item
+mode: default
+content:
+  field_mt_tml_timeline_date:
+    weight: 1
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: mt_yearless_date
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_mt_tml_timeline_link:
+    weight: 2
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_mt_tml_timeline_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

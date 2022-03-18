@@ -1,0 +1,23 @@
+uuid: 4927ee0f-bc3a-4861-9d32-fe49a82a2f00
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_type_d_accompagnement_sou
+    - node.type.projet
+  module:
+    - text
+id: node.projet.field_type_d_accompagnement_sou
+field_name: field_type_d_accompagnement_sou
+entity_type: node
+bundle: projet
+label: 'Type of support desired '
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

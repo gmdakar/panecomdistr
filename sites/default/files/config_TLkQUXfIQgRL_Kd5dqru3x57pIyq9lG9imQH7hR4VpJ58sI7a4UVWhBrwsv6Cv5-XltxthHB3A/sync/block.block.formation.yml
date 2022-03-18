@@ -1,0 +1,31 @@
+uuid: ac8ca8c5-ce36-4f76-95a5-cdf4b24214dd
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:820b0405-1cd8-49bc-a8e1-2422d70e94c9'
+  module:
+    - block_content
+    - system
+  theme:
+    - wwf9
+id: formation
+theme: wwf9
+region: hidden_blocks_collection
+weight: -22
+provider: null
+plugin: 'block_content:820b0405-1cd8-49bc-a8e1-2422d70e94c9'
+settings:
+  id: 'block_content:820b0405-1cd8-49bc-a8e1-2422d70e94c9'
+  label: formation
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /plateforme-disso
+    negate: false
+    context_mapping: {  }

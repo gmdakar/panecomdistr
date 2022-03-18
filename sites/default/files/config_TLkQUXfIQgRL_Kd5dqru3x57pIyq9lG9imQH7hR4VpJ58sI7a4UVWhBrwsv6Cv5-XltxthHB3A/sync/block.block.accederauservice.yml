@@ -1,0 +1,39 @@
+uuid: 44c2c2a8-8aa6-4ddc-a961-a1305d705bb9
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:763693c1-9e42-4077-b1c6-ed3d3027516c'
+  module:
+    - block_content
+    - ctools
+    - system
+  theme:
+    - wwf9
+id: accederauservice
+theme: wwf9
+region: hidden_blocks_collection
+weight: -24
+provider: null
+plugin: 'block_content:763693c1-9e42-4077-b1c6-ed3d3027516c'
+settings:
+  id: 'block_content:763693c1-9e42-4077-b1c6-ed3d3027516c'
+  label: 'Accès au service'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/318
+    negate: false
+    context_mapping: {  }
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      mt_canvas_page: mt_canvas_page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

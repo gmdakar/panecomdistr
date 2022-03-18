@@ -1,0 +1,21 @@
+uuid: 43439020-18b1-4ac2-856a-c5fb83c0f008
+langcode: en
+status: true
+dependencies:
+  module:
+    - mt_countdown
+  theme:
+    - wwf9
+id: countdown
+theme: wwf9
+region: header_first
+weight: -29
+provider: null
+plugin: mt_countdown
+settings:
+  id: mt_countdown
+  label: 'Count Down'
+  provider: mt_countdown
+  label_display: '0'
+  mt_countdown_block_settings: null
+visibility: {  }

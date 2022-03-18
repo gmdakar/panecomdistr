@@ -1,0 +1,22 @@
+uuid: 3b41d5a8-53c6-4b24-8c0b-2982d5796b22
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.press_room
+id: node.press_room.promote
+field_name: promote
+entity_type: node
+bundle: press_room
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

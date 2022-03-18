@@ -1,0 +1,52 @@
+display:
+  default:
+    display_options:
+      fields:
+        field_image:
+          alter:
+            text: "<div class=\"col-md-6\">\r\n<div class=\"views-field-field-image mb-4 mb-md-0\">\r\n<div class=\"overlay-container\">\r\n<span class=\"overlay overlay--colored\">\r\n<a class=\"overlay-target-link\" href=\"{{ path }}\"></a>\r\n</span>\r\n{{ field_image }}\r\n</div>\r\n</div>\r\n</div>"
+        body:
+          alter:
+            text: "<div class=\"views-field-body\">\r\n{{ body }}\r\n</div>"
+        created:
+          alter:
+            text: "<div class=\"views-field-created\">\r\n{{ created }}\r\n</div>"
+        view_node:
+          text: 'Lire la suite'
+  page_1:
+    display_options:
+      title: 'Dernières Actualités'
+      fields:
+        field_image:
+          alter:
+            text: "<div class=\"col-md-6\">\r\n<div class=\"views-field-field-image mb-4 mb-md-0\">\r\n<div class=\"overlay-container\">\r\n<span class=\"overlay overlay--colored\">\r\n<a class=\"overlay-target-link\" href=\"{{ path }}\"></a>\r\n</span>\r\n{{ field_image }}\r\n</div>\r\n</div>\r\n</div>"
+        body:
+          alter:
+            text: "<div class=\"views-field-body\">\r\n{{ body }}\r\n</div>"
+        view_node:
+          text: 'Lire la suite'
+        nothing:
+          alter:
+            text: "<div class=\"row view-items-list__item\">\r\n{{ field_image }}\r\n<div class=\"{{ field_image_1 }}\">\r\n<div class=\"view-items-list__body\">\r\n{{ created }}\r\n<div class=\"views-field-title\">\r\n<h5>{{ title }}</h5>\r\n</div>\r\n{{ body }}\r\n<div class=\"views-field-view-node\">\r\n{{ view_node }}\r\n</div>\r\n</div>\r\n</div>\r\n</div>"
+  block_1:
+    display_options:
+      fields:
+        field_image:
+          alter:
+            text: "<div class=\"col-md-6\">\r\n<div class=\"views-field-field-image mb-4 mb-md-0\">\r\n<div class=\"overlay-container\">\r\n<span class=\"overlay overlay--colored\">\r\n<a class=\"overlay-target-link\" href=\"{{ path }}\"></a>\r\n</span>\r\n{{ field_image }}\r\n</div>\r\n</div>\r\n</div>"
+        body:
+          alter:
+            text: "<div class=\"views-field-body\">\r\n{{ body }}\r\n</div>"
+        nothing:
+          alter:
+            text: "<div class=\"row view-items-list__item\">\r\n{{ field_image }}\r\n<div class=\"{{ field_image_1 }}\">\r\n<div class=\"view-items-list__body\">\r\n{{ created }}\r\n<div class=\"views-field-title\">\r\n<h5>{{ title }}</h5>\r\n</div>\r\n{{ body }}\r\n<div class=\"views-field-view-node\">\r\n{{ view_node }}\r\n</div>\r\n</div>\r\n</div>\r\n</div>"
+  block_2:
+    display_options:
+      fields:
+        field_image:
+          alter:
+            text: "<div class=\"col-md-6\">\r\n<div class=\"views-field-field-image mb-4 mb-md-0\">\r\n<div class=\"overlay-container\">\r\n<span class=\"overlay overlay--colored\">\r\n<a class=\"overlay-target-link\" href=\"{{ path }}\"></a>\r\n</span>\r\n{{ field_image }}\r\n</div>\r\n</div>\r\n</div>"
+        body:
+          alter:
+            text: "<div class=\"views-field-body\">\r\n{{ body }}\r\n</div>"
+      use_more_text: plus

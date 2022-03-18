@@ -1,0 +1,60 @@
+uuid: 6e1fe1a3-060d-4820-abd9-6744703892dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.mt_image_button.field_mt_image_button_image
+    - field.field.paragraph.mt_image_button.field_mt_image_button_link
+    - paragraphs.paragraphs_type.mt_image_button
+  module:
+    - field_layout
+    - image
+    - layout_builder
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          e937fb56-f5f0-446d-b786-0d5ab93c5c3e:
+            uuid: e937fb56-f5f0-446d-b786-0d5ab93c5c3e
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:mt_image_button:field_mt_image_button_image'
+              formatter:
+                label: hidden
+                settings:
+                  image_style: ''
+                  image_link: ''
+                third_party_settings: {  }
+                type: image
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+id: paragraph.mt_image_button.default
+targetEntityType: paragraph
+bundle: mt_image_button
+mode: default
+content:
+  field_mt_image_button_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  field_mt_image_button_link: true

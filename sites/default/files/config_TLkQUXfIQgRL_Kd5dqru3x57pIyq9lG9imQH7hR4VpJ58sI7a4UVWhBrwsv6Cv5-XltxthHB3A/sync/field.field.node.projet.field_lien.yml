@@ -1,0 +1,28 @@
+uuid: 834be481-c743-4266-b114-40d5c0635891
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lien
+    - node.type.projet
+  module:
+    - link
+id: node.projet.field_lien
+field_name: field_lien
+entity_type: node
+bundle: projet
+label: Link
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    attributes: {  }
+    uri: 'internal:/projets-labellises'
+    title: 'Back to projects'
+    options: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

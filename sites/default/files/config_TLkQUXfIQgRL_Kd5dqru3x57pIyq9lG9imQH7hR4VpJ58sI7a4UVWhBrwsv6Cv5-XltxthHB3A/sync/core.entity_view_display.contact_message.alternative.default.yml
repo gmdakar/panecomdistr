@@ -1,0 +1,53 @@
+uuid: 6c017005-bc62-4b27-8796-ddb249b3256a
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.alternative
+  module:
+    - field_layout
+    - layout_builder
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          2a8aa362-090c-4aa2-8f13-0e9bbd69cd31:
+            uuid: 2a8aa362-090c-4aa2-8f13-0e9bbd69cd31
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:contact_message:alternative:message'
+              formatter:
+                type: basic_string
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+id: contact_message.alternative.default
+targetEntityType: contact_message
+bundle: alternative
+mode: default
+content:
+  message:
+    type: basic_string
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

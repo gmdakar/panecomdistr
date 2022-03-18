@@ -1,0 +1,18 @@
+uuid: 94dc36ec-b9ca-4b2b-a21e-ddfc306f631d
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.mt_product
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '1'
+id: node.mt_product
+target_entity_type_id: node
+target_bundle: mt_product
+default_langcode: site_default
+language_alterable: true

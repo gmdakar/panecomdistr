@@ -1,0 +1,27 @@
+uuid: c9e9cd2d-35cf-4121-bd73-6dd479041583
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_shw_tags
+    - node.type.mt_showcase
+id: node.mt_showcase.field_mt_shw_tags
+field_name: field_mt_shw_tags
+entity_type: node
+bundle: mt_showcase
+label: Tags
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles: {  }
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

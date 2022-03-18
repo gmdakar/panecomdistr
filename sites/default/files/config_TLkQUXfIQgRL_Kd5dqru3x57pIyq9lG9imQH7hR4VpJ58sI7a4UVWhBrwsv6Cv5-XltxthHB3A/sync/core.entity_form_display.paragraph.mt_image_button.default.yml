@@ -1,0 +1,49 @@
+uuid: c377368e-607e-4ca5-92d1-43aa5290fa7e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.mt_image_button.field_mt_image_button_image
+    - field.field.paragraph.mt_image_button.field_mt_image_button_link
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.mt_image_button
+  module:
+    - field_layout
+    - image
+    - layout_discovery
+    - link
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+id: paragraph.mt_image_button.default
+targetEntityType: paragraph
+bundle: mt_image_button
+mode: default
+content:
+  field_mt_image_button_image:
+    weight: 1
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_mt_image_button_link:
+    weight: 0
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  translation:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

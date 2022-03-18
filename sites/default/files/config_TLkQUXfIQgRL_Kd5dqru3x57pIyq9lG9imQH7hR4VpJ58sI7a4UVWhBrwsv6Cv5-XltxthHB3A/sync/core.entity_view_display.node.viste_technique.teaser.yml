@@ -1,0 +1,38 @@
+uuid: 83bf2c6c-c86c-45bb-9f57-4fb15a1ef1fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.viste_technique.body
+    - field.field.node.viste_technique.field_point
+    - field.field.node.viste_technique.field_register
+    - node.type.viste_technique
+  module:
+    - text
+    - user
+id: node.viste_technique.teaser
+targetEntityType: node
+bundle: viste_technique
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  field_point: true
+  field_register: true
+  langcode: true

@@ -1,0 +1,106 @@
+uuid: c583ca36-916d-4b2d-ae29-c9f6dc818481
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.mt_featured_listing.field_mt_fl_description
+    - field.field.paragraph.mt_featured_listing.field_mt_fl_end_date
+    - field.field.paragraph.mt_featured_listing.field_mt_fl_reason
+    - paragraphs.paragraphs_type.mt_featured_listing
+  module:
+    - datetime
+    - field_layout
+    - layout_builder
+    - layout_discovery
+    - options
+    - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          bf81ce76-c3ce-485f-a328-231d7e4eddb1:
+            uuid: bf81ce76-c3ce-485f-a328-231d7e4eddb1
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:mt_featured_listing:field_mt_fl_end_date'
+              formatter:
+                label: above
+                settings:
+                  format_type: medium
+                  timezone_override: ''
+                third_party_settings: {  }
+                type: datetime_default
+            additional: {  }
+            weight: 0
+          68cd9bff-f146-423d-baf5-86e339936d34:
+            uuid: 68cd9bff-f146-423d-baf5-86e339936d34
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:mt_featured_listing:field_mt_fl_description'
+              formatter:
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+                type: text_default
+            additional: {  }
+            weight: 1
+          cc7cda7d-5850-4b7d-8611-8abf3e89044d:
+            uuid: cc7cda7d-5850-4b7d-8611-8abf3e89044d
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:mt_featured_listing:field_mt_fl_reason'
+              formatter:
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+                type: list_default
+            additional: {  }
+            weight: 2
+        third_party_settings: {  }
+id: paragraph.mt_featured_listing.default
+targetEntityType: paragraph
+bundle: mt_featured_listing
+mode: default
+content:
+  field_mt_fl_description:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_mt_fl_end_date:
+    weight: 0
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_mt_fl_reason:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+hidden: {  }

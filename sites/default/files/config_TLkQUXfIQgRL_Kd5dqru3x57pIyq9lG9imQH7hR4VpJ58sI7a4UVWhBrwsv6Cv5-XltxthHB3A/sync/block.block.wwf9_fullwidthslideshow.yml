@@ -1,0 +1,46 @@
+uuid: a720ee73-e6d8-45b7-a243-3b7a17e559c6
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:mt_main_slideshow_block:b2f629fe-21d9-4f21-b60a-3f820c8be0a9'
+  module:
+    - block_content
+    - ctools
+    - language
+    - system
+  theme:
+    - wwf9
+id: wwf9_fullwidthslideshow
+theme: wwf9
+region: banner
+weight: -56
+provider: null
+plugin: 'block_content:b2f629fe-21d9-4f21-b60a-3f820c8be0a9'
+settings:
+  id: 'block_content:b2f629fe-21d9-4f21-b60a-3f820c8be0a9'
+  label: 'Fullwidth Slideshow EN'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/node/107\r\n<front>"
+    negate: false
+    context_mapping: {  }
+  language:
+    id: language
+    langcodes:
+      en: en
+    negate: false
+    context_mapping:
+      language: '@language.current_language_context:language_interface'
+  'entity_bundle:webform_submission':
+    id: 'entity_bundle:webform_submission'
+    bundles: {  }
+    negate: true
+    context_mapping:
+      webform_submission: '@webform.webform_submission_route_context:webform_submission'

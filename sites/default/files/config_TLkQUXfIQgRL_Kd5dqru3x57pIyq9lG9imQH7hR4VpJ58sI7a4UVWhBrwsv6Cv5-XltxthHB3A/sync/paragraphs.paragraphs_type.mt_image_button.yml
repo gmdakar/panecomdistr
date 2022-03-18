@@ -1,0 +1,9 @@
+uuid: b3aa21bd-6f10-4ae4-b354-87fec4289e3f
+langcode: en
+status: true
+dependencies: {  }
+id: mt_image_button
+label: 'Image Button'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

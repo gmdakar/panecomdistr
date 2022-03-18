@@ -1,0 +1,32 @@
+uuid: dccca9e7-e110-4850-8030-c090911a7fb9
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:0519776f-71eb-4e18-94af-db4ff2839d49'
+  module:
+    - block_content
+    - ctools
+  theme:
+    - wwf9
+id: newsletter
+theme: wwf9
+region: footer_top_first
+weight: -21
+provider: null
+plugin: 'block_content:0519776f-71eb-4e18-94af-db4ff2839d49'
+settings:
+  id: 'block_content:0519776f-71eb-4e18-94af-db4ff2839d49'
+  label: 'Stay informed via our newsletter'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  'entity_bundle:webform_submission':
+    id: 'entity_bundle:webform_submission'
+    bundles: {  }
+    negate: true
+    context_mapping:
+      webform_submission: '@webform.webform_submission_route_context:webform_submission'

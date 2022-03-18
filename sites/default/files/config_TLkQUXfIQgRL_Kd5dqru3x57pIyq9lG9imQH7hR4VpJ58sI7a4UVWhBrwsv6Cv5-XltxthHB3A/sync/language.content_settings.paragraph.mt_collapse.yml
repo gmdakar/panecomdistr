@@ -1,0 +1,18 @@
+uuid: 19bfcdfa-0772-4981-ac31-14f8d07ddaaf
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.mt_collapse
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '1'
+id: paragraph.mt_collapse
+target_entity_type_id: paragraph
+target_bundle: mt_collapse
+default_langcode: site_default
+language_alterable: true

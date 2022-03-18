@@ -1,0 +1,58 @@
+uuid: fc3ceec8-f563-49b0-aef8-be55538c51a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.mt_collections.field_mt_collection_image
+    - field.field.taxonomy_term.mt_collections.field_mt_wide_collection_image
+    - taxonomy.vocabulary.mt_collections
+  module:
+    - field_layout
+    - layout_builder
+    - layout_discovery
+    - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          cb132544-10b5-44e2-8c09-34d26602fa17:
+            uuid: cb132544-10b5-44e2-8c09-34d26602fa17
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:taxonomy_term:mt_collections:description'
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+id: taxonomy_term.mt_collections.default
+targetEntityType: taxonomy_term
+bundle: mt_collections
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_mt_collection_image: true
+  field_mt_wide_collection_image: true
+  langcode: true

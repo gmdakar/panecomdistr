@@ -1,0 +1,21 @@
+uuid: c9537bdb-8637-4b69-b872-a0caca2441e8
+langcode: en
+status: true
+dependencies:
+  module:
+    - dropdown_language
+  theme:
+    - wwf9
+id: dropdownlanguage
+theme: wwf9
+region: header_top_highlighted_second
+weight: -22
+provider: null
+plugin: 'dropdown_language:language_interface'
+settings:
+  id: 'dropdown_language:language_interface'
+  label: 'Dropdown Language'
+  provider: dropdown_language
+  label_display: '0'
+  labels: null
+visibility: {  }

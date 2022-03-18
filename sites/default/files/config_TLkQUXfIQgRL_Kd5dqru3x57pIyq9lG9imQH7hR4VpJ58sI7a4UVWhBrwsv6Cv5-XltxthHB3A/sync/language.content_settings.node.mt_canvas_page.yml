@@ -1,0 +1,18 @@
+uuid: 1b6ea6ce-0797-4484-aa42-3121477602e2
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.mt_canvas_page
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '1'
+id: node.mt_canvas_page
+target_entity_type_id: node
+target_bundle: mt_canvas_page
+default_langcode: site_default
+language_alterable: true

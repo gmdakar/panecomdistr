@@ -1,0 +1,21 @@
+uuid: d09331ee-0a38-49d2-9104-0739e8575f8d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_mt_fl_description
+    - paragraphs.paragraphs_type.mt_featured_listing
+  module:
+    - text
+id: paragraph.mt_featured_listing.field_mt_fl_description
+field_name: field_mt_fl_description
+entity_type: paragraph
+bundle: mt_featured_listing
+label: Description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

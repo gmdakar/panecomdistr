@@ -1,0 +1,82 @@
+uuid: db3cef9d-a20f-4384-92aa-3b8bf44b4d59
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.hotel.body
+    - field.field.node.hotel.field_categorie
+    - field.field.node.hotel.field_image_tableau
+    - field.field.node.hotel.field_lien_
+    - field.field.node.hotel.field_mt_alb_image
+    - node.type.hotel
+  module:
+    - field_layout
+    - layout_builder
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          7e1f3a5d-2fce-424d-a4c9-7ba2a7af057c:
+            uuid: 7e1f3a5d-2fce-424d-a4c9-7ba2a7af057c
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:hotel:links'
+            additional: {  }
+            weight: 0
+          b8cbbde1-cfde-4f17-b943-4d3346e35a9d:
+            uuid: b8cbbde1-cfde-4f17-b943-4d3346e35a9d
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:hotel:body'
+              formatter:
+                label: hidden
+                type: text_summary_or_trimmed
+                settings:
+                  trim_length: 600
+                third_party_settings: {  }
+            additional: {  }
+            weight: 1
+        third_party_settings: {  }
+id: node.hotel.teaser
+targetEntityType: node
+bundle: hotel
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_categorie: true
+  field_image_tableau: true
+  field_lien_: true
+  field_mt_alb_image: true
+  langcode: true

@@ -1,0 +1,134 @@
+uuid: cb83fc12-0efe-4958-9b6d-68cd870db8f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.mt_additional_feature.field_mt_adf_body
+    - field.field.paragraph.mt_additional_feature.field_mt_adf_fa_icon
+    - field.field.paragraph.mt_additional_feature.field_mt_adf_image
+    - field.field.paragraph.mt_additional_feature.field_mt_adf_title
+    - image.style.large
+    - paragraphs.paragraphs_type.mt_additional_feature
+  module:
+    - field_layout
+    - fontawesome
+    - image
+    - layout_builder
+    - layout_discovery
+    - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          d114d942-742c-4fd4-af0a-87e714014551:
+            uuid: d114d942-742c-4fd4-af0a-87e714014551
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:mt_additional_feature:field_mt_adf_image'
+              formatter:
+                label: hidden
+                settings:
+                  image_style: large
+                  image_link: file
+                third_party_settings: {  }
+                type: image
+            additional: {  }
+            weight: 0
+          104ef932-f3a3-496a-89bf-5282e0c804f2:
+            uuid: 104ef932-f3a3-496a-89bf-5282e0c804f2
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:mt_additional_feature:field_mt_adf_fa_icon'
+              formatter:
+                label: hidden
+                settings:
+                  layers: false
+                third_party_settings: {  }
+                type: fontawesome_icon_formatter
+            additional: {  }
+            weight: 1
+          7e375926-2f18-43e7-b481-e54e98920b4c:
+            uuid: 7e375926-2f18-43e7-b481-e54e98920b4c
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:mt_additional_feature:field_mt_adf_title'
+              formatter:
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+                type: string
+            additional: {  }
+            weight: 2
+          f77d492c-d9b7-4845-a257-fcdeeb9ff186:
+            uuid: f77d492c-d9b7-4845-a257-fcdeeb9ff186
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:mt_additional_feature:field_mt_adf_body'
+              formatter:
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+                type: text_default
+            additional: {  }
+            weight: 3
+        third_party_settings: {  }
+id: paragraph.mt_additional_feature.default
+targetEntityType: paragraph
+bundle: mt_additional_feature
+mode: default
+content:
+  field_mt_adf_body:
+    weight: 4
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_mt_adf_fa_icon:
+    weight: 2
+    label: hidden
+    settings:
+      layers: false
+    third_party_settings: {  }
+    type: fontawesome_icon_formatter
+    region: content
+  field_mt_adf_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: large
+      image_link: file
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_mt_adf_title:
+    weight: 3
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

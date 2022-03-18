@@ -1,0 +1,23 @@
+uuid: 861802af-3e15-46c1-958f-bb56e4bcd416
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_secteur
+    - node.type.projet
+  module:
+    - text
+id: node.projet.field_secteur
+field_name: field_secteur
+entity_type: node
+bundle: projet
+label: Sector/Domain
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

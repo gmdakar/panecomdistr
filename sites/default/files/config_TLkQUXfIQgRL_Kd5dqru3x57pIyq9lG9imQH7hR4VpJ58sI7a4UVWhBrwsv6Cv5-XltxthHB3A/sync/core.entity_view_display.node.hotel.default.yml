@@ -1,0 +1,198 @@
+uuid: 4346128f-3eb8-4286-9e1f-fa0ff0ec9900
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.hotel.body
+    - field.field.node.hotel.field_categorie
+    - field.field.node.hotel.field_image_tableau
+    - field.field.node.hotel.field_lien_
+    - field.field.node.hotel.field_mt_alb_image
+    - node.type.hotel
+  module:
+    - field_layout
+    - image
+    - layout_builder
+    - layout_discovery
+    - link
+    - text
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          column_widths: 67-33
+        components:
+          89b03a7e-ca95-4b02-ba63-0032780d2b56:
+            uuid: 89b03a7e-ca95-4b02-ba63-0032780d2b56
+            region: first
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:hotel:body'
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 0
+          66331dcd-f156-4fec-a231-9d5cf0e13372:
+            uuid: 66331dcd-f156-4fec-a231-9d5cf0e13372
+            region: second
+            configuration:
+              id: 'field_block:node:hotel:field_mt_alb_image'
+              label: Images
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: image
+                settings:
+                  image_style: large
+                  image_link: ''
+                third_party_settings:
+                  field_formatter_class:
+                    class: img-hotels
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          5c20936f-4438-43af-9368-1d43fd630e3b:
+            uuid: 5c20936f-4438-43af-9368-1d43fd630e3b
+            region: content
+            configuration:
+              id: 'field_block:node:hotel:field_image_tableau'
+              label: 'Image tableau'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: image
+                settings:
+                  image_style: ''
+                  image_link: ''
+                third_party_settings:
+                  field_formatter_class:
+                    class: ''
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          d485922e-383d-4c86-a24f-dc91f2238e64:
+            uuid: d485922e-383d-4c86-a24f-dc91f2238e64
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:hotel:links'
+            additional: {  }
+            weight: 1
+          c97a0b9f-46b8-4bd8-93ab-12ae83fcb61f:
+            uuid: c97a0b9f-46b8-4bd8-93ab-12ae83fcb61f
+            region: content
+            configuration:
+              id: 'field_block:node:hotel:field_lien_'
+              label: 'Lien '
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: link
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: '0'
+                  target: '0'
+                third_party_settings:
+                  field_formatter_class:
+                    class: lien-reservation
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 6
+        third_party_settings: {  }
+id: node.hotel.default
+targetEntityType: node
+bundle: hotel
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_categorie:
+    weight: 103
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_image_tableau:
+    weight: 104
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_lien_:
+    weight: 105
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_mt_alb_image:
+    weight: 102
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

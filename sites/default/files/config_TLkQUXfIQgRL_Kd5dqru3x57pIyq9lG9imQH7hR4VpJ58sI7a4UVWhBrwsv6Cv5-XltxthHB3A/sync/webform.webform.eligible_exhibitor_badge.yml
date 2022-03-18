@@ -1,0 +1,275 @@
+uuid: 5b94ce71-457c-4546-a885-fb3f16177910
+langcode: en
+status: open
+dependencies: {  }
+open: null
+close: null
+weight: 0
+uid: 1082
+template: false
+archive: false
+id: eligible_exhibitor_badge
+title: 'Eligible exhibitor badge'
+description: ''
+category: ''
+elements: "info:\n  '#type': webform_message\n  '#message_type': warning\n  '#message_message': 'To book additional badges click on this link: <a href=\"https://stand.worldwaterforum.org/en/badges-exposant-payant/\" style=\"color:red\" target=\"_bank\">https://stand.worldwaterforum.org/en/badges-exposant-payant/</a>'\nmarkup:\n  '#type': webform_markup\n  '#markup': '<p><strong>Please fill in the form according to the number of badges you are entitled to based on the area you have reserved.</strong></p>'\nflexbox_01:\n  '#type': webform_flexbox\n  name_of_the_organisation:\n    '#type': textfield\n    '#title': 'Name of the organisation'\n    '#required': true\n  order_number:\n    '#type': textfield\n    '#title': 'Order number'\n    '#required': true\nbooth:\n  '#type': webform_flexbox\n  booth_or_pavilion_name:\n    '#type': textfield\n    '#title': 'Booth or pavilion name'\n    '#required': true\n  area:\n    '#type': textfield\n    '#title': 'Reserved area'\n    '#required': true\n  booth_or_pavilion_location_number:\n    '#type': textfield\n    '#title': 'Booth or pavilion location number'\n    '#required': true\nflexbox_02:\n  '#type': webform_flexbox\n  email_organisation:\n    '#type': email\n    '#title': Email\n    '#required': true\n  mobile:\n    '#type': tel\n    '#title': Phone\n    '#required': true\n  country:\n    '#type': textfield\n    '#title': Country\n    '#required': true\nother_members:\n  '#type': webform_table\n  '#title': 'List of beneficiaries'\n  '#header':\n    - title: 'First name'\n      attributes: {  }\n    - title: 'Last name'\n      attributes: {  }\n    - title: Email\n      attributes: {  }\n    - title: Position\n      attributes: {  }\n    - title: Organisation\n      attributes: {  }\n    - title: Country\n      attributes: {  }\n    - title: Phone\n      attributes: {  }\n  members_01:\n    '#type': webform_table_row\n    '#title': 'members (1)'\n    members_01_first_name:\n      '#type': textfield\n      '#title': 'First name'\n      '#title_display': invisible\n    members_01_last_name:\n      '#type': textfield\n      '#title': 'Last name'\n      '#title_display': invisible\n    members_01_mail:\n      '#type': email\n      '#title': Email\n      '#title_display': invisible\n    members_01_position_person:\n      '#type': textfield\n      '#title': Position\n      '#title_display': invisible\n    members_01_organisation:\n      '#type': textfield\n      '#title': Organisation\n      '#title_display': invisible\n    members_01_country_mbr:\n      '#type': textfield\n      '#title': Country\n      '#title_display': invisible\n    members_01_phone_members:\n      '#type': tel\n      '#title': Phone\n      '#title_display': invisible\n  members_02:\n    '#type': webform_table_row\n    '#title': 'members (2)'\n    members_02_first_name:\n      '#type': textfield\n      '#title': 'First name'\n      '#title_display': invisible\n    members_02_last_name:\n      '#type': textfield\n      '#title': 'Last name'\n      '#title_display': invisible\n    members_02_mail:\n      '#type': email\n      '#title': Email\n      '#title_display': invisible\n    members_02_position_person:\n      '#type': textfield\n      '#title': Position\n      '#title_display': invisible\n    members_02_organisation:\n      '#type': textfield\n      '#title': Organisation\n      '#title_display': invisible\n    members_02_country_mbr:\n      '#type': textfield\n      '#title': Country\n      '#title_display': invisible\n    phone_members:\n      '#type': tel\n      '#title': Phone\n      '#title_display': invisible\n  members_03:\n    '#type': webform_table_row\n    '#title': 'members (3)'\n    members_03_first_name:\n      '#type': textfield\n      '#title': 'First name'\n      '#title_display': invisible\n    members_03_last_name:\n      '#type': textfield\n      '#title': 'Last name'\n      '#title_display': invisible\n    members_03_mail:\n      '#type': email\n      '#title': Email\n      '#title_display': invisible\n    members_03_position_person:\n      '#type': textfield\n      '#title': Position\n      '#title_display': invisible\n    members_03_organisation:\n      '#type': textfield\n      '#title': Organisation\n      '#title_display': invisible\n    members_03_country_mbr:\n      '#type': textfield\n      '#title': Country\n      '#title_display': invisible\n    members_03_phone_members:\n      '#type': tel\n      '#title': Phone\n      '#title_display': invisible\n  members_04:\n    '#type': webform_table_row\n    '#title': 'members (4)'\n    members_04_first_name:\n      '#type': textfield\n      '#title': 'First name'\n      '#title_display': invisible\n    members_04_last_name:\n      '#type': textfield\n      '#title': 'Last name'\n      '#title_display': invisible\n    members_04_mail:\n      '#type': email\n      '#title': Email\n      '#title_display': invisible\n    members_04_position_person:\n      '#type': textfield\n      '#title': Position\n      '#title_display': invisible\n    members_04_organisation:\n      '#type': textfield\n      '#title': Organisation\n      '#title_display': invisible\n    members_04_country_mbr:\n      '#type': textfield\n      '#title': Country\n      '#title_display': invisible\n    members_05_phone_members:\n      '#type': tel\n      '#title': Phone\n      '#title_display': invisible\n  members_05:\n    '#type': webform_table_row\n    '#title': 'members (5)'\n    members_05_first_name:\n      '#type': textfield\n      '#title': 'First name'\n      '#title_display': invisible\n    members_05_last_name:\n      '#type': textfield\n      '#title': 'Last name'\n      '#title_display': invisible\n    members_05_mail:\n      '#type': email\n      '#title': Email\n      '#title_display': invisible\n    members_05_position_person:\n      '#type': textfield\n      '#title': Position\n      '#title_display': invisible\n    members_05_organisation:\n      '#type': textfield\n      '#title': Organisation\n      '#title_display': invisible\n    members_05_country_mbr:\n      '#type': textfield\n      '#title': Country\n      '#title_display': invisible\n    members_07_phone_members:\n      '#type': tel\n      '#title': Phone\n      '#title_display': invisible\n  members_06:\n    '#type': webform_table_row\n    '#title': 'members (6)'\n    members_06_first_name:\n      '#type': textfield\n      '#title': 'First name'\n      '#title_display': invisible\n    members_06_last_name:\n      '#type': textfield\n      '#title': 'Last name'\n      '#title_display': invisible\n    members_06_mail:\n      '#type': email\n      '#title': Email\n      '#title_display': invisible\n    members_06_position_person:\n      '#type': textfield\n      '#title': Position\n      '#title_display': invisible\n    members_06_organisation:\n      '#type': textfield\n      '#title': Organisation\n      '#title_display': invisible\n    members_06_country_mbr:\n      '#type': textfield\n      '#title': Country\n      '#title_display': invisible\n    members_14_phone_members:\n      '#type': tel\n      '#title': Phone\n      '#title_display': invisible\n  members_07:\n    '#type': webform_table_row\n    '#title': 'members (7)'\n    members_07_first_name:\n      '#type': textfield\n      '#title': 'First name'\n      '#title_display': invisible\n    members_07_last_name:\n      '#type': textfield\n      '#title': 'Last name'\n      '#title_display': invisible\n    members_07_mail:\n      '#type': email\n      '#title': Email\n      '#title_display': invisible\n    members_07_position_person:\n      '#type': textfield\n      '#title': Position\n      '#title_display': invisible\n    members_07_organisation:\n      '#type': textfield\n      '#title': Organisation\n      '#title_display': invisible\n    members_07_country_mbr:\n      '#type': textfield\n      '#title': Country\n      '#title_display': invisible\n    members_08_phone_members:\n      '#type': tel\n      '#title': Phone\n      '#title_display': invisible\n  members_08:\n    '#type': webform_table_row\n    '#title': 'members (8)'\n    members_08_first_name:\n      '#type': textfield\n      '#title': 'First name'\n      '#title_display': invisible\n    members_08_last_name:\n      '#type': textfield\n      '#title': 'Last name'\n      '#title_display': invisible\n    members_08_mail:\n      '#type': email\n      '#title': Email\n      '#title_display': invisible\n    members_08_position_person:\n      '#type': textfield\n      '#title': Position\n      '#title_display': invisible\n    members_08_organisation:\n      '#type': textfield\n      '#title': Organisation\n      '#title_display': invisible\n    members_08_country_mbr:\n      '#type': textfield\n      '#title': Country\n      '#title_display': invisible\n    members_06_phone_members:\n      '#type': tel\n      '#title': Phone\n      '#title_display': invisible\n  members_09:\n    '#type': webform_table_row\n    '#title': 'members (9)'\n    members_09_first_name:\n      '#type': textfield\n      '#title': 'First name'\n      '#title_display': invisible\n    members_09_last_name:\n      '#type': textfield\n      '#title': 'Last name'\n      '#title_display': invisible\n    members_09_mail:\n      '#type': email\n      '#title': Email\n      '#title_display': invisible\n    members_09_position_person:\n      '#type': textfield\n      '#title': Position\n      '#title_display': invisible\n    members_09_organisation:\n      '#type': textfield\n      '#title': Organisation\n      '#title_display': invisible\n    members_09_country_mbr:\n      '#type': textfield\n      '#title': Country\n      '#title_display': invisible\n    members_09_phone_members:\n      '#type': tel\n      '#title': Phone\n      '#title_display': invisible\n  members_10:\n    '#type': webform_table_row\n    '#title': 'members (10)'\n    members_10_first_name:\n      '#type': textfield\n      '#title': 'First name'\n      '#title_display': invisible\n    members_10_last_name:\n      '#type': textfield\n      '#title': 'Last name'\n      '#title_display': invisible\n    members_10_mail:\n      '#type': email\n      '#title': Email\n      '#title_display': invisible\n    members_10_position_person:\n      '#type': textfield\n      '#title': Position\n      '#title_display': invisible\n    members_10_organisation:\n      '#type': textfield\n      '#title': Organisation\n      '#title_display': invisible\n    members_10_country_mbr:\n      '#type': textfield\n      '#title': Country\n      '#title_display': invisible\n    members_04_phone_members:\n      '#type': tel\n      '#title': Phone\n      '#title_display': invisible\n  members_11:\n    '#type': webform_table_row\n    '#title': 'members (11)'\n    members_11_first_name:\n      '#type': textfield\n      '#title': 'First name'\n      '#title_display': invisible\n    members_11_last_name:\n      '#type': textfield\n      '#title': 'Last name'\n      '#title_display': invisible\n    members_11_mail:\n      '#type': email\n      '#title': Email\n      '#title_display': invisible\n    members_11_position_person:\n      '#type': textfield\n      '#title': Position\n      '#title_display': invisible\n    members_11_organisation:\n      '#type': textfield\n      '#title': Organisation\n      '#title_display': invisible\n    members_11_country_mbr:\n      '#type': textfield\n      '#title': Country\n      '#title_display': invisible\n    members_15_phone_members:\n      '#type': tel\n      '#title': Phone\n      '#title_display': invisible\n  members_12:\n    '#type': webform_table_row\n    '#title': 'members (12)'\n    members_12_first_name:\n      '#type': textfield\n      '#title': 'First name'\n      '#title_display': invisible\n    members_12_last_name:\n      '#type': textfield\n      '#title': 'Last name'\n      '#title_display': invisible\n    members_12_mail:\n      '#type': email\n      '#title': Email\n      '#title_display': invisible\n    members_12_position_person:\n      '#type': textfield\n      '#title': Position\n      '#title_display': invisible\n    members_12_organisation:\n      '#type': textfield\n      '#title': Organisation\n      '#title_display': invisible\n    members_12_country_mbr:\n      '#type': textfield\n      '#title': Country\n      '#title_display': invisible\n    members_10_phone_members:\n      '#type': tel\n      '#title': Phone\n      '#title_display': invisible\n  members_13:\n    '#type': webform_table_row\n    '#title': 'members (13)'\n    members_13_first_name:\n      '#type': textfield\n      '#title': 'First name'\n      '#title_display': invisible\n    members_13_last_name:\n      '#type': textfield\n      '#title': 'Last name'\n      '#title_display': invisible\n    members_13_mail:\n      '#type': email\n      '#title': Email\n      '#title_display': invisible\n    members_13_position_person:\n      '#type': textfield\n      '#title': Position\n      '#title_display': invisible\n    members_13_organisation:\n      '#type': textfield\n      '#title': Organisation\n      '#title_display': invisible\n    members_13_country_mbr:\n      '#type': textfield\n      '#title': Country\n      '#title_display': invisible\n    members_11_phone_members:\n      '#type': tel\n      '#title': Phone\n      '#title_display': invisible\n  members_14:\n    '#type': webform_table_row\n    '#title': 'members (14)'\n    members_14_first_name:\n      '#type': textfield\n      '#title': 'First name'\n      '#title_display': invisible\n    members_14_last_name:\n      '#type': textfield\n      '#title': 'Last name'\n      '#title_display': invisible\n    members_14_mail:\n      '#type': email\n      '#title': Email\n      '#title_display': invisible\n    members_14_position_person:\n      '#type': textfield\n      '#title': Position\n      '#title_display': invisible\n    members_14_organisation:\n      '#type': textfield\n      '#title': Organisation\n      '#title_display': invisible\n    members_14_country_mbr:\n      '#type': textfield\n      '#title': Country\n      '#title_display': invisible\n    members_12_phone_members:\n      '#type': tel\n      '#title': Phone\n      '#title_display': invisible\n  members_15:\n    '#type': webform_table_row\n    '#title': 'members (15)'\n    members_15_first_name:\n      '#type': textfield\n      '#title': 'First name'\n      '#title_display': invisible\n    members_15_last_name:\n      '#type': textfield\n      '#title': 'Last name'\n      '#title_display': invisible\n    members_15_mail:\n      '#type': email\n      '#title': Email\n      '#title_display': invisible\n    members_15_position_person:\n      '#type': textfield\n      '#title': Position\n      '#title_display': invisible\n    members_15_organisation:\n      '#type': textfield\n      '#title': Organisation\n      '#title_display': invisible\n    members_15_country_mbr:\n      '#type': textfield\n      '#title': Country\n      '#title_display': invisible\n    members_13_phone_members:\n      '#type': tel\n      '#title': Phone\n      '#title_display': invisible"
+css: ''
+javascript: ''
+settings:
+  ajax: false
+  ajax_scroll_top: form
+  ajax_progress_type: ''
+  ajax_effect: ''
+  ajax_speed: null
+  page: true
+  page_submit_path: ''
+  page_confirm_path: ''
+  page_theme_name: ''
+  form_title: source_entity_webform
+  form_submit_once: true
+  form_exception_message: ''
+  form_open_message: ''
+  form_close_message: ''
+  form_previous_submissions: true
+  form_confidential: false
+  form_confidential_message: ''
+  form_disable_remote_addr: true
+  form_convert_anonymous: false
+  form_prepopulate: false
+  form_prepopulate_source_entity: false
+  form_prepopulate_source_entity_required: false
+  form_prepopulate_source_entity_type: ''
+  form_reset: true
+  form_disable_autocomplete: false
+  form_novalidate: false
+  form_disable_inline_errors: false
+  form_required: false
+  form_unsaved: true
+  form_disable_back: false
+  form_submit_back: true
+  form_autofocus: false
+  form_details_toggle: false
+  form_access_denied: default
+  form_access_denied_title: ''
+  form_access_denied_message: ''
+  form_access_denied_attributes: {  }
+  form_file_limit: ''
+  form_method: ''
+  form_action: ''
+  form_attributes: {  }
+  share: false
+  share_node: false
+  share_theme_name: ''
+  share_title: true
+  share_page_body_attributes: {  }
+  submission_label: ''
+  submission_log: false
+  submission_views: {  }
+  submission_views_replace: {  }
+  submission_user_columns: {  }
+  submission_user_duplicate: false
+  submission_access_denied: default
+  submission_access_denied_title: ''
+  submission_access_denied_message: ''
+  submission_access_denied_attributes: {  }
+  submission_exception_message: ''
+  submission_locked_message: ''
+  submission_excluded_elements: {  }
+  submission_exclude_empty: false
+  submission_exclude_empty_checkbox: false
+  previous_submission_message: ''
+  previous_submissions_message: ''
+  autofill: false
+  autofill_message: ''
+  autofill_excluded_elements: {  }
+  wizard_progress_bar: true
+  wizard_progress_pages: false
+  wizard_progress_percentage: false
+  wizard_progress_link: false
+  wizard_progress_states: false
+  wizard_auto_forward: true
+  wizard_auto_forward_hide_next_button: false
+  wizard_keyboard: true
+  wizard_start_label: ''
+  wizard_preview_link: false
+  wizard_confirmation: true
+  wizard_confirmation_label: ''
+  wizard_track: ''
+  wizard_prev_button_label: ''
+  wizard_next_button_label: ''
+  wizard_toggle: true
+  wizard_toggle_show_label: ''
+  wizard_toggle_hide_label: ''
+  preview: 0
+  preview_label: ''
+  preview_title: ''
+  preview_message: ''
+  preview_attributes: {  }
+  preview_excluded_elements: {  }
+  preview_exclude_empty: true
+  preview_exclude_empty_checkbox: false
+  draft: none
+  draft_multiple: false
+  draft_auto_save: false
+  draft_saved_message: ''
+  draft_loaded_message: ''
+  draft_pending_single_message: ''
+  draft_pending_multiple_message: ''
+  confirmation_type: page
+  confirmation_title: Congratulations
+  confirmation_message: "<p><span lang=\"en\">The Executive Secretariat for the 9<sup>th</sup> World Water Forum thanks you for your interest.</span></p>\r\n\r\n<p><span lang=\"en\">Welcome to the &quot;Dakar 2022&quot; World Water Forum.</span></p>\r\n<span lang=\"en\">Diamniadio, March 21 to 26, 2022.</span><br />\r\n<br />\r\nSee you soon"
+  confirmation_url: ''
+  confirmation_attributes: {  }
+  confirmation_back: true
+  confirmation_back_label: ''
+  confirmation_back_attributes: {  }
+  confirmation_exclude_query: false
+  confirmation_exclude_token: false
+  confirmation_update: false
+  limit_total: null
+  limit_total_interval: null
+  limit_total_message: ''
+  limit_total_unique: false
+  limit_user: null
+  limit_user_interval: null
+  limit_user_message: ''
+  limit_user_unique: false
+  entity_limit_total: null
+  entity_limit_total_interval: null
+  entity_limit_user: null
+  entity_limit_user_interval: null
+  purge: none
+  purge_days: null
+  results_disabled: false
+  results_disabled_ignore: false
+  results_customize: false
+  token_view: false
+  token_update: false
+  token_delete: false
+  serial_disabled: false
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+    permissions: {  }
+  view_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  purge_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  view_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  administer:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  test:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  configuration:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+handlers:
+  email:
+    id: email
+    label: Email
+    notes: ''
+    handler_id: email
+    status: true
+    conditions: {  }
+    weight: 0
+    settings:
+      states:
+        - completed
+      to_mail: bdiouf58@gmail.com
+      to_options: {  }
+      cc_mail: boyeouraye@gmail.com
+      cc_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      from_mail: _default
+      from_options: {  }
+      from_name: _default
+      subject: 'New submission [ Eligible exhibitor badge ]'
+      body: _default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: true
+      attachments: false
+      twig: false
+      debug: false
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      theme_name: ''
+      parameters: {  }
+  email_confirmation:
+    id: email
+    label: 'Email confirmation'
+    notes: ''
+    handler_id: email_confirmation
+    status: true
+    conditions:
+      enabled:
+        ':input[name="email"]':
+          filled: true
+    weight: 0
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:email:raw]'
+      to_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      from_mail: _default
+      from_options: {  }
+      from_name: _default
+      subject: Thanks
+      body: "<p><span lang=\"en\">The Executive Secretariat for the 9<sup>th</sup> World Water Forum thanks you for your interest.</span></p>\r\n\r\n<p><span lang=\"en\">Welcome to the &quot;Dakar 2022&quot; World Water Forum.</span></p>\r\n<span lang=\"en\">Diamniadio, March 21 to 26, 2022.</span><br />\r\n<br />\r\nSee you soon"
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: true
+      attachments: false
+      twig: false
+      debug: false
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      theme_name: ''
+      parameters: {  }
+variants: {  }

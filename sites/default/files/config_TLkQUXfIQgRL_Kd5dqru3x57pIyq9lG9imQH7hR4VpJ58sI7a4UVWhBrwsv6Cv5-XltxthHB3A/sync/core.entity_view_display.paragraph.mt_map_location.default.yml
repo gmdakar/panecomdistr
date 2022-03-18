@@ -1,0 +1,36 @@
+uuid: e861ee8a-8df1-4f71-b991-57b12863f206
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.mt_map_location.field_mt_ml_latitude
+    - field.field.paragraph.mt_map_location.field_mt_ml_location_name
+    - field.field.paragraph.mt_map_location.field_mt_ml_longitude
+    - paragraphs.paragraphs_type.mt_map_location
+  module:
+    - field_layout
+    - layout_builder
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components: {  }
+        third_party_settings: {  }
+id: paragraph.mt_map_location.default
+targetEntityType: paragraph
+bundle: mt_map_location
+mode: default
+content: {  }
+hidden:
+  field_mt_ml_latitude: true
+  field_mt_ml_location_name: true
+  field_mt_ml_longitude: true

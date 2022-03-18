@@ -1,0 +1,18 @@
+uuid: 1bc6a441-4b3c-4215-a230-22552ef88640
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.mt_service
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '1'
+id: node.mt_service
+target_entity_type_id: node
+target_bundle: mt_service
+default_langcode: site_default
+language_alterable: true

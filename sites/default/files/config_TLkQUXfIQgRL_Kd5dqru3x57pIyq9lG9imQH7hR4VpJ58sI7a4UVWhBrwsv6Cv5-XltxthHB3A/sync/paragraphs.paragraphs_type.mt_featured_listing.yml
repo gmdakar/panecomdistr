@@ -1,0 +1,9 @@
+uuid: ee32534e-e902-4d5a-b06c-8b9660d1fc88
+langcode: en
+status: true
+dependencies: {  }
+id: mt_featured_listing
+label: 'Promoted Listing'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

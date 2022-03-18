@@ -1,0 +1,27 @@
+uuid: 953b1c26-d9de-43d5-a702-bcb299be2b3e
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - directoryplus
+_core:
+  default_config_hash: YXEMGoM2nj3FOtwQL5J1Lr8EJzC10Zdbbq40oya1qmA
+id: directoryplus_breadcrumbs
+theme: directoryplus
+region: content_top
+weight: -56
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: "<front>\r\n/node/102\r\n/node/103\r\n/node/106\r\n/node/107"
+    negate: true
+    context_mapping: {  }

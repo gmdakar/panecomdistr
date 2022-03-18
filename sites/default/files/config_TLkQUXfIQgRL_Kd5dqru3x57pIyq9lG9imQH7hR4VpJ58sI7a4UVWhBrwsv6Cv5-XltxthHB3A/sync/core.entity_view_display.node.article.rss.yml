@@ -1,0 +1,70 @@
+uuid: 57f7772a-3cfe-4e19-9055-a9c3f56ba339
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.rss
+    - field.field.node.article.body
+    - field.field.node.article.comment
+    - field.field.node.article.field_image
+    - field.field.node.article.field_mt_banner_image
+    - field.field.node.article.field_mt_slideshow
+    - field.field.node.article.field_mt_slideshow_image
+    - field.field.node.article.field_mt_slideshow_text
+    - field.field.node.article.field_mt_subheader_body
+    - field.field.node.article.field_mt_video
+    - field.field.node.article.field_tags
+    - node.type.article
+  module:
+    - field_layout
+    - layout_builder
+    - layout_discovery
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          244bb1ce-9586-423b-9ed3-9e1f22c0940a:
+            uuid: 244bb1ce-9586-423b-9ed3-9e1f22c0940a
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:article:links'
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+_core:
+  default_config_hash: Q90X1FmFdOkTx8udckWPoAgleOstOerbgDnNpoP6PO4
+id: node.article.rss
+targetEntityType: node
+bundle: article
+mode: rss
+content:
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  comment: true
+  field_image: true
+  field_mt_banner_image: true
+  field_mt_slideshow: true
+  field_mt_slideshow_image: true
+  field_mt_slideshow_text: true
+  field_mt_subheader_body: true
+  field_mt_video: true
+  field_tags: true
+  langcode: true

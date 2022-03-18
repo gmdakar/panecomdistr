@@ -1,0 +1,18 @@
+uuid: b56ce3e3-6776-4c49-ab43-1d4ab5e81bec
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.mt_team_member
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '1'
+id: node.mt_team_member
+target_entity_type_id: node
+target_bundle: mt_team_member
+default_langcode: site_default
+language_alterable: true

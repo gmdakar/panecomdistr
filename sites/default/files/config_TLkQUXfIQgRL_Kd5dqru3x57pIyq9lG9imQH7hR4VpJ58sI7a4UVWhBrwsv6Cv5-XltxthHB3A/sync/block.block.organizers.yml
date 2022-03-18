@@ -1,0 +1,25 @@
+uuid: ad97f1ee-7b82-4cb6-b624-16900343d04f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:d24de526-79a3-4101-b595-d26ca61e6b74'
+  module:
+    - block_content
+  theme:
+    - wwf9
+id: organizers
+theme: wwf9
+region: footer_bottom
+weight: 0
+provider: null
+plugin: 'block_content:d24de526-79a3-4101-b595-d26ca61e6b74'
+settings:
+  id: 'block_content:d24de526-79a3-4101-b595-d26ca61e6b74'
+  label: Organizers
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

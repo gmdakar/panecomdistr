@@ -1,0 +1,22 @@
+uuid: bcf5e5d7-9154-4474-8fff-2ea880e9a53f
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - wwf9
+_core:
+  default_config_hash: vK1p6mCOh5qkXs94boz5er53FGYbukdJb5-utFMa_CA
+id: wwf9_content
+theme: wwf9
+region: content
+weight: -17
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Contenu de la page principale'
+  provider: system
+  label_display: '0'
+visibility: {  }
