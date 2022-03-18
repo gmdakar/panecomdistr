@@ -22,4 +22,4 @@
 
 # But not these files...
 !.gitignore
-!sites/*/files/config_*
+!sites/default/files/config_*
